@@ -15,7 +15,7 @@ rawText: " home text "
 draft: false
 navigation: true
 path: /
-url: https://dvfr.illinois.gov
+url: https://infonet.icjia.dev
 ---
 
 :home-text

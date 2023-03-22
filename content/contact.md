@@ -22,7 +22,7 @@ rawText: " illinois domestic violence crisis hotline the 24 hour illinois
 draft: false
 navigation: true
 path: /contact
-url: https://dvfr.illinois.gov/contact
+url: https://infonet.icjia.dev/contact
 ---
 
 ## Illinois Domestic Violence Crisis Hotline
