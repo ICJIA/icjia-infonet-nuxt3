@@ -15,7 +15,7 @@
           border: 0px;
           font-size: 20px;
           font-weight: bold;
-          font-family: 'Oswald', sans-serif !important;
+          font-family: 'Roboto', sans-serif !important;
         "
         @click="scrollToTop"
       >

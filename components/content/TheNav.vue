@@ -39,7 +39,7 @@
           style="
             font-weight: 900 !important;
             font-size: 28px;
-            font-family: 'Oswald', sans-serif !important;
+            font-family: 'Roboto', sans-serif !important;
             letter-spacing: 0.004em;
           "
           class="agency app-title"
@@ -53,7 +53,7 @@
           style="
             font-weight: 900 !important;
             font-size: 28px;
-            font-family: 'Oswald', sans-serif !important;
+            font-family: 'Roboto', sans-serif !important;
             letter-spacing: 0.004em;
           "
           class="agency app-title"
@@ -126,7 +126,7 @@
               style="
                 font-weight: 900 !important;
                 font-size: 18px;
-                font-family: 'Oswald', sans-serif !important;
+                font-family: 'Roboto', sans-serif !important;
               "
               >{{ menu.main }}&nbsp;
               <v-icon v-if="menu.icon" right small color="black">{{

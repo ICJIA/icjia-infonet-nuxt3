@@ -9,7 +9,7 @@
         <NuxtLink
           :to="item.link"
           class="context-link px-2"
-          style="font-size: 14px; font-family: 'Oswald', sans-serif !important"
+          style="font-size: 14px; font-family: 'Roboto', sans-serif !important"
           >{{ item.main }}</NuxtLink
         >
         <span v-if="menuLength - 1 !== index"> | </span>

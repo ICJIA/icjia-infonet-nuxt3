@@ -4,7 +4,7 @@
       background: #401b60;
       border-bottom: 1px solid #aaa;
       font-size: 13px;
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Roboto', sans-serif;
       z-index: 99999;
     "
     class="text-left pr-5 pl-5 py-1 elevation-0"
@@ -12,7 +12,7 @@
     <nuxt-link
       to="/"
       class="breadcrumb-link"
-      style="color: white; font-family: 'Oswald', sans-serif !important"
+      style="color: white; font-family: 'Roboto', sans-serif !important"
       >HOME</nuxt-link
     >
     <span style="color: #fff; font-weight: 900"
