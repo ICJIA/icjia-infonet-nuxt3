@@ -7,5 +7,4 @@ node_modules
 .env
 dist
 public/siteMeta.json
-public/appRoutes.json
 assets/json/searchIndex.json
