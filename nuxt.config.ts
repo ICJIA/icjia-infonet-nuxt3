@@ -12,23 +12,23 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "Illinois Domestic Violence Fatality Review",
-      titleTemplate: "Illinois DVFR | %s ",
+      title: "InfoNet",
+      titleTemplate: "ICJIA | %s ",
       meta: [
         {
           hid: "description",
           name: "description",
-          content: "Illinois Domestic Violence Fatality Review (DVFR)",
+          content: "InfoNet",
         },
         {
           hid: "og-title",
           property: "og:title",
-          content: "Illinois Domestic Violence Fatality Review (DVFR)",
+          content: "InfoNet",
         },
         {
           hid: "og-desc",
           property: "og:description",
-          content: "Illinois Domestic Violence Fatality Review (DVFR)",
+          content: "InfoNet",
         },
         {
           hid: "og-image",
@@ -42,11 +42,11 @@ export default defineNuxtConfig({
           src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
           type: "text/javascript",
         },
-        {
-          src: "https://analytics.icjia-api.cloud/js/plausible.js",
-          "data-domain": "dvfr.illinois.gov",
-          defer: true,
-        },
+        // {
+        //   src: "https://analytics.icjia-api.cloud/js/plausible.js",
+        //   "data-domain": "dvfr.illinois.gov",
+        //   defer: true,
+        // },
         // {
         //   src: "https://www.googletagmanager.com/gtag/js?id=G-xxxxxxx",
         //   async: true,

@@ -1,8 +1,8 @@
 export default defineAppConfig({
-  title: "Illinois Domestic Violence Fatality Review",
-  description: "Illinois Domestic Violence Fatality Review",
-  api: "https://dvfr.icjia-api.cloud",
-  root: "https://dvfr.illinois.gov",
+  title: "InfoNet",
+  description: "InfoNet",
+  api: "https://infonet.icjia-api.cloud",
+  root: "https://infonet.illinois.gov",
   isTranslationEnabled: true,
   footerMenu: [
     {

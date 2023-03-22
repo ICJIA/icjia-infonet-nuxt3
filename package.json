@@ -46,12 +46,12 @@
     "fuse.js": "^6.6.2",
     "moment": "^2.29.4",
     "request": "^2.88.2",
-    "sass": "^1.58.3",
+    "sass": "^1.59.3",
     "sitemap": "^7.1.1",
     "url-exist": "2.0.2",
     "url-exist-sync": "^2.0.0",
     "uuid": "^9.0.0",
     "vite-plugin-vuetify": "^1.0.2",
-    "vuetify": "^3.1.10"
+    "vuetify": "^3.1.11"
   }
 }
