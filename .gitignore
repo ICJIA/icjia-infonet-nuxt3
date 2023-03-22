@@ -1,0 +1,12 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+public/siteMeta.json
+public/appRoutes.json
+assets/json/appRoutes.json
+assets/json/searchIndex.json
