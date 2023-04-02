@@ -3,8 +3,8 @@
     width="100%"
     max-height="600"
     cover
-    src="/dvfr-splash-text-02_xl.jpg"
-    lazy-src="/dvfr-splash-text-01_thumb.jpg"
+    src="/splash-grey-fill.jpg"
+    lazy-src="/splash-grey-fill.jpg"
     style="margin-top: 0px"
     alt="DVFR Splash Image"
   >

@@ -7,7 +7,7 @@
         tile
         width="100%"
         class="text-center markdown-body pb-4"
-        style="background: #401b60"
+        style="background: #13154c"
       >
         <v-container class="mt-0" fill-height>
           <v-row align="center" justify="center">
@@ -17,7 +17,7 @@
               class="text-center mt-2"
               style="color: white"
             >
-              <div>
+              <!-- <div>
                 <img
                   src="/dvfr-splash-text-01.jpg"
                   alt="Footer logo"
@@ -30,9 +30,9 @@
                     })
                   "
                 />
-              </div>
+              </div> -->
 
-              <div class="pb-6" style="margin-top: -20px">
+              <div class="pb-6" style="margin-top: -0px">
                 <v-btn
                   variant="text"
                   style="color: #fff !important; font-size: 20px"
@@ -90,7 +90,7 @@
                     href="https://icjia.illinois.gov"
                     target="_blank"
                     style="color: #fff"
-                    >State of Illinois</a
+                    >Illinois Criminal Justice Information Authority</a
                   >
                 </strong>
 
@@ -116,9 +116,9 @@
                   </nuxt-link>
                 </span>
               </div>
-              <p class="mt-3" style="font-size: 13px; font-weight: 400">
+              <!-- <p class="mt-3" style="font-size: 13px; font-weight: 400">
                 Illinois Domestic Violence Crisis Hotline: 1-877-863-6338
-              </p>
+              </p> -->
             </v-col>
           </v-row>
         </v-container>

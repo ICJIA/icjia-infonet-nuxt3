@@ -30,7 +30,7 @@
       <img
         alt="DVFR Logo"
         class="hover ml-4 mr-4"
-        src="/dvfr-logo-notext-01.jpg"
+        src="/icjia-logo.png"
         width="45"
         @click="$router.push('/')"
       />
@@ -44,8 +44,7 @@
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >DOMESTIC VIOLENCE FATALITY REVIEW
-          <span class="hidden-md-and-down"> </span
+          >ILLINOIS | INFONET <span class="hidden-md-and-down"> </span
         ></span>
       </div>
       <div class="hover hidden-md-and-up">

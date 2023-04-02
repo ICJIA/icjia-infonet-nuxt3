@@ -1,24 +1,21 @@
 ---
-title: Domestic Violence Fatality Review
+title: Infonet
 slug: index
 hideFromSearch: false
 hideFromSitemap: false
-showTableOfContents: true
-summary: Illinois Domestic Violence Fatality Review Home
+showTableOfContents: false
+summary: This is the summary for the home page.
 section: root
-createdAt: 2023-02-06T17:29:48.970Z
-updatedAt: 2023-03-11T21:35:04.164Z
-publishedAt: 2023-02-06T17:30:10.310Z
-searchMeta: "home dvfr index "
+createdAt: 2023-04-02T14:58:15.675Z
+updatedAt: 2023-04-02T15:03:54.772Z
+publishedAt: 2023-04-02T14:58:18.090Z
+searchMeta: null
 category: page
-rawText: " home text "
+rawText: "website goes here "
 draft: false
 navigation: true
 path: /
 url: https://infonet.icjia.dev
 ---
 
-:home-text
-
-
- 
+Website goes here.

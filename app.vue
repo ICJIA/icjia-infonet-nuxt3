@@ -1,6 +1,6 @@
 <template>
   <v-app id="appTop">
-    <!-- <TheNav></TheNav>
+    <TheNav></TheNav>
 
     <TheSidebar></TheSidebar>
 
@@ -12,10 +12,7 @@
       <div></div>
     </v-main>
     <div style="height: 75px"></div>
-    <TheFooter></TheFooter> -->
-    <div class="px-12 py-12">
-      <h1>Website goes here</h1>
-    </div>
+    <TheFooter></TheFooter>
   </v-app>
 </template>
 

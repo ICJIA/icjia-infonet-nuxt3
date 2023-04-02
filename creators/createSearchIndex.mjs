@@ -3,7 +3,7 @@ const require = createRequire(import.meta.url);
 const { v4: uuidv4 } = require("uuid");
 const jsonfile = require("jsonfile");
 const pages = require("../public/pages.json");
-const meetings = require("../public/meetings.json");
+// const meetings = require("../public/meetings.json");
 // const posts = require("../public/posts.json");
 // const publications = require("../public/publications.json");
 // const site = [...pages, ...posts];
@@ -12,7 +12,7 @@ const meetings = require("../public/meetings.json");
 
 // const site = [...pages, ...meetings, ...posts, ...publications];
 
-const site = [...pages, ...meetings];
+const site = [...pages];
 
 const searchIndex = site.map((item) => {
   // console.log(item.attributes);

@@ -17,20 +17,20 @@ export default defineAppConfig({
       main: "Contact",
       link: "/contact",
     },
-    {
-      main: "Meetings",
-      link: "/meetings",
-    },
+    // {
+    //   main: "Meetings",
+    //   link: "/meetings",
+    // },
 
-    {
-      main: "Privacy",
-      link: "/privacy",
-    },
+    // {
+    //   main: "Privacy",
+    //   link: "/privacy",
+    // },
 
-    {
-      main: "Resources",
-      link: "/resources",
-    },
+    // {
+    //   main: "Resources",
+    //   link: "/resources",
+    // },
 
     {
       main: "Search",
@@ -44,18 +44,22 @@ export default defineAppConfig({
 
   navMenu: [
     {
+      main: "Home",
+      link: "/",
+    },
+    {
       main: "About",
       link: "/about",
     },
-    {
-      main: "Meetings",
-      link: "/meetings",
-    },
+    // {
+    //   main: "Meetings",
+    //   link: "/meetings",
+    // },
 
-    {
-      main: "Resources",
-      link: "/resources",
-    },
+    // {
+    //   main: "Resources",
+    //   link: "/resources",
+    // },
     // {
     //   main: "Contact",
     //   link: "/contact",
