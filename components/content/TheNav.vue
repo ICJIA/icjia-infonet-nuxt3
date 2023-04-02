@@ -31,7 +31,7 @@
         alt="DVFR Logo"
         class="hover ml-4 mr-4"
         src="/icjia-logo.png"
-        width="45"
+        width="75"
         @click="$router.push('/')"
       />
       <div class="hover hidden-sm-and-down">
@@ -44,8 +44,8 @@
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >ILLINOIS | INFONET <span class="hidden-md-and-down"> </span
-        ></span>
+          >INFONET
+        </span>
       </div>
       <div class="hover hidden-md-and-up">
         <span
