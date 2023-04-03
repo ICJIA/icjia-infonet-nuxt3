@@ -9,7 +9,7 @@ const { data: query } = await useAsyncData("meetings", () =>
 );
 
 const constructURL = (url) => {
-  const myURL = "https://dvfr.icjia-api.cloud/uploads/" + url;
+  const myURL = "https://infonet.icjia-api.cloud/uploads/" + url;
   return myURL;
 };
 
@@ -95,7 +95,7 @@ useHead({
     {
       hid: "og-image",
       property: "og:image",
-      content: "https://dvfr.icjia.dev/dvfr-splash-text-01.jpg",
+      content: "https://infonet.icjia.dev/icjia-logo.png",
     },
     {
       hid: "og-image-width",
@@ -110,12 +110,12 @@ useHead({
     {
       hid: "description",
       name: "description",
-      content: "DVFR meeting information and attachments.",
+      content: "Infonet meeting information and attachments.",
     },
     {
       hid: "og-desc",
       property: "og:description",
-      content: "DVFR meeting information and attachments.",
+      content: "Infonet meeting information and attachments.",
     },
   ],
 });

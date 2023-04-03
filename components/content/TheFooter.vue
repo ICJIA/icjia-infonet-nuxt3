@@ -7,7 +7,7 @@
         tile
         width="100%"
         class="text-center markdown-body pb-4"
-        style="background: #13154c"
+        style="background: #0d4471"
       >
         <v-container class="mt-0" fill-height>
           <v-row align="center" justify="center">
@@ -19,7 +19,7 @@
             >
               <!-- <div>
                 <img
-                  src="/dvfr-splash-text-01.jpg"
+                  src="https://infonet.icjia.dev/icjia-logo.png"
                   alt="Footer logo"
                   width="250"
                   style="border: 0px solid #ddd; display: inline"

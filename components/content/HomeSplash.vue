@@ -6,7 +6,7 @@
     src="/splash-grey-fill.jpg"
     lazy-src="/splash-grey-fill.jpg"
     style="margin-top: 0px"
-    alt="DVFR Splash Image"
+    alt="ICJIA Splash Image"
   >
     <template #placeholder>
       <v-row class="fill-height ma-0" align="center" justify="center">
@@ -22,8 +22,8 @@
     width="100%"
     max-height="780"
     cover
-    src="/dvfr-splash-text-01_xl.jpg"
-    lazy-src="/dvfr-splash-text-01_thumb.jpg"
+    src="https://infonet.icjia.dev/icjia-logo.png"
+    lazy-src="https://infonet.icjia.dev/icjia-logo.png"
     style="margin-top: 0px"
     class="hidden-md-and-down"
   >

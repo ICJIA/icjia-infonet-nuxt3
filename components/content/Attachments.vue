@@ -23,7 +23,7 @@
             <td>
               <a
                 :href="
-                  'https://dvfr.icjia-api.cloud' + attachment.attributes.url
+                  'https://infonet.icjia-api.cloud' + attachment.attributes.url
                 "
                 target="_blank"
               >
@@ -62,7 +62,9 @@
             :key="attachment.attributes.url"
           >
             <a
-              :href="'https://dvfr.icjia-api.cloud' + attachment.attributes.url"
+              :href="
+                'https://infonet.icjia-api.cloud' + attachment.attributes.url
+              "
               target="_blank"
             >
               {{ attachment.attributes.name }}

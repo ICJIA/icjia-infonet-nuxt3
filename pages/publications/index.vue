@@ -13,7 +13,7 @@ const { data: query } = await useAsyncData("publications", () =>
 // console.log(query);
 
 const constructURL = (url: string) => {
-  const myURL = "https://dvfr.icjia-api.cloud/uploads/" + url;
+  const myURL = "https://infonet.icjia-api.cloud/uploads/" + url;
   return myURL;
 };
 
@@ -74,7 +74,7 @@ useHead({
     {
       hid: "og-image",
       property: "og:image",
-      content: "https://dvfr.icjia.dev/dvfr-splash-text-01.jpg",
+      content: "https://infonet.icjia.dev/icjia-logo.png",
     },
     {
       hid: "og-image-width",
@@ -89,12 +89,12 @@ useHead({
     {
       hid: "description",
       name: "description",
-      content: "DVFR mpublications.",
+      content: "Infonet mpublications.",
     },
     {
       hid: "og-desc",
       property: "og:description",
-      content: "DVFR publications.",
+      content: "Infonet publications.",
     },
   ],
 });

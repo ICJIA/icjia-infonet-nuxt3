@@ -13,7 +13,7 @@
                 ref="textfield"
                 v-model="query"
                 clearable
-                label="Search DVFR"
+                label="Search Infonet"
                 placeholder="Enter search term"
                 style="font-weight: 900"
                 @input="instantSearch"

@@ -7,7 +7,7 @@ import appRoutes from "./public/appRoutes.json";
 
 export default defineNuxtConfig({
   app: {
-    // baseURL: "/dvfr/",
+    // baseURL: "/infonet/",
     // pageTransition: { name: "page", mode: "out-in" },
     head: {
       charset: "utf-8",
@@ -33,7 +33,7 @@ export default defineNuxtConfig({
         {
           hid: "og-image",
           property: "og:image",
-          content: "https://dvfr.icjia.dev/dvfr-splash-text-01.jpg",
+          content: "https://infonet.icjia.dev/icjia-logo.png",
         },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         },
         // {
         //   src: "https://analytics.icjia-api.cloud/js/plausible.js",
-        //   "data-domain": "dvfr.illinois.gov",
+        //   "data-domain": "infonet.illinois.gov",
         //   defer: true,
         // },
         // {

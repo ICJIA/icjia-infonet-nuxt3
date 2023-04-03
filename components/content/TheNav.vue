@@ -28,7 +28,7 @@
       </div>
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <img
-        alt="DVFR Logo"
+        alt="ICJIA Logo"
         class="hover ml-4 mr-4"
         src="/icjia-logo.png"
         width="75"
@@ -57,7 +57,7 @@
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >DVFR <span class="hidden-md-and-down"> </span
+          >INFONET <span class="hidden-md-and-down"> </span
         ></span>
       </div>
 

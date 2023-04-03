@@ -41,7 +41,7 @@ a.context-link:hover {
   color: #aaa;
 }
 .footer-bg {
-  background: #1f2987;
+  background: #0d4494;
   min-width: 100%;
   color: #fff;
   font-size: 16px;

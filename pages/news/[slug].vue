@@ -134,8 +134,8 @@ useHead({
             <div v-if="data && data.splash && data.splash.data" class="mb-10">
               <v-img
                 cover
-                :src="`https://dvfr.icjia-api.cloud${data.splash.data.attributes.formats.medium.url}`"
-                :lazy-src="`https://dvfr.icjia-api.cloud${data.splash.data.attributes.formats.thumbnail.url}`"
+                :src="`https://infonet.icjia-api.cloud${data.splash.data.attributes.formats.medium.url}`"
+                :lazy-src="`https://infonet.icjia-api.cloud${data.splash.data.attributes.formats.thumbnail.url}`"
                 height="550"
               />
               <div style="font-size: 12px; color: #666" class="mt-2">

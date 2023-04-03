@@ -81,7 +81,7 @@ useHead({
     {
       hid: "og-image",
       property: "og:image",
-      content: "https://dvfr.icjia.dev/dvfr-splash-text-01.jpg",
+      content: "https://infonet.icjia.dev/icjia-logo.png",
     },
     {
       hid: "og-image-width",
