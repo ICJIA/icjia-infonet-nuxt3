@@ -5,6 +5,7 @@ import * as labs from "vuetify/labs/components";
 
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
+    ssr: true,
     icons: {
       iconfont: ["mdiSvg", "fa"], // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
     },

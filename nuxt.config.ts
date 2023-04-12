@@ -6,6 +6,10 @@ import vuetify from "vite-plugin-vuetify";
 import appRoutes from "./public/appRoutes.json";
 
 export default defineNuxtConfig({
+  experimental: {
+    viewTransition: true,
+  },
+  devtools: true,
   app: {
     // baseURL: "/infonet/",
     // pageTransition: { name: "page", mode: "out-in" },
