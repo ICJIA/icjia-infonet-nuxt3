@@ -54,7 +54,11 @@
     "url-exist-sync": "^2.0.0",
     "uuid": "^9.0.0",
     "vite-plugin-vuetify": "^1.0.2",
+<<<<<<< HEAD
     "vuetify": "^3.1.16",
+=======
+    "vuetify": "^3.1.14",
+>>>>>>> a88768b576df59c4d4661ff7d3bc0c1be64e3433
     "yaml": "^2.2.2"
   }
 }
