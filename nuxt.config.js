@@ -98,6 +98,7 @@ export default defineNuxtConfig({
     "@nuxt/image-edge",
     "@vueuse/nuxt",
     "@nuxt/content",
+    "@nuxtjs/apollo",
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async (options, nuxt) => {
@@ -160,11 +161,11 @@ export default defineNuxtConfig({
   generate: {
     routes: appRoutes,
   },
-  //   apollo: {
-  //     clients: {
-  //       default: {
-  //         httpEndpoint: `${process.env.NUXT_PUBLIC_API_BASE_URL}/graphql`,
-  //       },
-  //     },
-  //   },
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: "https://researchhub.icjia-api.cloud/graphql",
+      },
+    },
+  },
 });
