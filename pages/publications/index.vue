@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import moment from "moment";
 import _ from "lodash";
 const { path } = useRoute();
@@ -12,7 +12,7 @@ const { data: query } = await useAsyncData("publications", () =>
 
 // console.log(query);
 
-const constructURL = (url: string) => {
+const constructURL = (url) => {
   const myURL = "https://infonet.icjia-api.cloud/uploads/" + url;
   return myURL;
 };

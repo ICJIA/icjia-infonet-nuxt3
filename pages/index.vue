@@ -13,30 +13,32 @@
         <template #not-found>Document not found</template>
       </ContentDoc>
     </div>
-    <!-- <div class="text-center" style="margin-top: 100px">
-      <v-btn
-        style="color: #000 !important"
-        color="grey-lighten-3"
-        @click="downloadReport()"
-        >Download Full Report (PDF)&nbsp;&nbsp;<v-icon right
-          >mdi-download</v-icon
-        ></v-btn
-      >
-    </div> -->
+    <h2 class="mt-12">Latest Infonet ResearchHub articles (test query):</h2>
+    <div v-for="article in articles" :key="article._id">
+      <v-card elevation="5" class="mt-8 px-10 py-10">
+        <div>{{ formatDate(article.date) }}</div>
+        <h3>{{ article.title }}</h3>
+        <h4>
+          <span v-for="(author, index) in article.authors" :key="author.title">
+            {{ author.title
+            }}<span v-if="index < article.authors.length - 1">, </span>
+          </span>
+        </h4>
+        <div>{{ article.abstract }}</div>
+        <v-img width="100%" :src="article.splash"></v-img>
+      </v-card>
+    </div>
   </div>
 </template>
 
 <script setup>
+import hubArticles from "~/assets/json/hub.json";
 // const { path } = useRoute();
 // const router = useRouter();
 const isMounted = ref(false);
-
-const downloadReport = () => {
-  // window.open(
-  //   "https://i2i.icjia-api.cloud/uploads/2021-ICJIA-Annual-Report.pdf",
-  //   "_blank"
-  // );
-  alert("TODO: Download Report on click");
+const articles = ref(hubArticles);
+const displayAuthors = (arr) => {
+  console.log(arr);
 };
 
 // const error = useError();
@@ -48,6 +50,11 @@ const { data } = await useAsyncData(`content-home`, async () => {
 onMounted(() => {
   isMounted.value = true;
 });
+
+const formatDate = (dateString) => {
+  const options = { year: "numeric", month: "long", day: "numeric" };
+  return new Date(dateString).toLocaleDateString(undefined, options);
+};
 </script>
 
 <style>

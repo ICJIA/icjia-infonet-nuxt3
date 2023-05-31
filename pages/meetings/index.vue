@@ -1,10 +1,10 @@
 <script setup>
+import { v4 as uuidv4 } from "uuid";
 import moment from "moment";
 const { path } = useRoute();
 const router = useRouter();
-import { v4 as uuidv4 } from "uuid";
 
-const { data: query } = await useAsyncData("meetings", () =>
+const { data } = await useAsyncData("meetings", () =>
   queryContent("/meetings/").sort({ start: -1 }).find()
 );
 

@@ -20,10 +20,11 @@
     "create:publications": "node ./creators/createMarkdownPublications.js",
     "create:searchIndex": "node  ./creators/createSearchIndex.mjs",
     "create:contentDirectory": "node ./creators/createContentDirectory.js",
+    "create:hub": "node ./creators/createHubArticles.mjs",
     "create:local": "yarn clear:cache && node ./creators/createLocalMeta.mjs",
     "create:sitemap": "node ./creators/createSitemap.mjs",
     "scripts:local": "yarn create:local",
-    "scripts": "yarn clear:cache && yarn create:contentDirectory && yarn create:pages &&  yarn create:searchIndex && yarn create:sitemap && yarn create:routes",
+    "scripts": "yarn clear:cache && yarn create:contentDirectory && yarn create:pages &&  yarn create:hub && yarn create:searchIndex && yarn create:sitemap && yarn create:routes",
     "clear:cache": "rm -rf .nuxt .output",
     "prestart": "source $HOME/.nvm/nvm.sh; nvm use"
   },
