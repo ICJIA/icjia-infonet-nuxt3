@@ -1,26 +1,15 @@
 const fs = require("fs");
 const axios = require("axios");
 
-// const { apiBaseURL } = require("./src/config");
-// const dirpath = "./public/images";
-// if (!fs.existsSync(dirpath)) {
-//   fs.mkdirSync(dirpath);
-// } else {
-//   fs.rm("public/images", { recursive: true }, (err) => {
-//     if (err) {
-//       throw err;
-//     }
-//     console.log(`./public/images is deleted!`);
-//     fs.mkdirSync(dirpath);
-//     console.log(`./public/images is created!`);
-//   });
-// }
-
 const query = `query {
-  articles(limit: 100, where: { tags_contains: "infonet" }) {
+  articles(limit: 200, sort: "date:desc", where: { tags_contains: "infonet" }) {
     _id
     title
+    date
     tags
+    authors
+    abstract
+    slug
   }
  
 }`;
