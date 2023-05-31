@@ -1,6 +1,6 @@
 <template>
   <div>
-    <HomeSplash></HomeSplash>
+    <!-- <HomeSplash></HomeSplash> -->
     <!-- <HomeText style="margin-bottom: -50px !important"></HomeText> -->
     <!-- <HomeBoxes></HomeBoxes> -->
     <div
