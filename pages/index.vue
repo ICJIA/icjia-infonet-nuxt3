@@ -68,11 +68,12 @@
         >
           <v-card
             elevation="2"
-            class="mx-3 px-2"
+            class="mx-3 px-5 info-card"
             outlined
             min-width="500"
             min-height="200"
             style="width: 100%"
+            @click="gotoArticle(article.slug)"
           >
             <div>
               {{ formatDate(article.date) }}
