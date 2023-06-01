@@ -62,17 +62,23 @@
         show-arrows
       >
         <v-slide-group-item
-          v-for="n in 24"
+          v-for="n in 3"
           :key="n"
           v-slot="{ isSelected, toggle, selectedClass }"
         >
           <v-card
             color="grey-lighten-1"
             :class="['ma-4', selectedClass]"
-            height="400"
-            width="450"
+            height="500"
+            width="800"
             @click="toggle"
           >
+            <div
+              class="text-center mt-8"
+              style="font-weight: 900; font-size: 20px"
+            >
+              Hub Article info here
+            </div>
             <div class="d-flex fill-height align-center justify-center">
               <v-scale-transition>
                 <v-icon

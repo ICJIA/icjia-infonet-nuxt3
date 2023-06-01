@@ -34,7 +34,7 @@
           color="grey-lighten-1"
           :class="['ma-4', selectedClass]"
           height="300"
-          width="350"
+          width="30"
           @click="toggle"
         >
           <div class="d-flex fill-height align-center justify-center">
@@ -51,13 +51,13 @@
       </v-slide-group-item>
     </v-slide-group>
 
-    <v-expand-transition>
+    <!-- <v-expand-transition>
       <v-sheet v-if="model != null" height="200">
         <div class="d-flex fill-height align-center justify-center">
           <h3 class="text-h6">Selected {{ model }}</h3>
         </div>
       </v-sheet>
-    </v-expand-transition>
+    </v-expand-transition> -->
   </v-sheet>
 </template>
 
