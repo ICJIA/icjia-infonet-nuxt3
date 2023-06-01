@@ -14,37 +14,46 @@
         <template #not-found>Document not found</template>
       </ContentDoc>
     </div>
-    <h2 class="mt-12">
-      Latest Infonet ResearchHub articles (this is a only a test -- do not be
-      alarmed):
-    </h2>
-    <div class="px-12">
-      <div v-for="article in articles" :key="article._id">
-        <v-card
-          elevation="5"
-          class="mt-8 px-10 py-10 info-card"
-          @click="gotoArticle(article.slug)"
-        >
-          <div>{{ formatDate(article.date) }}</div>
-          <h3>{{ article.title }}</h3>
-          <h4>
-            <span
-              v-for="(author, index) in article.authors"
-              :key="author.title"
-            >
-              {{ author.title
-              }}<span v-if="index < article.authors.length - 1">, </span>
-            </span>
-          </h4>
-          <div>{{ article.abstract }}</div>
-          <h5 class="text-center">Splash image:</h5>
 
-          <div class="text-center mt-8">
-            <img :src="article.splash" style="width: 30%" />
-          </div>
-        </v-card>
-      </div>
-    </div>
+    <v-container
+      ><v-row
+        ><v-col cols="12">
+          <h2 class="mt-12">
+            Latest Infonet ResearchHub articles (this is a only a test -- do not
+            be alarmed):
+          </h2>
+
+          <div v-for="article in articles" :key="article._id">
+            <v-card
+              elevation="5"
+              class="mt-8 px-10 py-10 info-card"
+              @click="gotoArticle(article.slug)"
+            >
+              <div>{{ formatDate(article.date) }}</div>
+              <h3>{{ article.title }}</h3>
+              <h4>
+                <span
+                  v-for="(author, index) in article.authors"
+                  :key="author.title"
+                >
+                  {{ author.title
+                  }}<span v-if="index < article.authors.length - 1">, </span>
+                </span>
+              </h4>
+              <div>{{ article.abstract }}</div>
+              <h5 class="text-center">Tags:</h5>
+
+              <div class="text-center">
+                {{ article.tags }}
+              </div>
+              <h5 class="text-center">Splash image:</h5>
+
+              <div class="mt-8">
+                <v-img :src="article.splash" width="50%" class="mx-auto" />
+              </div>
+            </v-card>
+          </div> </v-col></v-row
+    ></v-container>
   </div>
 </template>
 

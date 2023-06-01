@@ -24,17 +24,17 @@ axios
   .then((res) => {
     const articles = res.data.data.articles;
 
-    jsonfile.writeFileSync(`public/hub.json`, articles, function (err) {
-      if (err) {
-        console.error(err);
-      }
-    });
+    // jsonfile.writeFileSync(`public/hub.json`, articles, function (err) {
+    //   if (err) {
+    //     console.error(err);
+    //   }
+    // });
     jsonfile.writeFileSync(`assets/json/hub.json`, articles, function (err) {
       if (err) {
         console.error(err);
       }
     });
-    console.log("hub.json created in /public/");
+
     console.log("hub.json created in /asseets/json/");
   })
   .catch((err) => console.error(err));

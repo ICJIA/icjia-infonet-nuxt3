@@ -51,18 +51,15 @@ export default defineAppConfig({
       main: "About",
       link: "/about",
     },
-    // {
-    //   main: "Meetings",
-    //   link: "/meetings",
-    // },
-
-    // {
-    //   main: "Resources",
-    //   link: "/resources",
-    // },
-    // {
-    //   main: "Contact",
-    //   link: "/contact",
-    // },
+  ],
+  sidebarMenu: [
+    {
+      main: "Home",
+      link: "/",
+    },
+    {
+      main: "About",
+      link: "/about",
+    },
   ],
 });

@@ -7,9 +7,9 @@
       style="background: #fff"
     >
       <v-list v-model:opened="open" density="compact">
-        <v-list-item exact to="/" style="font-weight: 900; color: #000"
+        <!-- <v-list-item exact to="/" style="font-weight: 900; color: #000"
           >Home</v-list-item
-        >
+        > -->
         <div
           v-for="(menu, index) in navMenu"
           :key="`sidebar-accordion-${index}`"
@@ -66,11 +66,7 @@
           <v-icon left icon="mdi-magnify" size="x-small"></v-icon
           >&nbsp;&nbsp;&nbsp;Search</v-list-item
         >
-        <v-list-item
-          v-if="isTranslationEnabled"
-          class="sidebar-item"
-          @click.prevent="translationToggle"
-        >
+        <v-list-item exact to="/translate">
           <v-icon left icon="mdi-web" size="x-small"></v-icon
           >&nbsp;&nbsp;&nbsp;Translate</v-list-item
         >
@@ -82,7 +78,7 @@
 <script setup>
 const { isTranslationEnabled } = useAppConfig();
 const appConfig = useAppConfig();
-const navMenu = JSON.parse(JSON.stringify(appConfig.navMenu));
+const navMenu = JSON.parse(JSON.stringify(appConfig.sidebarMenu));
 const isMounted = ref(false);
 const drawer = ref(false);
 const open = ref([]);
