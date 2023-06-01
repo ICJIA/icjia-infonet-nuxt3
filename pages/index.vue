@@ -73,21 +73,13 @@
             width="800"
             @click="toggle"
           >
-            <div
-              class="text-center mt-8"
-              style="font-weight: 900; font-size: 20px"
-            >
-              Hub Article info here
-            </div>
             <div class="d-flex fill-height align-center justify-center">
-              <v-scale-transition>
-                <v-icon
-                  v-if="isSelected"
-                  color="white"
-                  size="80"
-                  icon="mdi-close-circle-outline"
-                ></v-icon>
-              </v-scale-transition>
+              <div
+                class="text-center mt-8"
+                style="font-weight: 900; font-size: 20px"
+              >
+                Hub Article info here
+              </div>
             </div>
           </v-card>
         </v-slide-group-item>
