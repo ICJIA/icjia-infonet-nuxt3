@@ -62,25 +62,43 @@
         show-arrows
       >
         <v-slide-group-item
-          v-for="n in 3"
-          :key="n"
+          v-for="article in articles"
+          :key="article._id"
           v-slot="{ isSelected, toggle, selectedClass }"
         >
           <v-card
-            color="grey-lighten-1"
-            :class="['ma-4', selectedClass]"
-            height="500"
-            width="800"
-            @click="toggle"
+            elevation="2"
+            class="mx-3 px-2"
+            outlined
+            min-width="500"
+            min-height="200"
+            style="width: 100%"
           >
-            <div class="d-flex fill-height align-center justify-center">
-              <div
-                class="text-center mt-8"
-                style="font-weight: 900; font-size: 20px"
-              >
-                Hub Article info here
-              </div>
+            <div>
+              {{ formatDate(article.date) }}
             </div>
+            <div class="my-6" style="font-weight: 900">
+              {{ article.title }}
+            </div>
+            <v-img
+              :src="article.splash"
+              cover
+              height="200"
+              class="mb-5"
+              :ref="'img_' + article._id"
+              style="border: 1px solid #fafafa"
+              alt="ICJIA News image"
+              ><template #placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="blue darken-3"
+                    aria-label="progress"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+            <div style="max-width: 500px">{{ article.abstract }}</div>
           </v-card>
         </v-slide-group-item>
       </v-slide-group>
