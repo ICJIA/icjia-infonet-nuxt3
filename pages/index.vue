@@ -54,10 +54,7 @@
             </v-card>
           </div> </v-col></v-row
     ></v-container> -->
-    <h2 class="mt-12 px-10">
-      Latest Infonet ResearchHub articles (this is a only a test -- do not be
-      alarmed):
-    </h2>
+    <h2 class="mt-12 px-10">Latest Infonet ResearchHub articles (test):</h2>
     <v-sheet class="mx-auto mt-12" elevation="8">
       <v-slide-group
         v-model="model"
