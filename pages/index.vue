@@ -15,7 +15,8 @@
       </ContentDoc>
     </div>
     <h2 class="mt-12">
-      Latest Infonet ResearchHub articles (this is a test -- do not be alarmed):
+      Latest Infonet ResearchHub articles (this is a only a test -- do not be
+      alarmed):
     </h2>
     <div class="px-12">
       <div v-for="article in articles" :key="article._id">
