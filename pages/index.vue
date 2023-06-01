@@ -15,7 +15,7 @@
       </ContentDoc>
     </div>
 
-    <v-container
+    <!-- <v-container
       ><v-row
         ><v-col cols="12">
           <h2 class="mt-12">
@@ -53,8 +53,12 @@
               </div>
             </v-card>
           </div> </v-col></v-row
-    ></v-container>
-    <v-sheet class="mx-auto" elevation="8">
+    ></v-container> -->
+    <h2 class="mt-12 px-10">
+      Latest Infonet ResearchHub articles (this is a only a test -- do not be
+      alarmed):
+    </h2>
+    <v-sheet class="mx-auto mt-12" elevation="8">
       <v-slide-group
         v-model="model"
         class="pa-4"
@@ -68,7 +72,7 @@
         >
           <v-card
             elevation="2"
-            class="mx-3 px-5 info-card"
+            class="mx-3 px-3 py-5 info-card"
             outlined
             min-width="500"
             min-height="200"
