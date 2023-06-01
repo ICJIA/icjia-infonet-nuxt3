@@ -1,31 +1,70 @@
 <template>
-  <div>
-    <v-carousel>
-      <v-carousel-item :key="i" v-for="i in 5">
-        <v-layout row>
-          <v-flex xs4 :key="j" v-for="j in 3">
-            <img
-              :src="'https://placehold.it/380x500/?text=' + i + '-' + j"
-              alt=""
-              class="pl-1"
-            />
-          </v-flex>
-        </v-layout>
-      </v-carousel-item>
-    </v-carousel>
-  </div>
+  <v-sheet class="mx-auto" max-width="600">
+    <v-slide-group show-arrows>
+      <v-slide-group-item
+        v-for="n in 25"
+        :key="n"
+        v-slot="{ isSelected, toggle }"
+      >
+        <v-btn
+          class="ma-2"
+          rounded
+          :color="isSelected ? 'primary' : undefined"
+          @click="toggle"
+        >
+          Options {{ n }}
+        </v-btn>
+      </v-slide-group-item>
+    </v-slide-group>
+  </v-sheet>
+
+  <v-sheet class="mx-auto" elevation="8">
+    <v-slide-group
+      v-model="model"
+      class="pa-4"
+      selected-class="bg-primary"
+      show-arrows
+    >
+      <v-slide-group-item
+        v-for="n in 7"
+        :key="n"
+        v-slot="{ isSelected, toggle, selectedClass }"
+      >
+        <v-card
+          color="grey-lighten-1"
+          :class="['ma-4', selectedClass]"
+          height="300"
+          width="350"
+          @click="toggle"
+        >
+          <div class="d-flex fill-height align-center justify-center">
+            <v-scale-transition>
+              <v-icon
+                v-if="isSelected"
+                color="white"
+                size="80"
+                icon="mdi-close-circle-outline"
+              ></v-icon>
+            </v-scale-transition>
+          </div>
+        </v-card>
+      </v-slide-group-item>
+    </v-slide-group>
+
+    <v-expand-transition>
+      <v-sheet v-if="model != null" height="200">
+        <div class="d-flex fill-height align-center justify-center">
+          <h3 class="text-h6">Selected {{ model }}</h3>
+        </div>
+      </v-sheet>
+    </v-expand-transition>
+  </v-sheet>
 </template>
 
 <script>
 export default {
   data: () => ({
-    page: 1,
-    items: Array.from({ length: 15 }, (k, v) => ({
-      title: "Item " + v + 1,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima, at placeat totam, magni doloremque veniam neque porro libero rerum unde voluptatem!",
-    })),
+    model: null,
   }),
 };
 </script>
-
-<style lang="scss" scoped></style>

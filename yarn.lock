@@ -767,10 +767,10 @@
     which "^3.0.1"
     ws "^8.13.0"
 
-"@nuxt/image-edge@1.0.0-28092288.ed573bb":
-  version "1.0.0-28092288.ed573bb"
-  resolved "https://registry.yarnpkg.com/@nuxt/image-edge/-/image-edge-1.0.0-28092288.ed573bb.tgz#683da2b57d2fae0890de1efccfe255c03b8d3fb5"
-  integrity sha512-nmvoiELOi/RtBMfOLzu7F4E8E12xK8+V1LB2LNrsni51gCZOGYp9i1SbNiCiMMnHYKYHndjurCsqY8TlUa/2/A==
+"@nuxt/image-edge@1.0.0-28092818.5c21f4c":
+  version "1.0.0-28092818.5c21f4c"
+  resolved "https://registry.yarnpkg.com/@nuxt/image-edge/-/image-edge-1.0.0-28092818.5c21f4c.tgz#5134cb27c16e34f57b3b2867dae1f520af4f0611"
+  integrity sha512-3bXhj6MsdP+e8Os4lvlCSiBOHNS/1uQ72CEIMB7MD2XRVPoOPdfPCV4SyJbB5e/ZvEHTcsIXA1JHc1O6/qhwoQ==
   dependencies:
     "@nuxt/kit" "^3.5.2"
     consola "^3.1.0"
@@ -6982,6 +6982,11 @@ sshpk@^1.7.0:
     safer-buffer "^2.0.2"
     tweetnacl "~0.14.0"
 
+ssr-window@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/ssr-window/-/ssr-window-4.0.2.tgz#dc6b3ee37be86ac0e3ddc60030f7b3bc9b8553be"
+  integrity sha512-ISv/Ch+ig7SOtw7G2+qkwfVASzazUnvlDTwypdLoPoySv+6MqlOV10VwPSE6EWkGjhW50lUmghPmpYZXMu/+AQ==
+
 ssri@^10.0.0:
   version "10.0.4"
   resolved "https://registry.yarnpkg.com/ssri/-/ssri-10.0.4.tgz#5a20af378be586df139ddb2dfb3bf992cf0daba6"
@@ -7140,6 +7145,13 @@ svgo@^3.0.2:
     css-tree "^2.2.1"
     csso "^5.0.5"
     picocolors "^1.0.0"
+
+swiper@^9.3.2:
+  version "9.3.2"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.3.2.tgz#f29eddb17f231221c7727372637c44279174a4e1"
+  integrity sha512-Kj9Z4kXRmJR3YT/Wj+XLWj8P6IcRt+WG38uL8M3/Wny7+6sV0TlP9vnE1X+Co9c7VzNooojWGnFa+Wf/9+CUMA==
+  dependencies:
+    ssr-window "^4.0.2"
 
 symbol-observable@^4.0.0:
   version "4.0.0"

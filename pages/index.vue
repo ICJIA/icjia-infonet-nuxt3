@@ -54,6 +54,47 @@
             </v-card>
           </div> </v-col></v-row
     ></v-container>
+    <v-sheet class="mx-auto" elevation="8">
+      <v-slide-group
+        v-model="model"
+        class="pa-4"
+        selected-class="bg-primary"
+        show-arrows
+      >
+        <v-slide-group-item
+          v-for="n in 24"
+          :key="n"
+          v-slot="{ isSelected, toggle, selectedClass }"
+        >
+          <v-card
+            color="grey-lighten-1"
+            :class="['ma-4', selectedClass]"
+            height="400"
+            width="450"
+            @click="toggle"
+          >
+            <div class="d-flex fill-height align-center justify-center">
+              <v-scale-transition>
+                <v-icon
+                  v-if="isSelected"
+                  color="white"
+                  size="80"
+                  icon="mdi-close-circle-outline"
+                ></v-icon>
+              </v-scale-transition>
+            </div>
+          </v-card>
+        </v-slide-group-item>
+      </v-slide-group>
+
+      <v-expand-transition>
+        <v-sheet v-if="model != null" height="200">
+          <div class="d-flex fill-height align-center justify-center">
+            <h3 class="text-h6">Selected {{ model }}</h3>
+          </div>
+        </v-sheet>
+      </v-expand-transition>
+    </v-sheet>
   </div>
 </template>
 
@@ -63,6 +104,7 @@ import hubArticles from "~/assets/json/hub.json";
 // const router = useRouter();
 const isMounted = ref(false);
 const articles = ref(hubArticles);
+let model = ref(null);
 const displayAuthors = (arr) => {
   console.log(arr);
 };
