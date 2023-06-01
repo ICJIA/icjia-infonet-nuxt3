@@ -68,7 +68,7 @@ onMounted(() => {
 });
 
 const gotoArticle = (slug) => {
-  let hubArticle = `https://icjia.illinois.gov/`;
+  let hubArticle = `https://icjia.illinois.gov/researchhub/articles/${slug}`;
   return window.open(hubArticle, "_blank");
 };
 
