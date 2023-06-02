@@ -14,11 +14,11 @@
         <template #not-found>Document not found</template>
       </ContentDoc>
     </div>
+    <div v-if="!isMobile && isMounted">
+      <h2 class="mt-12 px-10">Latest Infonet ResearchHub articles (test):</h2>
+      <!-- isMobile: {{ isMobile }}<br />
+      isServer: {{ isServer }}<br /> -->
 
-    <h2 class="mt-12 px-10">Latest Infonet ResearchHub articles (test):</h2>
-    Mobile: {{ mobile }}
-    <div v-if="!mobile">
-      (To see mobile view, please reduce width of browser)
       <v-sheet class="mx-auto mt-12" elevation="8" v-if="!mobile">
         <v-slide-group
           v-model="model"
@@ -126,6 +126,8 @@ let model = ref(null);
 const displayAuthors = (arr) => {
   console.log(arr);
 };
+
+let isServer = ref(process.server);
 
 // const error = useError();
 const { data } = await useAsyncData(`content-home`, async () => {
