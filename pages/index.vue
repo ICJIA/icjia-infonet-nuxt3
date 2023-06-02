@@ -78,7 +78,7 @@
       <div v-for="article in articles" :key="article._id">
         <v-card
           elevation="2"
-          class="mx-3 px-3 py-5 info-card"
+          class="px-3 py-5 info-card"
           outlined
           style="width: 100%"
           @click="gotoArticle(article.slug)"
