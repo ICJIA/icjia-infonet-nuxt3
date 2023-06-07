@@ -15,7 +15,7 @@
       </ContentDoc>
     </div>
     <div v-if="!isMobile && isMounted">
-      <h2 class="mt-12 px-10">Latest Infonet ResearchHub articles (test):</h2>
+      <h2 class="mt-12 px-10">Latest Infonet ResearchHub articles:</h2>
       <!-- isMobile: {{ isMobile }}<br />
       isServer: {{ isServer }}<br /> -->
       <v-no-ssr>
