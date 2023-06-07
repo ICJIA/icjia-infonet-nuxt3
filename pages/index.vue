@@ -18,62 +18,63 @@
       <h2 class="mt-12 px-10">Latest Infonet ResearchHub articles (test):</h2>
       <!-- isMobile: {{ isMobile }}<br />
       isServer: {{ isServer }}<br /> -->
-
-      <v-sheet class="mx-auto mt-12" elevation="8" v-if="!mobile">
-        <v-slide-group
-          v-model="model"
-          class="pa-4"
-          selected-class="bg-primary"
-          show-arrows
-        >
-          <v-slide-group-item
-            v-for="article in articles"
-            :key="article._id"
-            v-slot="{ isSelected, toggle, selectedClass }"
+      <v-no-ssr>
+        <v-sheet class="mx-auto mt-12" elevation="8" v-if="!mobile">
+          <v-slide-group
+            v-model="model"
+            class="pa-4"
+            selected-class="bg-primary"
+            show-arrows
           >
-            <v-card
-              elevation="2"
-              class="mx-3 px-5 py-5 info-card"
-              outlined
-              min-height="200"
-              style="width: 100%"
-              @click="gotoArticle(article.slug)"
+            <v-slide-group-item
+              v-for="article in articles"
+              :key="article._id"
+              v-slot="{ isSelected, toggle, selectedClass }"
             >
-              <div>
-                {{ formatDate(article.date) }}
-              </div>
-              <div class="my-6" style="font-weight: 900">
-                {{ article.title }}
-              </div>
-              <v-img
-                :src="article.splash"
-                cover
-                height="200"
-                class="mb-5"
-                :ref="'img_' + article._id"
-                style="border: 1px solid #fafafa"
-                alt="ICJIA News image"
-                ><template #placeholder>
-                  <v-row
-                    class="fill-height ma-0"
-                    align="center"
-                    justify="center"
-                  >
-                    <v-progress-circular
-                      indeterminate
-                      color="blue darken-3"
-                      aria-label="progress"
-                    ></v-progress-circular>
-                  </v-row>
-                </template>
-              </v-img>
-              <div style="max-width: 500px">{{ article.abstract }}</div>
-            </v-card>
-          </v-slide-group-item>
-        </v-slide-group>
-      </v-sheet>
+              <v-card
+                elevation="2"
+                class="mx-3 px-5 py-5 info-card"
+                outlined
+                min-height="200"
+                style="width: 100%"
+                @click="gotoArticle(article.slug)"
+              >
+                <div>
+                  {{ formatDate(article.date) }}
+                </div>
+                <div class="my-6" style="font-weight: 900">
+                  {{ article.title }}
+                </div>
+                <v-img
+                  :src="article.splash"
+                  cover
+                  height="200"
+                  class="mb-5"
+                  :ref="'img_' + article._id"
+                  style="border: 1px solid #fafafa"
+                  alt="ICJIA News image"
+                  ><template #placeholder>
+                    <v-row
+                      class="fill-height ma-0"
+                      align="center"
+                      justify="center"
+                    >
+                      <v-progress-circular
+                        indeterminate
+                        color="blue darken-3"
+                        aria-label="progress"
+                      ></v-progress-circular>
+                    </v-row>
+                  </template>
+                </v-img>
+                <div style="max-width: 500px">{{ article.abstract }}</div>
+              </v-card>
+            </v-slide-group-item>
+          </v-slide-group>
+        </v-sheet>
+      </v-no-ssr>
     </div>
-    <div v-else>
+    <div v-if="isMobile && isMounted">
       <h2>Hub articles for mobile here</h2>
       <div v-for="article in articles" :key="article._id">
         <v-card
