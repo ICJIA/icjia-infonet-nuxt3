@@ -75,42 +75,44 @@
       </v-no-ssr>
     </div>
     <div v-if="isMobile && isMounted">
-      <h2>Hub articles for mobile here</h2>
-      <div v-for="article in articles" :key="article._id">
-        <v-card
-          elevation="2"
-          class="px-3 py-5 info-card"
-          outlined
-          style="width: 100%"
-          @click="gotoArticle(article.slug)"
-        >
-          <div>
-            {{ formatDate(article.date) }}
-          </div>
-          <div class="my-6" style="font-weight: 900">
-            {{ article.title }}
-          </div>
-          <v-img
-            :src="article.splash"
-            cover
-            height="200"
-            class="mb-5"
-            :ref="'img_' + article._id"
-            style="border: 1px solid #fafafa"
-            alt="ICJIA News image"
-            ><template #placeholder>
-              <v-row class="fill-height ma-0" align="center" justify="center">
-                <v-progress-circular
-                  indeterminate
-                  color="blue darken-3"
-                  aria-label="progress"
-                ></v-progress-circular>
-              </v-row>
-            </template>
-          </v-img>
-          <div style="max-width: 500px">{{ article.abstract }}</div>
-        </v-card>
-      </div>
+      <v-no-ssr>
+        <h2>Hub articles for mobile here</h2>
+        <div v-for="article in articles" :key="article._id">
+          <v-card
+            elevation="2"
+            class="px-3 py-5 info-card"
+            outlined
+            style="width: 100%"
+            @click="gotoArticle(article.slug)"
+          >
+            <div>
+              {{ formatDate(article.date) }}
+            </div>
+            <div class="my-6" style="font-weight: 900">
+              {{ article.title }}
+            </div>
+            <v-img
+              :src="article.splash"
+              cover
+              height="200"
+              class="mb-5"
+              :ref="'img_' + article._id"
+              style="border: 1px solid #fafafa"
+              alt="ICJIA News image"
+              ><template #placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular
+                    indeterminate
+                    color="blue darken-3"
+                    aria-label="progress"
+                  ></v-progress-circular>
+                </v-row>
+              </template>
+            </v-img>
+            <div style="max-width: 500px">{{ article.abstract }}</div>
+          </v-card>
+        </div>
+      </v-no-ssr>
     </div>
   </div>
 </template>
