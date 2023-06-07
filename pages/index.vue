@@ -74,7 +74,7 @@
         </v-sheet>
       </v-no-ssr>
     </div>
-    <!-- <div v-if="isMobile && isMounted">
+    <div v-if="isMobile && isMounted">
       <h2>Hub articles for mobile here</h2>
       <div v-for="article in articles" :key="article._id">
         <v-card
@@ -111,7 +111,7 @@
           <div style="max-width: 500px">{{ article.abstract }}</div>
         </v-card>
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
