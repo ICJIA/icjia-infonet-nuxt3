@@ -31,7 +31,7 @@
   "devDependencies": {
     "@nuxt/content": "^2.6.0",
     "@nuxt/devtools": "^0.5.5",
-    "@nuxt/image-edge": "1.0.0-28094923.e859bba",
+    "@nuxt/image-edge": "1.0.0-rc.1-28106434.299e03e",
     "@nuxtjs/apollo": "^5.0.0-alpha.6",
     "@nuxtjs/google-fonts": "^3.0.1",
     "@vueuse/nuxt": "^10.1.2",
@@ -50,7 +50,7 @@
     "fuse.js": "^6.6.2",
     "moment": "^2.29.4",
     "request": "^2.88.2",
-    "sass": "^1.62.1",
+    "sass": "^1.63.3",
     "sitemap": "^7.1.1",
     "swiper": "^9.3.2",
     "url-exist": "2.0.2",
