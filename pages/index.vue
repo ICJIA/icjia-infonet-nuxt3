@@ -38,13 +38,13 @@
             src="/splash-grey.jpg"
           ></v-img>
           <div class="mt-8 homeContainer px-4 hidden-sm-and-down">
-            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+            <v-btn variant="outlined" size="small" style="padding-right: 5px"
               >iurares aethera</v-btn
             >
-            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+            <v-btn variant="outlined" size="small" style="padding-right: 5px"
               >Exiguo Velociter</v-btn
             >
-            <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
+            <v-btn variant="outlined" size="small">Forma Iurares</v-btn>
           </div></v-col
         ></v-row
       >
@@ -79,7 +79,7 @@
       :options="{ threshold: 0.5 }"
       transition="fade-transition"
     >
-      <div style="margin-top: -0px !important; background: #fff">
+      <div style="margin-top: -0px !important; background: #fff" class="py-10">
         <v-container fluid>
           <v-row
             ><v-col>

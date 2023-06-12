@@ -29,7 +29,7 @@
       <v-spacer class="hidden-md-and-up"></v-spacer>
       <img
         alt="ICJIA Logo"
-        class="hover ml-4 mr-4"
+        class="hover ml-4 mr-4 hidden-sm-and-down"
         src="/icjia-logo.png"
         width="75"
         @click="$router.push('/')"
@@ -38,13 +38,16 @@
         <span
           style="
             font-weight: 900 !important;
-            font-size: 28px;
+            font-size: 20px;
             font-family: 'Roboto', sans-serif !important;
             letter-spacing: 0.004em;
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >INFONET
+          ><span v-if="isHome" class="headerTitleHome"
+            >ILLINOIS CRIMINAL JUSTICE INFORMATION AUTHORITY</span
+          >
+          <span v-else class="headerTitle">INFONET</span>
         </span>
       </div>
       <div class="hover hidden-md-and-up">
@@ -213,6 +216,16 @@ const nav = useNavToggle();
 const toggleNav = () => {
   nav.value = !nav.value;
 };
+const isHome = ref(true);
+const route = useRoute();
+watchEffect(() => {
+  console.log("route.path: ", route.path);
+  if (route.path === "/") {
+    isHome.value = true;
+  } else {
+    isHome.value = false;
+  }
+});
 
 const appConfig = useAppConfig();
 const navMenu = JSON.parse(JSON.stringify(appConfig.navMenu));
@@ -244,6 +257,12 @@ const items = ref([
 </script>
 
 <style lang="scss" scoped>
+.headerTitleHome {
+  font-size: 20px;
+}
+.headerTitle {
+  font-size: 28px;
+}
 .navItem {
   color: #333 !important;
   font-weight: 900;
