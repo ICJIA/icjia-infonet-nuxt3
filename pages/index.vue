@@ -10,12 +10,9 @@
         z-index: 1000;
       "
     >
-      <v-row style=""
-        ><v-col cols="12" md="5">
-          <!-- <div style="font-size: 12px; margin-bottom: -10px">
-            The Illinois Criminal Justice Information Authority
-          </div> -->
-          <div class="headingHomeMain text-left mt-1">INFONET</div>
+      <v-row style="">
+        <v-col cols="12" md="5">
+          <div class="headingHomeMain text-left mt-3">INFONET</div>
           <p>
             Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
             pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
@@ -35,7 +32,7 @@
         </v-col>
         <v-col cols="12" md="7"
           ><v-img
-            class="mt-9"
+            class="mt-12"
             cover
             max-height="550"
             src="/splash-grey.jpg"
@@ -240,7 +237,7 @@ const formatDate = (dateString) => {
   font-size: 110px;
   font-weight: 700;
   font-family: "Oswald", sans-serif;
-  color: #0d4474;
+  color: #0b3a62;
 }
 
 .homeContainer {
