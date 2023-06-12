@@ -2,7 +2,8 @@
   <div style="background: #f2f2f2">
     <v-container
       fluid
-      style="margin-top: -20px;
+      style="
+        margin-top: -20px;
         margin-bottom: 30px;
         background: #f2f2f2;
         z-index: 1000;
@@ -60,7 +61,7 @@
 
     <HomeBoxes v-if="isMounted"></HomeBoxes>
 
-   <v-container fluid class="py-10" style="margin-top: -20px; background: #fff"
+    <v-container fluid class="py-10" style="margin-top: -20px; background: #fff"
       ><v-row
         ><v-col>
           <div v-if="data && isMounted" style="" class="py-5">
@@ -180,7 +181,7 @@
             </div>
           </v-col></v-row
         ></v-container
-      > 
+      >
     </div>
   </div>
 </template>
