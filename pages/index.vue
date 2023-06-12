@@ -12,7 +12,7 @@
     >
       <v-row style="">
         <v-col cols="12" md="5">
-          <div class="headingHomeMain text-left mt-5">INFONET</div>
+          <div class="headingHomeMain text-left mt-12 mb-10">INFONET</div>
           <p>
             Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
             pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
@@ -37,7 +37,7 @@
             max-height="550"
             src="/splash-grey.jpg"
           ></v-img>
-          <div class="mt-8 homeContainer px-4 hidden-sm-and-down">
+          <div class="mt-8 homeContainer px-4">
             <v-btn variant="outlined" size="small" style="padding-right: 5px"
               >iurares aethera</v-btn
             >
@@ -48,15 +48,6 @@
           </div></v-col
         ></v-row
       >
-      <div class="mt-8 homeContainer px-4 hidden-md-and-up">
-        <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
-          >iurares aethera</v-btn
-        >
-        <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
-          >Exiguo Velociter</v-btn
-        >
-        <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
-      </div>
     </v-container>
 
     <HomeBoxes v-if="isMounted"></HomeBoxes>
@@ -231,8 +222,9 @@ const formatDate = (dateString) => {
 }
 
 .headingHomeMain {
-  font-size: 100px;
+  font-size: 85px;
   font-weight: 700;
+  line-height: 1.2em;
   font-family: "Oswald", sans-serif;
   color: #0b3a62;
 }
