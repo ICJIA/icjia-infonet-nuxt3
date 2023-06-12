@@ -4,7 +4,7 @@
       <v-row no-gutters>
         <v-col cols="12" md="4">
           <v-card
-            color="#552c82"
+            color="#6184a0"
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
@@ -19,10 +19,9 @@
                     dark
                     >mdi-home</v-icon
                   >
-                  <h2 id="aboutUs" class="boxHeader">About Us</h2>
-                  <p style="color: #fff; font-size: 20px !important">
-                    i2i supports new and emerging localized “grassroots”
-                    community organizations.
+                  <h2 id="aboutUs" class="boxHeader boxLight">Relatis</h2>
+                  <p style="font-size: 20px" class="boxLight">
+                    Lorem markdownum annum, relatis ipse.
                   </p></v-col
                 >
               </v-row>
@@ -32,7 +31,7 @@
 
         <v-col cols="12" md="4">
           <v-card
-            color="#10366B"
+            color="#2e618c"
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
@@ -47,9 +46,11 @@
                     dark
                     >mdi-pencil-ruler</v-icon
                   >
-                  <h2 id="our-approach" class="boxHeader">Contact Us</h2>
-                  <p style="color: #fff; font-size: 20px">
-                    Contact DVFR for more information.
+                  <h2 id="our-approach" class="boxHeader boxLight">
+                    Calathis Procerum
+                  </h2>
+                  <p style="font-size: 20px" class="boxLight">
+                    Ut hastam, quos modo super dixit pete vixque.
                   </p></v-col
                 >
               </v-row>
@@ -58,7 +59,7 @@
         </v-col>
         <v-col cols="12" md="4">
           <v-card
-            color="#3B5984"
+            color="#0D4474"
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
@@ -73,9 +74,10 @@
                     dark
                     >mdi-account-group</v-icon
                   >
-                  <h2 id="cohorts" class="boxHeader">Cohorts</h2>
-                  <p style="color: #fff; font-size: 20px !important">
-                    Find out who's who.
+                  <h2 id="cohorts" class="boxHeader">Hesperidas Candore</h2>
+                  <p style="font-size: 20px" class="boxLight">
+                    Caelestia tectis supplicium exceptas haberet inde medea, sub
+                    sed reicere.
                   </p></v-col
                 >
               </v-row>
@@ -154,5 +156,13 @@ export default {
   font-weight: 900;
   margin-bottom: 10px;
   font-size: 24px;
+}
+
+.boxDark {
+  color: #000;
+}
+
+.boxLight {
+  color: #fff;
 }
 </style>

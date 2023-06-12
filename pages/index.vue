@@ -2,8 +2,7 @@
   <div>
     <!-- <HomeSplash></HomeSplash> -->
     <!-- <HomeText style="margin-bottom: -50px !important"></HomeText> -->
-    <!-- <HomeBoxes></HomeBoxes> -->
-    <v-container fluid
+    <v-container
       ><v-row
         ><v-col>
           <div
@@ -17,8 +16,17 @@
               <template #not-found>Document not found</template>
             </ContentDoc>
           </div>
+        </v-col></v-row
+      ></v-container
+    >
+    <HomeBoxes class="mt-12"></HomeBoxes>
+    <v-container
+      fluid
+      style="margin: 0 !important; padding: 0 !important; margin-top: -60px"
+    >
+      <v-row
+        ><v-col>
           <div v-if="!isMobile && isMounted">
-            <h2 class="mt-12 px-10">Latest Infonet ResearchHub articles:</h2>
             <!-- isMobile: {{ isMobile }}<br />
       isServer: {{ isServer }}<br /> -->
             <v-no-ssr>
