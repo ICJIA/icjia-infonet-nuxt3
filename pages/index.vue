@@ -1,8 +1,14 @@
 <template>
+  <!-- <div style="z-index: 0">test</div> -->
   <div style="background: #f2f2f2" v-if="isMounted">
     <v-container
       fluid
-      style="margin-top: 0px; margin-bottom: 30px; background: #f2f2f2"
+      style="
+        margin-top: -20px;
+        margin-bottom: 30px;
+        background: #f2f2f2;
+        z-index: 1000;
+      "
     >
       <v-row style=""
         ><v-col cols="12" md="5">
