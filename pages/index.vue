@@ -229,6 +229,7 @@ const formatDate = (dateString) => {
   font-size: 110px;
   font-weight: 900;
   font-family: "Oswald", sans-serif;
+  color: #0d4474;
 }
 
 .homeContainer {
