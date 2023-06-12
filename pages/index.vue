@@ -18,19 +18,39 @@
             vix deicit at ureret moderatior. Forma pharetratus exiguo aurem mole
             quarum retorserunt pauperque, semina ultra opacas ego opes.
           </p>
-          <div class="mt-8 homeContainer px-4 hidden-sm-and-down">
-            <v-btn variant="outlined" size="small" style="padding-right: 5px"
-              >iurares aethera</v-btn
-            >
-            <v-btn variant="outlined" size="small" style="padding-right: 5px"
-              >Velociter</v-btn
-            >
-            <v-btn variant="outlined" size="small">Iurares</v-btn>
-          </div>
+          <p>
+            Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
+            pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
+            virum.
+          </p>
         </v-col>
         <v-col cols="12" md="7"
-          ><v-img class="mt-9" src="/splash-grey.jpg"></v-img></v-col
-      ></v-row>
+          ><v-img
+            class="mt-9"
+            cover
+            max-height="550"
+            src="/splash-grey.jpg"
+          ></v-img>
+          <div class="mt-8 homeContainer px-4 hidden-sm-and-down">
+            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+              >iurares aethera</v-btn
+            >
+            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+              >Exiguo Velociter</v-btn
+            >
+            <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
+          </div></v-col
+        ></v-row
+      >
+      <div class="mt-8 homeContainer px-4 hidden-md-and-up">
+        <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+          >iurares aethera</v-btn
+        >
+        <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+          >Exiguo Velociter</v-btn
+        >
+        <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
+      </div>
     </v-container>
     <HomeBoxes v-if="isMounted"></HomeBoxes>
     <v-container fluid class="py-10" style="margin-top: -20px; background: #"
