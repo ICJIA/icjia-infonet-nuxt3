@@ -5,8 +5,11 @@
       style="margin-top: 0px; margin-bottom: 30px; background: #fff"
     >
       <v-row style=""
-        ><v-col cols="12" md="5"
-          ><div class="headingHomeMain text-left">INFONET</div>
+        ><v-col cols="12" md="5">
+          <!-- <div style="font-size: 12px; margin-bottom: -10px">
+            The Illinois Criminal Justice Information Authority
+          </div> -->
+          <div class="headingHomeMain text-left mt-1">INFONET</div>
           <p>
             Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
             pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
