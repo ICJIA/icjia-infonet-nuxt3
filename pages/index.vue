@@ -1,10 +1,5 @@
 <template>
   <div>
-    <!-- <HomeSplash></HomeSplash> -->
-    <!-- <HomeText style="margin-bottom: -50px !important"></HomeText> -->
-    <!-- <v-container v-if="!isMounted" fluid
-      ><v-row><v-col>Loading...</v-col></v-row></v-container
-    > -->
     <v-container
       ><v-row
         ><v-col>
@@ -89,7 +84,6 @@
               </v-no-ssr>
             </div>
             <div v-if="isMobile && isMounted">
-              <h2>Hub articles for mobile here</h2>
               <div v-for="article in articles" :key="article._id">
                 <v-card
                   elevation="2"

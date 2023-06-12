@@ -17,15 +17,15 @@ const menuLength = navMenu.length;
 </script>
 <style scoped>
 .nav-footer {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   background: #0d4494;
   min-width: 100%;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 900;
-  padding: 1rem 0;
+  padding: 0.8rem 0.8rem;
   text-align: center;
 }
 

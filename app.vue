@@ -11,8 +11,10 @@
       <NuxtPage></NuxtPage>
       <div></div>
     </v-main>
-    <div style="height: 75px"></div>
-    <!-- <TheFooter></TheFooter> -->
+    <!-- <div style="height: 75px"></div> -->
+    <the-context-footer></the-context-footer>
+
+    <TheFooter></TheFooter>
   </v-app>
 </template>
 
