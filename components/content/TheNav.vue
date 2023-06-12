@@ -51,7 +51,7 @@
         </span>
       </div>
       <div class="hover hidden-md-and-up">
-        <span
+        <!-- <span
           style="
             font-weight: 900 !important;
             font-size: 28px;
@@ -60,8 +60,15 @@
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >INFONET <span class="hidden-md-and-down"> </span
-        ></span>
+          >ICJIA <span class="hidden-md-and-down"> </span
+        ></span> -->
+        <img
+          alt="ICJIA Logo"
+          class="hover ml-4 mr-4"
+          src="/icjia-logo.png"
+          width="75"
+          @click="$router.push('/')"
+        />
       </div>
 
       <v-spacer></v-spacer>
@@ -258,7 +265,7 @@ const items = ref([
 
 <style lang="scss" scoped>
 .headerTitleHome {
-  font-size: 20px;
+  font-size: 22px;
 }
 .headerTitle {
   font-size: 28px;
