@@ -8,7 +8,7 @@
 
     <v-main class="markdown-body" style="min-height: 90vh !important">
       <TheBreadcrumbBar v-if="!isHome"></TheBreadcrumbBar>
-      <NuxtPage @vnodeMounted="handleMounted()"></NuxtPage>
+      <NuxtPage></NuxtPage>
     </v-main>
     <!-- <div style="height: 75px"></div> -->
     <the-context-footer></the-context-footer>

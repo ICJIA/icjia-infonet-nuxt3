@@ -1,14 +1,13 @@
 <template>
-  <!-- <div style="z-index: 0">test</div> -->
-  <div style="background: #f2f2f2" v-if="isMounted">
+  <div style="background: #f2f2f2">
     <v-container
       fluid
-      style="
-        margin-top: -20px;
+      style="margin-top: -20px;
         margin-bottom: 30px;
         background: #f2f2f2;
         z-index: 1000;
       "
+      v-if="isMounted"
     >
       <v-row style="">
         <v-col cols="12" md="5">
@@ -58,10 +57,10 @@
         <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
       </div>
     </v-container>
-    <v-lazy transition="fade-transition">
-      <HomeBoxes v-if="isMounted"></HomeBoxes>
-    </v-lazy>
-    <v-container fluid class="py-10" style="margin-top: -20px; background: #fff"
+
+    <HomeBoxes v-if="isMounted"></HomeBoxes>
+
+   <v-container fluid class="py-10" style="margin-top: -20px; background: #fff"
       ><v-row
         ><v-col>
           <div v-if="data && isMounted" style="" class="py-5">
@@ -74,120 +73,115 @@
         </v-col></v-row
       ></v-container
     >
-    <v-lazy
-      :min-height="200"
-      :options="{ threshold: 0.5 }"
-      transition="fade-transition"
-    >
-      <div style="margin-top: -0px !important; background: #fff" class="py-10">
-        <v-container fluid>
-          <v-row
-            ><v-col>
-              <div v-if="!isMobile && isMounted">
-                <v-no-ssr>
-                  <v-sheet class="mx-auto mt-12" elevation="8" v-if="!mobile">
-                    <v-slide-group
-                      v-model="model"
-                      class="pa-4"
-                      selected-class="bg-primary"
-                      show-arrows
-                    >
-                      <v-slide-group-item
-                        v-for="article in articles"
-                        :key="article._id"
-                        v-slot="{ isSelected, toggle, selectedClass }"
-                      >
-                        <v-card
-                          elevation="2"
-                          class="mx-3 px-5 py-5 info-card"
-                          outlined
-                          min-height="200"
-                          style="width: 100%"
-                          @click="gotoArticle(article.slug)"
-                        >
-                          <div>
-                            {{ formatDate(article.date) }}
-                          </div>
-                          <div class="my-6" style="font-weight: 900">
-                            {{ article.title }}
-                          </div>
-                          <v-img
-                            :src="article.splash"
-                            cover
-                            height="200"
-                            class="mb-5"
-                            :ref="'img_' + article._id"
-                            style="border: 1px solid #fafafa"
-                            alt="ICJIA News image"
-                            ><template #placeholder>
-                              <v-row
-                                class="fill-height ma-0"
-                                align="center"
-                                justify="center"
-                              >
-                                <v-progress-circular
-                                  indeterminate
-                                  color="blue darken-3"
-                                  aria-label="progress"
-                                ></v-progress-circular>
-                              </v-row>
-                            </template>
-                          </v-img>
-                          <div style="max-width: 500px">
-                            {{ article.abstract }}
-                          </div>
-                        </v-card>
-                      </v-slide-group-item>
-                    </v-slide-group>
-                  </v-sheet>
-                </v-no-ssr>
-              </div>
-              <div v-if="isMobile && isMounted">
-                <div v-for="article in articles" :key="article._id">
-                  <v-card
-                    elevation="2"
-                    class="px-3 py-5 info-card"
-                    outlined
-                    style="width: 100%"
-                    @click="gotoArticle(article.slug)"
+
+    <div style="margin-top: -0px !important; background: #fff" class="py-10">
+      <v-container fluid>
+        <v-row
+          ><v-col>
+            <div v-if="!isMobile && isMounted">
+              <v-no-ssr>
+                <v-sheet class="mx-auto mt-12" elevation="8" v-if="!mobile">
+                  <v-slide-group
+                    v-model="model"
+                    class="pa-4"
+                    selected-class="bg-primary"
+                    show-arrows
                   >
-                    <div>
-                      {{ formatDate(article.date) }}
-                    </div>
-                    <div class="my-6" style="font-weight: 900">
-                      {{ article.title }}
-                    </div>
-                    <v-img
-                      :src="article.splash"
-                      cover
-                      height="200"
-                      class="mb-5"
-                      :ref="'img_' + article._id"
-                      style="border: 1px solid #fafafa"
-                      alt="ICJIA News image"
-                      ><template #placeholder>
-                        <v-row
-                          class="fill-height ma-0"
-                          align="center"
-                          justify="center"
-                        >
-                          <v-progress-circular
-                            indeterminate
-                            color="blue darken-3"
-                            aria-label="progress"
-                          ></v-progress-circular>
-                        </v-row>
-                      </template>
-                    </v-img>
-                    <div style="max-width: 500px">{{ article.abstract }}</div>
-                  </v-card>
-                </div>
+                    <v-slide-group-item
+                      v-for="article in articles"
+                      :key="article._id"
+                      v-slot="{ isSelected, toggle, selectedClass }"
+                    >
+                      <v-card
+                        elevation="2"
+                        class="mx-3 px-5 py-5 info-card"
+                        outlined
+                        min-height="200"
+                        style="width: 100%"
+                        @click="gotoArticle(article.slug)"
+                      >
+                        <div>
+                          {{ formatDate(article.date) }}
+                        </div>
+                        <div class="my-6" style="font-weight: 900">
+                          {{ article.title }}
+                        </div>
+                        <v-img
+                          :src="article.splash"
+                          cover
+                          height="200"
+                          class="mb-5"
+                          :ref="'img_' + article._id"
+                          style="border: 1px solid #fafafa"
+                          alt="ICJIA News image"
+                          ><template #placeholder>
+                            <v-row
+                              class="fill-height ma-0"
+                              align="center"
+                              justify="center"
+                            >
+                              <v-progress-circular
+                                indeterminate
+                                color="blue darken-3"
+                                aria-label="progress"
+                              ></v-progress-circular>
+                            </v-row>
+                          </template>
+                        </v-img>
+                        <div style="max-width: 500px">
+                          {{ article.abstract }}
+                        </div>
+                      </v-card>
+                    </v-slide-group-item>
+                  </v-slide-group>
+                </v-sheet>
+              </v-no-ssr>
+            </div>
+            <div v-if="isMobile && isMounted">
+              <div v-for="article in articles" :key="article._id">
+                <v-card
+                  elevation="2"
+                  class="px-3 py-5 info-card"
+                  outlined
+                  style="width: 100%"
+                  @click="gotoArticle(article.slug)"
+                >
+                  <div>
+                    {{ formatDate(article.date) }}
+                  </div>
+                  <div class="my-6" style="font-weight: 900">
+                    {{ article.title }}
+                  </div>
+                  <v-img
+                    :src="article.splash"
+                    cover
+                    height="200"
+                    class="mb-5"
+                    :ref="'img_' + article._id"
+                    style="border: 1px solid #fafafa"
+                    alt="ICJIA News image"
+                    ><template #placeholder>
+                      <v-row
+                        class="fill-height ma-0"
+                        align="center"
+                        justify="center"
+                      >
+                        <v-progress-circular
+                          indeterminate
+                          color="blue darken-3"
+                          aria-label="progress"
+                        ></v-progress-circular>
+                      </v-row>
+                    </template>
+                  </v-img>
+                  <div style="max-width: 500px">{{ article.abstract }}</div>
+                </v-card>
               </div>
-            </v-col></v-row
-          ></v-container
-        >
-      </div>
-    </v-lazy>
+            </div>
+          </v-col></v-row
+        ></v-container
+      > 
+    </div>
   </div>
 </template>
 
