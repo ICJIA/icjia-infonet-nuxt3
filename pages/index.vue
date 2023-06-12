@@ -58,7 +58,9 @@
         <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
       </div>
     </v-container>
-    <HomeBoxes v-if="isMounted"></HomeBoxes>
+    <v-lazy transition="fade-transition">
+      <HomeBoxes v-if="isMounted"></HomeBoxes>
+    </v-lazy>
     <v-container fluid class="py-10" style="margin-top: -20px; background: #fff"
       ><v-row
         ><v-col>
