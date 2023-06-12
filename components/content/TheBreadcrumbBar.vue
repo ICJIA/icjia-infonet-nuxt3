@@ -13,7 +13,7 @@
       to="/"
       class="breadcrumb-link"
       style="color: white; font-family: 'Roboto', sans-serif !important"
-      >HOME</nuxt-link
+      >INFONET HOME</nuxt-link
     >
     <span style="color: #fff; font-weight: 900"
       >&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</span
