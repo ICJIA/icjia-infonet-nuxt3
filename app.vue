@@ -12,7 +12,7 @@
       <div></div>
     </v-main>
     <div style="height: 75px"></div>
-    <TheFooter></TheFooter>
+    <!-- <TheFooter></TheFooter> -->
   </v-app>
 </template>
 
