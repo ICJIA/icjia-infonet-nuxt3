@@ -1,8 +1,8 @@
 <template>
-  <div style="background: #fff">
+  <div style="background: #f5f5f5">
     <v-container
       fluid
-      style="margin-top: 0px; margin-bottom: 30px; background: #fff"
+      style="margin-top: 0px; margin-bottom: 30px; background: #f6f6f6"
     >
       <v-row style=""
         ><v-col cols="12" md="5">
@@ -56,7 +56,7 @@
       </div>
     </v-container>
     <HomeBoxes v-if="isMounted"></HomeBoxes>
-    <v-container fluid class="py-10" style="margin-top: -20px; background: #"
+    <v-container fluid class="py-10" style="margin-top: -20px; background: #fff"
       ><v-row
         ><v-col>
           <div v-if="data && isMounted" style="" class="py-5">
@@ -70,7 +70,7 @@
       ></v-container
     >
 
-    <div style="margin-top: -0px !important">
+    <div style="margin-top: -0px !important; background: #fff">
       <v-container fluid>
         <v-row
           ><v-col>
