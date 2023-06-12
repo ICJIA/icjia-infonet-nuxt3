@@ -10,34 +10,46 @@
       "
       v-if="isMounted"
     >
-      <v-row style="">
-        <v-col cols="12" md="5">
-          <div class="headingHomeMain text-left mt-12 mb-10">INFONET</div>
-          <p>
-            Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
-            pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
-            virum. Rebus iurares aethera cunctae et vix deicit at ureret
-            moderatior.
-          </p>
-          <p>
-            Regaliter, fugerat terrae virum. Rebus iurares aethera cunctae et
-            vix deicit at ureret moderatior. Forma pharetratus exiguo aurem mole
-            quarum retorserunt pauperque, semina ultra opacas ego opes.
-          </p>
-          <p>
-            Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
-            pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
-            virum.
-          </p>
+      <v-row style="" v-if="data && isMounted">
+        <v-col cols="12" md="6">
+          <h1
+            class="text-center mt-12 mb-10 hidden-md-and-up headingHomeMainMobile"
+            style="border: 0px; margin: 0; padding: 0"
+          >
+            INFONET
+          </h1>
+          <h1
+            class="text-left mt-12 mb-10 hidden-sm-and-down headingHomeMain"
+            style="border: 0px; margin: 0; padding: 0"
+          >
+            INFONET
+          </h1>
+
+          <div style="margin-top: -25px" class="py-5">
+            <ContentDoc :key="data?.title" :value="data" class="markdown-body">
+              <template #empty>Document not found</template>
+              <template #not-found>Document not found</template>
+            </ContentDoc>
+          </div>
+          <div class="mt-0 homeContainer px-4 hidden-md-and-up">
+            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+              >iurares aethera</v-btn
+            >
+            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+              >Exiguo Velociter</v-btn
+            >
+            <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
+          </div>
         </v-col>
-        <v-col cols="12" md="7"
+        <v-col cols="12" md="6"
           ><v-img
-            class="mt-12"
+            style="margin-top: 55px"
             cover
-            max-height="550"
+            max-height="650"
             src="/splash-grey.jpg"
           ></v-img>
-          <div class="mt-8 homeContainer px-4">
+
+          <div class="mt-8 homeContainer px-4 hidden-sm-and-down">
             <v-btn variant="outlined" size="small" style="padding-right: 5px"
               >iurares aethera</v-btn
             >
@@ -51,20 +63,6 @@
     </v-container>
 
     <HomeBoxes v-if="isMounted"></HomeBoxes>
-
-    <v-container fluid class="py-10" style="margin-top: -20px; background: #fff"
-      ><v-row
-        ><v-col>
-          <div v-if="data && isMounted" style="" class="py-5">
-            <h1>Infonet Home content here</h1>
-            <ContentDoc :key="data?.title" :value="data" class="markdown-body">
-              <template #empty>Document not found</template>
-              <template #not-found>Document not found</template>
-            </ContentDoc>
-          </div>
-        </v-col></v-row
-      ></v-container
-    >
 
     <div style="margin-top: -0px !important; background: #fff" class="py-10">
       <v-container fluid>
@@ -222,11 +220,20 @@ const formatDate = (dateString) => {
 }
 
 .headingHomeMain {
-  font-size: 85px;
+  font-size: 105px !important;
   font-weight: 700;
-  line-height: 1.2em;
-  font-family: "Oswald", sans-serif;
+  line-height: 1.1em !important;
+
   color: #0b3a62;
+}
+
+.headingHomeMainMobile {
+  font-size: 65px !important;
+  font-weight: 700;
+  line-height: 0.5em;
+  border: none;
+
+  color: #0b3a62 !important;
 }
 
 .homeContainer {
