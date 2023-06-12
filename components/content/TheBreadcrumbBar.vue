@@ -1,7 +1,7 @@
 <template>
   <div
     style="
-      background: #181e68;
+      background: #0b3a62;
       border-bottom: 1px solid #aaa;
       font-size: 13px;
       font-family: 'Roboto', sans-serif;
