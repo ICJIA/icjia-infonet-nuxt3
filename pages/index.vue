@@ -227,7 +227,7 @@ const formatDate = (dateString) => {
 
 .headingHomeMain {
   font-size: 110px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: "Oswald", sans-serif;
   color: #0d4474;
 }
