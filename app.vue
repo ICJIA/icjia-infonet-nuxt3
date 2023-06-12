@@ -8,8 +8,7 @@
 
     <v-main class="markdown-body" style="min-height: 90vh !important">
       <TheBreadcrumbBar v-if="!isHome"></TheBreadcrumbBar>
-      <NuxtPage></NuxtPage>
-      <div></div>
+      <NuxtPage @vnodeMounted="handleMounted()"></NuxtPage>
     </v-main>
     <!-- <div style="height: 75px"></div> -->
     <the-context-footer></the-context-footer>
@@ -19,9 +18,12 @@
 </template>
 
 <script setup>
+import { is } from "@babel/types";
+
 const { isTranslationEnabled } = useAppConfig();
 const isHome = ref(true);
 const route = useRoute();
+const isMounted = ref(false);
 watchEffect(() => {
   console.log("route.path: ", route.path);
   if (route.path === "/") {
@@ -35,6 +37,11 @@ useHead({
     lang: "en",
   },
 });
+
+const handleMounted = () => {
+  console.log("mounted");
+  isMounted.value = true;
+};
 
 const page = useCurrentPage({ slug: "slug-here" });
 // console.log(page);

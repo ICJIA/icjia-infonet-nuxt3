@@ -12,7 +12,7 @@
     >
       <v-row style="">
         <v-col cols="12" md="5">
-          <div class="headingHomeMain text-left mt-3">INFONET</div>
+          <div class="headingHomeMain text-left mt-5">INFONET</div>
           <p>
             Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
             pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
@@ -234,7 +234,7 @@ const formatDate = (dateString) => {
 }
 
 .headingHomeMain {
-  font-size: 110px;
+  font-size: 100px;
   font-weight: 700;
   font-family: "Oswald", sans-serif;
   color: #0b3a62;
