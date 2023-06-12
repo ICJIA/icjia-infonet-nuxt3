@@ -1,13 +1,42 @@
 <template>
-  <div>
+  <div style="background: #fff">
     <v-container
+      fluid
+      style="margin-top: 0px; margin-bottom: 30px; background: #fff"
+    >
+      <v-row style=""
+        ><v-col cols="12" md="5"
+          ><div class="headingHomeMain text-left">INFONET</div>
+          <p>
+            Lorem markdownum et vocas medius, dabat Ilion amplexaque nuper
+            pugnavimus portabat sanguine canendi, regaliter, fugerat terrae
+            virum. Rebus iurares aethera cunctae et vix deicit at ureret
+            moderatior.
+          </p>
+          <p>
+            Regaliter, fugerat terrae virum. Rebus iurares aethera cunctae et
+            vix deicit at ureret moderatior. Forma pharetratus exiguo aurem mole
+            quarum retorserunt pauperque, semina ultra opacas ego opes.
+          </p>
+          <div class="mt-8 homeContainer px-4 hidden-sm-and-down">
+            <v-btn variant="outlined" size="small" style="padding-right: 5px"
+              >iurares aethera</v-btn
+            >
+            <v-btn variant="outlined" size="small" style="padding-right: 5px"
+              >Velociter</v-btn
+            >
+            <v-btn variant="outlined" size="small">Iurares</v-btn>
+          </div>
+        </v-col>
+        <v-col cols="12" md="7"
+          ><v-img class="mt-9" src="/splash-grey.jpg"></v-img></v-col
+      ></v-row>
+    </v-container>
+    <HomeBoxes v-if="isMounted"></HomeBoxes>
+    <v-container fluid class="py-10" style="margin-top: -20px; background: #"
       ><v-row
         ><v-col>
-          <div
-            v-if="data && isMounted"
-            style="margin-bottom: -45px !important; margin-top: -20px"
-            class="py-5"
-          >
+          <div v-if="data && isMounted" style="" class="py-5">
             <h1>Infonet Home content here</h1>
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
@@ -17,14 +46,12 @@
         </v-col></v-row
       ></v-container
     >
-    <HomeBoxes style="margin-top: 30px" v-if="isMounted"></HomeBoxes>
-    <div style="margin-top: -50px !important">
-      <v-container fluid style="margin: 0 !important; padding: 0 !important">
+
+    <div style="margin-top: -0px !important">
+      <v-container fluid>
         <v-row
           ><v-col>
             <div v-if="!isMobile && isMounted">
-              <!-- isMobile: {{ isMobile }}<br />
-      isServer: {{ isServer }}<br /> -->
               <v-no-ssr>
                 <v-sheet class="mx-auto mt-12" elevation="8" v-if="!mobile">
                   <v-slide-group
@@ -173,5 +200,16 @@ const formatDate = (dateString) => {
 }
 .dark-rule {
   border-bottom: 1px solid #000 !important;
+}
+
+.headingHomeMain {
+  font-size: 110px;
+  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+}
+
+.homeContainer {
+  display: flex;
+  justify-content: space-around;
 }
 </style>
