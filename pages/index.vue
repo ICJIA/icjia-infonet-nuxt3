@@ -86,6 +86,17 @@
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
             </ContentDoc>
+            <div class="text-center mt-4">
+              <v-btn
+                size="x-small"
+                variant="outlined"
+                to="/about"
+                style="font-weight: 900; color: #000 !important"
+                ><span style="color: #000 !important"
+                  >Read More&nbsp;&raquo;</span
+                ></v-btn
+              >
+            </div>
           </div>
         </v-col>
         <v-col cols="12" md="6">
