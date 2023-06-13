@@ -120,7 +120,7 @@
                   cover
                   max-height="550"
                   alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
-                  src="/home-splash-v2.jpg"
+                  src="/home-splash-v3.jpg"
                 ></v-img>
               </v-lazy>
             </div>
