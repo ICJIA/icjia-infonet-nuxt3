@@ -137,7 +137,7 @@ export default defineNuxtConfig({
         ital: [100],
       },
       Raleway: {
-        wght: [100, 400, 900],
+        wght: [100, 300, 400, 900],
         ital: [100],
       },
       Oswald: {

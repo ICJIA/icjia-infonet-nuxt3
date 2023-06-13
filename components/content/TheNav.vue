@@ -27,28 +27,60 @@
         <div style="font-size: 10px; font-weight: 900">CLOSE</div>
       </div>
       <v-spacer class="hidden-md-and-up"></v-spacer>
-      <img
+      <!-- <img
         alt="ICJIA Logo"
         class="hover ml-4 mr-4 hidden-sm-and-down"
         src="/icjia-logo.png"
         width="75"
         @click="$router.push('/')"
-      />
+      /> -->
       <div class="hover hidden-sm-and-down">
         <span
           style="
             font-weight: 900 !important;
-            font-size: 20px;
+            font-size: 26px;
             font-family: 'Roboto', sans-serif !important;
             letter-spacing: 0.004em;
           "
           class="agency app-title"
           @click="$router.push('/')"
           ><span v-if="isHome" class="headerTitleHome"
-            >ILLINOIS CRIMINAL JUSTICE INFORMATION AUTHORITY | INFONET</span
+            ><span
+              style="
+                color: #0d4270;
+                font-family: 'Raleway', sans-serif;
+                letter-spacing: 0em;
+              "
+              >INFONET</span
+            >
+            |
+
+            <span
+              style="
+                font-weight: 300;
+                color: #000;
+                font-size: 26px;
+                letter-spacing: 0px;
+                font-family: 'Raleway', sans-serif;
+              "
+              class="mb-12"
+              >DATA COLLECTION & REPORTING SYSTEM</span
+            ></span
           >
+
           <span v-else class="headerTitle"
-            >ILLINOIS CRIMINAL JUSTICE INFORMATION AUTHORITY | INFONET</span
+            >INFONET |
+            <span
+              style="
+                font-weight: 300;
+                color: #000;
+                font-size: 26px;
+                letter-spacing: 0px;
+                font-family: 'Raleway', sans-serif;
+              "
+              class="mb-12"
+              >Data Collection & Reporting System</span
+            ></span
           >
         </span>
       </div>
@@ -62,7 +94,7 @@
           "
           class="agency app-title"
           @click="$router.push('/')"
-          >ICJIA | INFONET <span class="hidden-md-and-down"> </span
+          >INFONET <span class="hidden-md-and-down"> </span
         ></span>
       </div>
 
@@ -260,10 +292,11 @@ const items = ref([
 
 <style lang="scss" scoped>
 .headerTitleHome {
-  font-size: 18px;
+  font-size: 28px;
 }
 .headerTitle {
-  font-size: 18px;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 .navItem {
   color: #333 !important;

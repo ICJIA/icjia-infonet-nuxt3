@@ -11,45 +11,59 @@
       v-if="isMounted"
     >
       <v-row style="" v-if="data && isMounted">
-        <v-col cols="12" md="6">
+        <v-col cols="12" md="5" class="text-center">
+          <div
+            class="hidden-md-and-up"
+            style="
+              font-weight: 900;
+              color: #fff;
+              background: #2e618c;
+              display: inline-block;
+              padding: 5px 10px;
+              border-radius: 5px;
+              font-size: 0.7em;
+              margin-bottom: 5px;
+              margin-top: 35px;
+            "
+          >
+            Illinois Criminal Justice Information Authority
+          </div>
           <h1
-            class="text-center mt-12 mb-10 hidden-md-and-up headingHomeMainMobile"
+            class="text-center mt-2 mb-10 hidden-md-and-up headingHomeMainMobile"
             style="border: 0px; margin: 0; padding: 0"
           >
             INFONET
           </h1>
-          <h1
-            class="text-left mt-12 mb-10 hidden-sm-and-down headingHomeMain"
-            style="border: 0px; margin: 0; padding: 0"
-          >
-            INFONET
-          </h1>
-
-          <div style="margin-top: -25px" class="py-5">
+          <div class="text-left">
+            <div
+              class="hidden-sm-and-down mt-12"
+              style="
+                font-weight: 900;
+                color: #fff;
+                background: #2e618c;
+                display: inline-block;
+                padding: 5px 10px;
+                border-radius: 3px;
+                font-size: 0.65em;
+                margin-bottom: 5px;
+              "
+            >
+              Illinois Criminal Justice Information Authority
+            </div>
+            <h1
+              class="text-left mb-10 hidden-sm-and-down headingHomeMain mt-1"
+              style="border: 0px; margin: 0; padding: 0"
+            >
+              INFONET
+            </h1>
+          </div>
+          <div style="margin-top: -25px" class="py-5 text-left">
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
             </ContentDoc>
           </div>
-          <div class="mt-0 homeContainer px-4 hidden-md-and-up">
-            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
-              >iurares aethera</v-btn
-            >
-            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
-              >Exiguo Velociter</v-btn
-            >
-            <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
-          </div>
-        </v-col>
-        <v-col cols="12" md="6"
-          ><v-img
-            style="margin-top: 55px"
-            cover
-            max-height="650"
-            src="/splash-grey.jpg"
-          ></v-img>
-
-          <div class="mt-8 homeContainer px-4 hidden-sm-and-down">
+          <div class="mt-2 homeContainer px-4 hidden-sm-and-down">
             <v-btn variant="outlined" size="small" style="padding-right: 5px"
               >iurares aethera</v-btn
             >
@@ -57,9 +71,25 @@
               >Exiguo Velociter</v-btn
             >
             <v-btn variant="outlined" size="small">Forma Iurares</v-btn>
-          </div></v-col
-        ></v-row
-      >
+          </div>
+          <!-- <div class="mt-0 homeContainer px-4 hidden-md-and-up">
+            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+              >iurares aethera</v-btn
+            >
+            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
+              >Exiguo Velociter</v-btn
+            >
+            <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
+          </div> -->
+        </v-col>
+        <v-col cols="12" md="7"
+          ><v-img
+            style="margin-top: 55px"
+            cover
+            max-height="550"
+            src="/splash-grey.jpg"
+          ></v-img> </v-col
+      ></v-row>
     </v-container>
 
     <HomeBoxes v-if="isMounted"></HomeBoxes>
@@ -220,7 +250,7 @@ const formatDate = (dateString) => {
 }
 
 .headingHomeMain {
-  font-size: 105px !important;
+  font-size: 90px !important;
   font-weight: 700;
   line-height: 1.1em !important;
 
@@ -228,7 +258,7 @@ const formatDate = (dateString) => {
 }
 
 .headingHomeMainMobile {
-  font-size: 65px !important;
+  font-size: 70px !important;
   font-weight: 700;
   line-height: 0.5em;
   border: none;
