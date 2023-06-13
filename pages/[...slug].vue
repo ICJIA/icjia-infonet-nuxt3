@@ -9,6 +9,9 @@ const cols = ref(12);
 let sections = ref([]);
 let myToc = [];
 
+const route = useRoute();
+console.log(route.query);
+
 // const error = useError();
 const { data } = await useAsyncData(`content-${path}`, async () => {
   const post = await queryContent().where({ _path: path }).findOne();
@@ -91,6 +94,10 @@ useHead({
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
             </ContentDoc>
+            <div v-if="Object.keys(route.query).length">
+              Email subject: {{ route.query.subject }}
+            </div>
+            <div v-else>Email subject: General</div>
           </div>
           <div v-else>{{ redirect() }}</div>
         </v-col>
