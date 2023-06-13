@@ -8,7 +8,7 @@
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="routeTo('/contact')"
+            @click="routeTo('/contact?subject=more%20information')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
@@ -37,7 +37,7 @@
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="routeTo('/contact')"
+            @click="routeTo('/contact?subject=request%20data')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
@@ -65,7 +65,7 @@
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="routeTo('/contact')"
+            @click="routeTo('/contact?subject=technical%20assistance')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
