@@ -4,11 +4,11 @@
       <v-row no-gutters>
         <v-col cols="12" md="4">
           <v-card
-            color="#6184a0"
+            color="#0D4474"
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="routeTo('/')"
+            @click="routeTo('/contact')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
@@ -17,17 +17,19 @@
                     icon="mdi-menu"
                     style="font-size: 50px; color: #fff"
                     dark
-                    >mdi-home</v-icon
+                    >mdi-account-group</v-icon
                   >
-                  <h2 id="aboutUs" class="boxHeader boxLight">Relatis</h2>
+                  <h2 id="cohorts" class="boxHeader">
+                    Interested in using InfoNet?
+                  </h2>
                   <p style="font-size: 20px" class="boxLight">
-                    Lorem markdownum annum, relatis ipse.
+                    Click to request more infomation
                   </p></v-col
                 >
               </v-row>
             </v-container>
-          </v-card></v-col
-        >
+          </v-card>
+        </v-col>
 
         <v-col cols="12" md="4">
           <v-card
@@ -47,10 +49,10 @@
                     >mdi-pencil-ruler</v-icon
                   >
                   <h2 id="our-approach" class="boxHeader boxLight">
-                    Calathis Procerum
+                    Request InfoNet Data
                   </h2>
                   <p style="font-size: 20px" class="boxLight">
-                    Ut hastam, quos modo super dixit pete vixque.
+                    Request InfoNet data
                   </p></v-col
                 >
               </v-row>
@@ -59,11 +61,11 @@
         </v-col>
         <v-col cols="12" md="4">
           <v-card
-            color="#0D4474"
+            color="#6184a0"
             style="height: 300px"
             class="py-5 px-2 text-center info-card hover"
             :class="{ boxGutter: gutter }"
-            @click="click({ id: 'cohorts', type: 'scrollTo' })"
+            @click="routeTo('/contact')"
           >
             <v-container fill-height fluid>
               <v-row align="center" justify="center">
@@ -72,18 +74,19 @@
                     icon="mdi-menu"
                     style="font-size: 50px; color: #fff"
                     dark
-                    >mdi-account-group</v-icon
+                    >mdi-home</v-icon
                   >
-                  <h2 id="cohorts" class="boxHeader">Hesperidas Candore</h2>
+                  <h2 id="aboutUs" class="boxHeader boxLight">
+                    Request Technical Assistance
+                  </h2>
                   <p style="font-size: 20px" class="boxLight">
-                    Caelestia tectis supplicium exceptas haberet inde medea, sub
-                    sed reicere.
+                    For current InfoNet users
                   </p></v-col
                 >
               </v-row>
             </v-container>
-          </v-card>
-        </v-col>
+          </v-card></v-col
+        >
       </v-row>
     </v-container>
   </div>
