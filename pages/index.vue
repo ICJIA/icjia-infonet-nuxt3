@@ -57,7 +57,7 @@
               INFONET
             </h1>
           </div>
-          <div style="margin-top: -25px" class="py-5 px-8 text-left">
+          <div style="margin-top: -45px" class="py-5 px-8 text-left">
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
@@ -87,6 +87,7 @@
             class="splash"
             cover
             max-height="550"
+            alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
             src="/home-chart-v1.jpg"
           ></v-img> </v-col
       ></v-row>
