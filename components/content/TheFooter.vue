@@ -1,6 +1,10 @@
 <template>
   <div>
-    <v-footer dark class="" style="margin: 0; padding: 0">
+    <v-footer
+      dark
+      class=""
+      style="margin: 0; padding: 0; z-index: 1000 !important"
+    >
       <v-card
         flat
         tile
