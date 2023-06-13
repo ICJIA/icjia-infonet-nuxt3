@@ -11,7 +11,7 @@
       v-if="isMounted"
     >
       <v-row style="" v-if="data && isMounted">
-        <v-col cols="12" md="5" class="text-center">
+        <v-col cols="12" md="6" class="text-center">
           <div
             class="hidden-md-and-up"
             style="
@@ -57,7 +57,7 @@
               INFONET
             </h1>
           </div>
-          <div style="margin-top: -25px" class="py-5 text-left">
+          <div style="margin-top: -25px" class="py-5 px-8 text-left">
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
@@ -82,12 +82,12 @@
             <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
           </div> -->
         </v-col>
-        <v-col cols="12" md="7"
+        <v-col cols="12" md="6"
           ><v-img
             class="splash"
             cover
             max-height="550"
-            src="/splash-grey.jpg"
+            src="/home-chart-v1.jpg"
           ></v-img> </v-col
       ></v-row>
     </v-container>
