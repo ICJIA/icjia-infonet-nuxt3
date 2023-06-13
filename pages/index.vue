@@ -3,7 +3,7 @@
     <v-container
       fluid
       style="
-        margin-top: -20px;
+        margin-top: -10px;
         margin-bottom: 30px;
         background: #f2f2f2;
         z-index: 1000;
@@ -21,7 +21,7 @@
               display: inline-block;
               padding: 5px 10px;
               border-radius: 5px;
-              font-size: 0.7em;
+              font-size: 0.8em;
               margin-bottom: 5px;
               margin-top: 35px;
             "
@@ -36,7 +36,7 @@
           </h1>
           <div class="text-left">
             <div
-              class="hidden-sm-and-down mt-12"
+              class="hidden-sm-and-down mt-5"
               style="
                 font-weight: 900;
                 color: #fff;
@@ -44,7 +44,7 @@
                 display: inline-block;
                 padding: 5px 10px;
                 border-radius: 3px;
-                font-size: 0.65em;
+                font-size: 0.8em;
                 margin-bottom: 5px;
               "
             >
@@ -63,7 +63,7 @@
               <template #not-found>Document not found</template>
             </ContentDoc>
           </div>
-          <div class="mt-2 homeContainer px-4 hidden-sm-and-down">
+          <!-- <div class="mt-2 homeContainer px-4 hidden-sm-and-down">
             <v-btn variant="outlined" size="small" style="padding-right: 5px"
               >iurares aethera</v-btn
             >
@@ -71,7 +71,7 @@
               >Exiguo Velociter</v-btn
             >
             <v-btn variant="outlined" size="small">Forma Iurares</v-btn>
-          </div>
+          </div> -->
           <!-- <div class="mt-0 homeContainer px-4 hidden-md-and-up">
             <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
               >iurares aethera</v-btn
@@ -84,7 +84,7 @@
         </v-col>
         <v-col cols="12" md="7"
           ><v-img
-            style="margin-top: 55px"
+            class="splash"
             cover
             max-height="550"
             src="/splash-grey.jpg"
@@ -269,5 +269,13 @@ const formatDate = (dateString) => {
 .homeContainer {
   display: flex;
   justify-content: space-around;
+}
+.splash {
+  margin-top: 45px;
+}
+@media (max-width: 1024px) {
+  .splash {
+    margin-top: 5px;
+  }
 }
 </style>
