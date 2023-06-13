@@ -20,7 +20,7 @@ const menuLength = navMenu.length;
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  background: #0d4494;
+  background: #0d4e84 !important;
   min-width: 100%;
   color: #fff;
   font-size: 14px;
