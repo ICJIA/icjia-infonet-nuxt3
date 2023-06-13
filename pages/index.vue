@@ -82,14 +82,26 @@
             <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
           </div> -->
         </v-col>
-        <v-col cols="12" md="6"
-          ><v-img
+        <v-col cols="12" md="6">
+          <!-- <v-img
             class="splash"
             cover
             max-height="550"
             alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
-            src="/home-chart-v1.jpg"
-          ></v-img> </v-col
+            src="/home-splash-v1.jpg"
+          ></v-img> -->
+
+          <div class="flex-container">
+            <div class="flex-row">
+              <v-img
+                class="splash"
+                cover
+                max-height="550"
+                alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
+                src="/home-splash-v1.jpg"
+              ></v-img>
+            </div>
+          </div> </v-col
       ></v-row>
     </v-container>
 
