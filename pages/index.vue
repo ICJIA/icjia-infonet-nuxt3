@@ -29,14 +29,26 @@
             Illinois Criminal Justice Information Authority
           </div>
           <h1
-            class="text-center mt-2 mb-10 hidden-md-and-up headingHomeMainMobile"
+            class="text-center mt-2 hidden-md-and-up headingHomeMainMobile"
             style="border: 0px; margin: 0; padding: 0"
           >
             INFONET
           </h1>
+          <h2
+            style="
+              border: none;
+              margin-top: -10px;
+              font-size: 18px;
+              color: #222;
+              font-weight: 400;
+            "
+            class="mb-8 hidden-md-and-up"
+          >
+            Illinois’ victim service data resource for over 25 years
+          </h2>
           <div class="text-left">
             <div
-              class="hidden-sm-and-down mt-5"
+              class="hidden-sm-and-down mt-8"
               style="
                 font-weight: 900;
                 color: #fff;
@@ -51,36 +63,30 @@
               Illinois Criminal Justice Information Authority
             </div>
             <h1
-              class="text-left mb-10 hidden-sm-and-down headingHomeMain mt-1"
+              class="text-left hidden-sm-and-down headingHomeMain mt-1"
               style="border: 0px; margin: 0; padding: 0"
             >
               INFONET
             </h1>
+            <h2
+              style="
+                border: none;
+                margin-top: -5px;
+                font-size: 18px;
+                color: #222;
+                font-weight: 400;
+              "
+              class="mb-8 hidden-sm-and-down pl-2"
+            >
+              Illinois’ victim service data resource for over 25 years
+            </h2>
           </div>
-          <div style="margin-top: -45px" class="py-5 px-8 text-left">
+          <div style="margin-top: -25px" class="py-5 px-2 text-left">
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
             </ContentDoc>
           </div>
-          <!-- <div class="mt-2 homeContainer px-4 hidden-sm-and-down">
-            <v-btn variant="outlined" size="small" style="padding-right: 5px"
-              >iurares aethera</v-btn
-            >
-            <v-btn variant="outlined" size="small" style="padding-right: 5px"
-              >Exiguo Velociter</v-btn
-            >
-            <v-btn variant="outlined" size="small">Forma Iurares</v-btn>
-          </div> -->
-          <!-- <div class="mt-0 homeContainer px-4 hidden-md-and-up">
-            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
-              >iurares aethera</v-btn
-            >
-            <v-btn variant="outlined" size="x-small" style="padding-right: 5px"
-              >Exiguo Velociter</v-btn
-            >
-            <v-btn variant="outlined" size="x-small">Forma Iurares</v-btn>
-          </div> -->
         </v-col>
         <v-col cols="12" md="6">
           <!-- <v-img
