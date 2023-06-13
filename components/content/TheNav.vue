@@ -68,7 +68,14 @@
             ></span
           >
 
-          <span v-else class="headerTitle"
+          <span
+            v-else
+            class="headerTitle"
+            style="
+              color: #0d4270;
+              font-family: 'Raleway', sans-serif;
+              letter-spacing: 0em;
+            "
             >INFONET |
             <span
               style="
