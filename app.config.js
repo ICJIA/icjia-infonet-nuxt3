@@ -18,6 +18,10 @@ export default defineAppConfig({
       link: "/contact",
     },
     {
+      main: "FAQs",
+      link: "/faqs",
+    },
+    {
       main: "News & Updates",
       link: "/news",
     },
@@ -55,6 +59,11 @@ export default defineAppConfig({
       main: "About",
       link: "/about",
     },
+
+    {
+      main: "News & Updates",
+      link: "/news",
+    },
   ],
   sidebarMenu: [
     {
@@ -64,6 +73,14 @@ export default defineAppConfig({
     {
       main: "About",
       link: "/about",
+    },
+    {
+      main: "Contact",
+      link: "/contact",
+    },
+    {
+      main: "FAQs",
+      link: "/faqs",
     },
   ],
 });

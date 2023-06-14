@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="i in 10" :key="i" class="mb-4">
+    <div v-for="i in 5" :key="i" class="mb-4">
       <v-expansion-panels>
         <v-expansion-panel
           elevation="1"
