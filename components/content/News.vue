@@ -3,6 +3,7 @@
     <div v-for="i in 2" :key="i" class="mb-4 info-card">
       <v-card
         color="#fff"
+        elevation="0"
         theme="dark"
         class="px-5 py-3"
         max-height="350"
