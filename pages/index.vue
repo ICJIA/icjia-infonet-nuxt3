@@ -158,10 +158,10 @@
               <v-col cols="12" md="4" class="text-right hidden-sm-and-down"
                 ><div style="border: none" class="pt-8 pr-3">
                   <v-btn
-                    variant="outlined"
+                    color="#0D4474"
                     to="/news"
                     size="x-small"
-                    style="color: #666; font-weight: 700"
+                    style="font-weight: 700; color: #fff"
                     >All News&nbsp;&raquo;</v-btn
                   >
                 </div>

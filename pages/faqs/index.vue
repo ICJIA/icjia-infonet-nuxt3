@@ -124,7 +124,7 @@ let myTocObj = ref({ title: "", searchDepth: 2, depth: 2, links: myTocLinks });
 console.log("links: ", myTocLinks);
 
 useHead({
-  title: "Meetings",
+  title: "FAQs",
   meta: [
     {
       hid: "og-image",
@@ -144,12 +144,12 @@ useHead({
     {
       hid: "description",
       name: "description",
-      content: "Infonet meeting information and attachments.",
+      content: "Infonet frequently asked questions (FAQs).",
     },
     {
       hid: "og-desc",
       property: "og:description",
-      content: "Infonet meeting information and attachments.",
+      content: "Infonet frequently asked questions (FAQs).",
     },
   ],
 });

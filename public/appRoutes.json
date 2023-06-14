@@ -1,14 +1,1 @@
-[
-    "/",
-    "/about",
-    "/contact",
-    "/privacy",
-    "/faqs/what-information-is-collected-with-info-net",
-    "/faqs/how-is-the-system-structured-and-secured",
-    "/faqs/how-do-agencies-use-the-data",
-    "/faqs/how-much-data-have-been-entered-into-info-net-to-date",
-    "/faqs/who-uses-info-net",
-    "/search",
-    "/translate",
-    "/faqs"
-]
+["/","/about","/contact","/privacy","/faqs/what-information-is-collected-with-info-net","/faqs/how-is-the-system-structured-and-secured","/faqs/how-do-agencies-use-the-data","/faqs/how-much-data-have-been-entered-into-info-net-to-date","/faqs/who-uses-info-net","/search","/translate","/faqs"]
