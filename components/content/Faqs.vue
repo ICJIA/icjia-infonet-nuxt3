@@ -127,37 +127,6 @@ let myTocLinks = years.map((year) => {
 let myTocObj = ref({ title: "", searchDepth: 2, depth: 2, links: myTocLinks });
 
 console.log("links: ", myTocLinks);
-
-useHead({
-  title: "FAQs",
-  meta: [
-    {
-      hid: "og-image",
-      property: "og:image",
-      content: "https://infonet.icjia.dev/icjia-logo.png",
-    },
-    {
-      hid: "og-image-width",
-      property: "og:image:width",
-      content: "1200",
-    },
-    {
-      hid: "og-image-height",
-      property: "og:image:height",
-      content: "630",
-    },
-    {
-      hid: "description",
-      name: "description",
-      content: "InfoNet frequently asked questions.",
-    },
-    {
-      hid: "og-desc",
-      property: "og:description",
-      content: "InfoNet frequently asked questions.",
-    },
-  ],
-});
 </script>
 
 <style scoped>
