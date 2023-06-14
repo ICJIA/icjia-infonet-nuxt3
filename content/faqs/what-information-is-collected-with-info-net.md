@@ -40,6 +40,7 @@ rawText: "basic information about all victims clients who receive services from
   specific information "
 draft: false
 title: What information is collected with InfoNet?
+summary: What information is collected with InfoNet?
 path: /faqs/what-information-is-collected-with-info-net
 url: https://infonet.icjia.dev/faqs/what-information-is-collected-with-info-net
 searchMeta: "faq  "

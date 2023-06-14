@@ -21,6 +21,7 @@ rawText: "infonet includes a comprehensive set of reporting tools that
   needed "
 draft: false
 title: How do agencies use the data?
+summary: How do agencies use the data?
 path: /faqs/how-do-agencies-use-the-data
 url: https://infonet.icjia.dev/faqs/how-do-agencies-use-the-data
 searchMeta: "faq  "

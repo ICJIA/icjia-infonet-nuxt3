@@ -38,6 +38,7 @@ axios
       obj.attributes.rawText = rawText.toLowerCase();
       obj.attributes.draft = false;
       obj.attributes.title = obj.attributes.question;
+      obj.attributes.summary = obj.attributes.question;
       obj.attributes.body = obj.attributes.answer;
       obj.attributes.path = `/faqs/${item.attributes.slug}`;
       obj.attributes.url = `${SITE_URL}${obj.attributes.path}`;

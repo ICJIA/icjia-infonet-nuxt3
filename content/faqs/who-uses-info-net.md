@@ -26,6 +26,7 @@ rawText: "three types of service providers use infonet child advocacy domestic
   strategic planning "
 draft: false
 title: Who uses InfoNet?
+summary: Who uses InfoNet?
 path: /faqs/who-uses-info-net
 url: https://infonet.icjia.dev/faqs/who-uses-info-net
 searchMeta: "faq  "
