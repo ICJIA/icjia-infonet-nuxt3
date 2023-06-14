@@ -59,11 +59,6 @@ export default defineAppConfig({
       main: "About",
       link: "/about",
     },
-
-    {
-      main: "News & Updates",
-      link: "/news",
-    },
   ],
   sidebarMenu: [
     {

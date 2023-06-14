@@ -95,11 +95,20 @@
                 style="font-weight: 900; color: #333"
                 ><span style="color: #333">Contact</span></v-btn
               >&nbsp;&nbsp; -->
+              <!-- <v-btn
+                size="small"
+                variant="text"
+                to="/about"
+                style="font-weight: 700; color: #000 !important"
+                ><span style="color: #000 !important"
+                  >List of Partners&nbsp;&raquo;</span
+                ></v-btn
+              > -->
               <v-btn
                 size="small"
                 variant="text"
                 to="/about"
-                style="font-weight: 900; color: #000 !important"
+                style="font-weight: 700; color: #000 !important"
                 ><span style="color: #000 !important"
                   >Read More&nbsp;&raquo;</span
                 ></v-btn

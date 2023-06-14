@@ -5,6 +5,7 @@
         v-for="(item, index) in data"
         :key="item._path"
         class="mb-5"
+        elevation="1"
       >
         <v-expansion-panel-title
           expand-icon="mdi-plus"
