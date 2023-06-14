@@ -48,6 +48,12 @@ yarn generate
 yarn scripts
 ```
 
+## Manually run build scripts for remote API and serve site:
+
+```bash
+yarn generate:serve
+```
+
 ## Manually run build scripts for local API
 
 ```bash
