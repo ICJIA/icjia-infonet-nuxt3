@@ -81,7 +81,7 @@ ul.cohort-list li {
     -moz-transition: all 100ms ease-in;
     -moz-transform: scale(1.04);
     transition: all 100ms ease-in;
-    transform: scale(1.04);
+    transform: scale(1.001);
     cursor: pointer;
 }
 

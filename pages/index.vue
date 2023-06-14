@@ -10,7 +10,7 @@
       "
       v-if="isMounted"
     >
-      <v-row style="" v-if="data && isMounted">
+      <v-row style="" v-if="data">
         <v-col cols="12" md="6" class="text-center">
           <div
             class="hidden-md-and-up"
@@ -131,6 +131,26 @@
     <v-lazy transition="fade-transition">
       <HomeBoxes v-if="isMounted"></HomeBoxes>
     </v-lazy>
+
+    <!-- ---------------------------------------- start text section -->
+
+    <v-container
+      fluid
+      style="background: #f2f2f2; z-index: 1000"
+      v-if="isMounted"
+    >
+      <v-row
+        ><v-col cols="12" md="6"
+          ><h2>News & Updates</h2>
+          <News></News></v-col
+        ><v-col cols="12" md="6"
+          ><h2>Frequently Asked Questions (FAQs)</h2>
+          <Faqs></Faqs>
+        </v-col>
+      </v-row>
+    </v-container>
+
+    <!-- ---------------------------------------- end text section -->
 
     <div style="margin-top: -0px !important; background: #fff" class="py-10">
       <v-lazy
