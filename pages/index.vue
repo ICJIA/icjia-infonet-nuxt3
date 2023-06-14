@@ -142,10 +142,22 @@
       <v-row
         ><v-col cols="12" md="6"
           ><h2>News & Updates</h2>
-          <News></News></v-col
+          <v-lazy
+            :min-height="200"
+            :options="{ threshold: 0.5 }"
+            transition="fade-transition"
+          >
+            <News></News>
+          </v-lazy> </v-col
         ><v-col cols="12" md="6"
           ><h2>Frequently Asked Questions (FAQs)</h2>
-          <Faqs></Faqs>
+          <v-lazy
+            :min-height="200"
+            :options="{ threshold: 0.5 }"
+            transition="fade-transition"
+          >
+            <Faqs></Faqs>
+          </v-lazy>
         </v-col>
       </v-row>
     </v-container>
