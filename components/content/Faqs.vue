@@ -146,4 +146,8 @@ console.log("links: ", myTocLinks);
   text-align: left;
   font-size: 0.65rem;
 }
+
+.v-icon--size-default {
+  font-size: calc(var(--v-icon-size-multiplier) * 1em) !important;
+}
 </style>

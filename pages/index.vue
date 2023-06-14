@@ -373,4 +373,8 @@ const formatDate = (dateString) => {
     margin-top: 5px;
   }
 }
+
+.v-icon--size-default {
+  font-size: calc(var(--v-icon-size-multiplier) * 2.5em);
+}
 </style>
