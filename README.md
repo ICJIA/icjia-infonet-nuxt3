@@ -26,6 +26,7 @@ Start the development server on http://localhost:8000
 
 ```bash
 yarn dev
+https://localhost:8000
 ```
 
 ## Preview
@@ -48,16 +49,17 @@ yarn generate
 yarn scripts
 ```
 
-## Manually run build scripts for remote API and serve site:
+## Manually generate and serve locally:
 
-```bash
+````bash
 yarn generate:serve
+https://localhost:3000
 ```
 
 ## Manually run build scripts for local API
 
 ```bash
 yarn scripts:local
-```
+````
 
 _Netlify will automatically deploy the live site when changes are pushed to the master branch._
