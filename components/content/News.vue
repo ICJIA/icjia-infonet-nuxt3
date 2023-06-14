@@ -1,15 +1,15 @@
 <template>
   <div>
-    <div v-for="i in 3" :key="i" class="mb-4 info-card">
+    <div v-for="i in 2" :key="i" class="mb-4 info-card">
       <v-card color="#fff" theme="dark" class="px-5 py-3" max-height="350">
         <div class="d-flex flex-no-wrap justify-space-between">
-          <v-avatar class="hidden-sm-and-down" size="150" rounded="0">
+          <!-- <v-avatar class="hidden-sm-and-down" size="150" rounded="0">
             <v-img
               src="/news-square.jpg"
               style="min-height: 100% !important; min-width: 100% !important"
               cover
             ></v-img>
-          </v-avatar>
+          </v-avatar> -->
           <div class="px-5" style="color: #000; margin-top: -20px">
             <h3>Lorem markdownum peragant</h3>
             <div
