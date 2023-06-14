@@ -94,10 +94,10 @@ useHead({
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
             </ContentDoc>
-            <div v-if="Object.keys(route.query).length">
+            <!-- <div v-if="Object.keys(route.query).length">
               Email subject: {{ route.query.subject }}
             </div>
-            <div v-else>Email subject: General</div>
+            <div v-else>Email subject: General</div> -->
           </div>
           <div v-else>{{ redirect() }}</div>
         </v-col>
