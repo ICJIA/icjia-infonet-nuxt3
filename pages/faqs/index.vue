@@ -1,8 +1,9 @@
 <template>
-  <div class="pb-12" data-aos="fade-in" style="margin-top: 0px">
+  <div class="pb-12" data-aos="fade-in" style="margin-top: -10px">
     <v-container fluid
       ><v-row>
         <v-col>
+          <h1 class="mb-8">Frequently Asked Questions (FAQs)</h1>
           <v-expansion-panels>
             <v-expansion-panel
               v-for="(item, index) in data"

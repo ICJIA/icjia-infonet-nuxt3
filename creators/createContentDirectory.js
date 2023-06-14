@@ -17,6 +17,7 @@ const PUBLIC_FILES_TO_REMOVE = [
   "sitemap.xml",
   "siteMeta.json",
   "routesPages.json",
+  "routesFaqs.json",
   "routesPosts.json",
   "routesMeetings.json",
   "routesPublications.json",

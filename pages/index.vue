@@ -140,8 +140,26 @@
       v-if="isMounted"
     >
       <v-row
-        ><v-col cols="12" md="6"
-          ><h2>News & Updates</h2>
+        ><v-col cols="12" md="6" style="margin-top: -20px">
+          <v-container
+            ><v-row>
+              <v-col cols="12" md="8"
+                ><h2 style="border: none">News & Updates</h2>
+              </v-col>
+              <v-col cols="12" md="4" class="text-right hidden-sm-and-down"
+                ><div style="border: none" class="pt-8 pr-3">
+                  <v-btn
+                    variant="outlined"
+                    to="/news"
+                    size="x-small"
+                    style="color: #666; font-weight: 700"
+                    >All News&nbsp;&raquo;</v-btn
+                  >
+                </div>
+              </v-col>
+            </v-row></v-container
+          >
+          <h2 style="margin-top: -35px"></h2>
           <v-lazy
             :min-height="200"
             :options="{ threshold: 0.5 }"
