@@ -9,7 +9,12 @@
         <v-expansion-panel-title
           expand-icon="mdi-plus"
           collapse-icon="mdi-minus"
-          style="font-weight: 700; background: #eee; color: #000"
+          style="
+            color: #000 !important;
+            font-family: 'Lato', san-serif !important;
+            font-weight: 400;
+            background: #fff;
+          "
         >
           {{ item.question }}
         </v-expansion-panel-title>
@@ -156,23 +161,6 @@ useHead({
 </script>
 
 <style scoped>
-/* Summary/details */
-
-summary {
-  cursor: pointer;
-  font-weight: 900;
-  font-size: 16px;
-}
-
-details {
-  margin-top: 15px !important;
-  margin-bottom: 15px;
-}
-
-summary > * {
-  display: inline;
-}
-
 .markdown-body.dataTable {
   width: 100%;
   font-size: 14px;
