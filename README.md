@@ -41,14 +41,6 @@ yarn preview
 yarn generate:serve
 ```
 
-## Production
-
-Build the application for production:
-
-```bash
-yarn generate
-```
-
 ## Manually run build scripts for remote API
 
 ```bash
@@ -59,6 +51,14 @@ yarn scripts
 
 ```bash
 yarn scripts:local
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+yarn generate
 ```
 
 _Netlify will automatically deploy the live site when changes are pushed to the master branch._
