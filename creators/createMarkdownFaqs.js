@@ -27,7 +27,7 @@ axios
   })
   .then((res) => {
     const raw = res.data.data;
-    const faqs = raw.map((item) => {
+    const _faqs = raw.map((item) => {
       const obj = { ...item };
       let rawText;
 
@@ -51,6 +51,8 @@ axios
       return obj;
     });
 
+    // let faqs = _.orderBy(_faqs, ["ranking"], ["asc"]);
+    let faqs = _faqs;
     jsonfile.writeFileSync(`./public/faqs.json`, faqs, function (err) {
       if (err) {
         console.error(err);
@@ -71,6 +73,7 @@ axios
         }
       }
     );
+
     let section;
     faqs.forEach((item) => {
       section = "faqs";
