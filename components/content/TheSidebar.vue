@@ -62,6 +62,11 @@
         > -->
         <v-divider class="my-3"></v-divider>
 
+        <v-list-item exact to="/contact">
+          <v-icon left icon="mdi-mail" size="x-small"></v-icon
+          >&nbsp;&nbsp;&nbsp;Contact</v-list-item
+        >
+
         <v-list-item exact to="/search">
           <v-icon left icon="mdi-magnify" size="x-small"></v-icon
           >&nbsp;&nbsp;&nbsp;Search</v-list-item

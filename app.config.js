@@ -69,13 +69,14 @@ export default defineAppConfig({
       main: "About",
       link: "/about",
     },
-    {
-      main: "Contact",
-      link: "/contact",
-    },
+
     {
       main: "FAQs",
       link: "/faqs",
+    },
+    {
+      main: "News & Updates",
+      link: "/news",
     },
   ],
 });
