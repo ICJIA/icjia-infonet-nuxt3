@@ -1,7 +1,13 @@
 <template>
   <div>
     <div v-for="i in 2" :key="i" class="mb-4 info-card">
-      <v-card color="#fff" theme="dark" class="px-5 py-3" max-height="350">
+      <v-card
+        color="#fff"
+        theme="dark"
+        class="px-5 py-3"
+        max-height="350"
+        @click="$router.push(`/news/${i}`)"
+      >
         <div class="d-flex flex-no-wrap justify-space-between">
           <!-- <v-avatar class="hidden-sm-and-down" size="150" rounded="0">
             <v-img
