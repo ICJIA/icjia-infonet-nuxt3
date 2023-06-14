@@ -152,18 +152,19 @@
 
     <!-- ---------------------------------------- end text section -->
 
-    <div style="margin-top: -0px !important; background: #fff" class="py-10">
+    <div style="margin-top: 0px !important; background: #fff" class="py-10">
       <v-lazy
         :min-height="200"
         :options="{ threshold: 0.5 }"
         transition="fade-transition"
       >
-        <v-container fluid>
+        <v-container fluid style="margin-top: -50px !important">
           <v-row
             ><v-col>
               <div v-if="!isMobile && isMounted">
                 <v-no-ssr>
-                  <v-sheet class="mx-auto mt-12" elevation="8" v-if="!mobile">
+                  <v-sheet class="mx-auto mt-12" elevation="0" v-if="!mobile">
+                    <h2 class="px-5 py-5 mb-10">Latest InfoNet Research</h2>
                     <v-slide-group
                       v-model="model"
                       class="pa-4"
@@ -176,8 +177,8 @@
                         v-slot="{ isSelected, toggle, selectedClass }"
                       >
                         <v-card
-                          elevation="2"
-                          class="mx-3 px-5 py-5 info-card"
+                          elevation="5"
+                          class="mx-3 px-5 py-5 info-card mb-2"
                           outlined
                           min-height="200"
                           style="width: 100%"

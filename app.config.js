@@ -17,6 +17,10 @@ export default defineAppConfig({
       main: "Contact",
       link: "/contact",
     },
+    {
+      main: "News & Updates",
+      link: "/news",
+    },
     // {
     //   main: "Meetings",
     //   link: "/meetings",
