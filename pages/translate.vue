@@ -225,6 +225,7 @@ const googleTranslate = (lang) => {
   // console.log("href: ", href);
   // const route = `${root}${fullPath}`;
   const route = `${root}`;
+  console.log("Translation route: ", route);
   const url =
     `https://translate.google.com/translate?hl=en&sl=en&u=${route}&tl=` + lang;
   window.open(url);
