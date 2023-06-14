@@ -261,6 +261,7 @@
                 </v-no-ssr>
               </div>
               <div v-if="isMobile && isMounted">
+                <h2 class="px-5 py-5 mb-10">Latest InfoNet Research</h2>
                 <div v-for="article in articles" :key="article._id">
                   <v-card
                     elevation="2"
