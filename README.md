@@ -35,6 +35,12 @@ https://localhost:8000
 yarn preview
 ```
 
+## Manually generate static site and serve local (port 3000):
+
+```bash
+yarn generate:serve
+```
+
 ## Production
 
 Build the application for production:
@@ -49,17 +55,10 @@ yarn generate
 yarn scripts
 ```
 
-## Manually generate and serve locally:
-
-````bash
-yarn generate:serve
-https://localhost:3000
-```
-
 ## Manually run build scripts for local API
 
 ```bash
 yarn scripts:local
-````
+```
 
 _Netlify will automatically deploy the live site when changes are pushed to the master branch._
