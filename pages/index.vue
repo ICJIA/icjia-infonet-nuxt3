@@ -127,7 +127,7 @@
                 <v-img
                   class="splash"
                   cover
-                  max-height="525"
+                  max-height="625"
                   alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
                   src="/home-splash-v3.jpg"
                 ></v-img>
@@ -350,7 +350,7 @@ const formatDate = (dateString) => {
 }
 
 .headingHomeMain {
-  font-size: 90px !important;
+  font-size: 100px !important;
   font-weight: 700;
   line-height: 1.1em !important;
 
@@ -358,7 +358,7 @@ const formatDate = (dateString) => {
 }
 
 .headingHomeMainMobile {
-  font-size: 70px !important;
+  font-size: 75px !important;
   font-weight: 700;
   line-height: 0.5em;
   border: none;
