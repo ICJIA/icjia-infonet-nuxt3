@@ -178,7 +178,7 @@
                       >
                         <v-card
                           elevation="5"
-                          class="mx-3 px-5 py-5 info-card mb-2"
+                          class="px-5 py-5 info-card mb-5 mt-4 mr-2"
                           outlined
                           min-height="200"
                           style="width: 100%"
@@ -225,7 +225,7 @@
                 <div v-for="article in articles" :key="article._id">
                   <v-card
                     elevation="2"
-                    class="px-3 py-5 info-card"
+                    class="px-3 py-5 info-card mt-2"
                     outlined
                     style="width: 100%"
                     @click="gotoArticle(article.slug)"
