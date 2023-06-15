@@ -10,7 +10,7 @@ let sections = ref([]);
 let myToc = [];
 
 const route = useRoute();
-console.log(route.query);
+// console.log(route);
 
 // const error = useError();
 const { data } = await useAsyncData(`content-${path}`, async () => {

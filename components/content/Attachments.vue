@@ -6,13 +6,17 @@
     <div>{{ props.links }}</div> -->
 
     <div v-if="props.showTableDisplay">
-      <strong>{{ props.attachmentHeading }}</strong>
-      <v-table class="markdown-body dataTable mt-3" density="compact">
+      <h3 class="mt-10">{{ props.attachmentHeading }}</h3>
+      <v-table
+        class="markdown-body dataTable mt-3"
+        density="compact"
+        style="border: 1px solid #eee"
+      >
         <thead>
           <tr>
-            <th class="text-left">Filename</th>
-            <th class="text-left">Last Updated</th>
-            <th class="text-left">Size</th>
+            <th class="text-left" style="font-weight: 900">Filename</th>
+            <th class="text-left" style="font-weight: 900">Last Updated</th>
+            <th class="text-left" style="font-weight: 900">Size</th>
           </tr>
         </thead>
         <tbody>
@@ -54,7 +58,7 @@
       </div>
     </div>
     <div v-else>
-      <div v-if="props.attachments.length">
+      <div v-if="props.attachments && props.attachments.length > 0">
         <strong v-if="attachmentHeading">{{ attachmentHeading }}</strong>
         <ul class="mt-2">
           <li
@@ -99,7 +103,7 @@ const props = defineProps({
   },
   attachmentHeading: {
     type: String,
-    default: "",
+    default: "ATTACHMENTS",
   },
   linkHeading: {
     type: String,
@@ -151,13 +155,13 @@ const formatDate = (dateString) => {
 }
 
 .markdown-body .dataTable th {
-  font-weight: 900;
+  font-weight: 700;
   text-align: left;
   font-size: 0.8rem;
 }
 
 .markdown-body.dataTable td {
-  font-weight: 400;
+  font-weight: 700;
   text-align: left;
   font-size: 0.65rem;
 }

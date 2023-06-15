@@ -156,13 +156,13 @@ useHead({
               <template #not-found>Document not found</template>
             </ContentDoc>
 
-            <!-- <attachments
+            <attachments
               :attachments="data.attachments.data"
-              :links="data.link"
-              :showTableDisplay="false"
+              :showTableDisplay="true"
               class="mt-6"
               style="font-size: 14px"
-            /> -->
+              v-if="data.attachments.data && data.attachments.data.length > 0"
+            />
           </div>
         </v-col>
 
