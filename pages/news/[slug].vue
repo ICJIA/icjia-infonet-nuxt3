@@ -135,7 +135,11 @@ useHead({
               >
             </div>
 
-            <div v-if="data && data.splash && data.splash.data" class="mb-10">
+            <div
+              v-if="data && data.splash && data.splash.data"
+              class="mb-10"
+              style="margin-top: -20px"
+            >
               <v-img
                 cover
                 :src="`https://infonet.icjia-api.cloud${data.splash.data.attributes.formats.medium.url}`"
