@@ -119,19 +119,22 @@
         <v-col cols="12" md="6">
           <div class="flex-container">
             <div class="flex-row">
-              <v-lazy
-                :min-height="200"
-                :options="{ threshold: 0.5 }"
-                transition="fade-transition"
+              <v-tooltip
+                text="Click for more information about InfoNet"
+                location="bottom"
               >
-                <v-img
-                  class="splash"
-                  cover
-                  max-height="600"
-                  alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
-                  src="/home-splash-v3.jpg"
-                ></v-img>
-              </v-lazy>
+                <template v-slot:activator="{ props }">
+                  <v-img
+                    v-bind="props"
+                    class="splash hover"
+                    cover
+                    max-height="600"
+                    alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
+                    src="/home-splash-v3.jpg"
+                    @click="$router.push('/about')"
+                  ></v-img>
+                </template>
+              </v-tooltip>
             </div>
           </div> </v-col
       ></v-row>
