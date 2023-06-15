@@ -4,6 +4,7 @@ require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
+const moment = require("moment");
 const jsonfile = require("jsonfile");
 const _ = require("lodash");
 const yaml = require("yaml");
@@ -80,8 +81,8 @@ axios
     const site = posts.map((post) => {
       const obj = { ...post };
       obj.attributes.postDate = obj.attributes.dateOverride
-        ? new Date(obj.attributes.dateOverride)
-        : obj.attributes.publishedAt;
+        ? moment(obj.attributes.dateOverride).format()
+        : moment(obj.attributes.publishedAt).format();
       let rawText;
 
       rawText = obj.attributes?.body

@@ -1,22 +1,22 @@
 <template>
   <v-card
     class="px-5 py-5 info-card"
-    style="width: 100%; flex-grow: 1 !important; background: #fafafa"
+    :style="cardStyle"
     @click="navigateTo(props.item.path)"
   >
-    <div style="font-size: 12px">
-      <span style="font-weight: 900"
-        >{{ formatDate(props.item.postDate) }} |
-        <nuxt-link
-          :to="`/search?q=${props.item.category.toLowerCase()}`"
-          class="search-link"
-          >{{ props.item.category.toUpperCase() }}</nuxt-link
-        ></span
-      >
+    <div style="font-size: 14px; margin-top: 0px">
+      <span style="font-weight: 400"
+        >{{ formatDate(props.item.postDate) }}
+      </span>
     </div>
-    <h2 style="border: 0">{{ props.item.title }}</h2>
-    <p>{{ props.item.summary }}</p>
-    <div style="font-size: 12px; font-weight: 700" class="mt-5 text-right">
+    <h2 style="border: 0; margin-top: 5px">{{ props.item.title }}</h2>
+
+    <p class="mt-4">{{ truncateString(props.item.summary) }}</p>
+    <div
+      style="font-size: 12px; font-weight: 700"
+      class="mt-5 text-right"
+      v-if="props.displayFooter"
+    >
       <nuxt-link
         :to="`/search?q=${props.item.category.toLowerCase()}`"
         class="search-link"
@@ -34,6 +34,14 @@ const props = defineProps({
   item: {
     type: Object,
     default: [],
+  },
+  background: {
+    type: String,
+    default: "#fff",
+  },
+  displayFooter: {
+    type: Boolean,
+    default: false,
   },
 });
 
@@ -64,6 +72,14 @@ const niceBytes = (bytes, si = false, dp = 1) => {
   return bytes.toFixed(dp) + " " + units[u];
 };
 
+const cardStyle = computed(() => {
+  return (
+    "width: 100%; flex-grow: 1 !important; background:" +
+    props.background +
+    " !important;"
+  );
+});
+
 const formatDate = (dateString) => {
   const options = { year: "numeric", month: "long", day: "numeric" };
   return new Date(dateString).toLocaleDateString(undefined, options);
@@ -84,6 +100,16 @@ const readingTime = (item) => {
   const readTime = Math.ceil(minutes);
   return readTime + " min read";
 };
+
+function truncateString(str, num = 250) {
+  // If the length of str is less than or equal to num
+  // just return str--don't truncate it.
+  if (str.length <= num) {
+    return str;
+  }
+  // Return str truncated with '...' concatenated to the end of str.
+  return str.slice(0, num) + "...";
+}
 </script>
 
 <style>

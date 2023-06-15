@@ -4,7 +4,7 @@
       <v-row>
         <v-col>
           <h1 class="brand-color">News & Updates</h1>
-        
+
           <v-container fluid>
             <v-row align="stretch">
               <v-col
@@ -15,7 +15,7 @@
                 md="6"
                 style="display: flex; flex-direction: column"
               >
-                <NewsCard :item="item"></NewsCard
+                <NewsCard :item="item" background="#fafafa"></NewsCard
               ></v-col> </v-row
           ></v-container>
         </v-col>
@@ -33,6 +33,7 @@ const router = useRouter();
 const { data: query } = await useAsyncData("news", () =>
   queryContent("/news/")
     .sort([{ postDate: -1 }])
+
     .find()
 );
 </script>

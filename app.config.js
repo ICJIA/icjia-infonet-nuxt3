@@ -4,6 +4,7 @@ export default defineAppConfig({
   api: "https://infonet.icjia-api.cloud",
   root: "https://infonet.icjia.dev",
   isTranslationEnabled: true,
+  homeNewsLimit: 2,
   footerMenu: [
     {
       main: "Home",
