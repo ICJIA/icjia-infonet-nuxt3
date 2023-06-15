@@ -146,7 +146,10 @@ useHead({
                 :lazy-src="`https://infonet.icjia-api.cloud${data.splash.data.attributes.formats.thumbnail.url}`"
                 height="550"
               />
-              <div style="font-size: 12px; color: #666" class="mt-2">
+              <div
+                style="font-size: 12px; color: #666; font-weight: 700"
+                class="mt-2 pl-1 mb-12"
+              >
                 {{ data.splash.data.attributes.caption }}
               </div>
             </div>
