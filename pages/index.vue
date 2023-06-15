@@ -217,7 +217,7 @@
                           >
                             <v-btn
                               color="#0D4474"
-                              href="https://icjia.illinois.gov"
+                              href="https://icjia.illinois.gov/researchhub/"
                               target="_blank"
                               size="x-small"
                               style="font-weight: 700; color: #fff"
