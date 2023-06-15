@@ -119,10 +119,7 @@
         <v-col cols="12" md="6" class="mb-8">
           <div class="flex-container">
             <div class="flex-row">
-              <v-tooltip
-                text="Click for more information about InfoNet"
-                location="bottom"
-              >
+              <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
                   <v-img
                     v-bind="props"
@@ -134,10 +131,14 @@
                     @click="$router.push('/about')"
                   ></v-img>
                 </template>
+                <span class="mt-3"
+                  >Click chart for more information about InfoNet</span
+                >
               </v-tooltip>
             </div>
-          </div> </v-col
-      ></v-row>
+          </div>
+        </v-col></v-row
+      >
     </v-container>
 
     <HomeBoxes v-if="isMounted"></HomeBoxes>
