@@ -13,14 +13,14 @@ summary: Pectora iam letali annos placet, capillos, fraternaque nitorem veneno,
   iamdudum in vires.
 section: news
 createdAt: 2023-06-15T13:35:20.144Z
-updatedAt: 2023-06-15T16:38:35.418Z
+updatedAt: 2023-06-15T16:47:50.337Z
 publishedAt: 2023-06-15T13:35:21.360Z
 searchMeta: "news "
 splash:
   data:
     id: "2"
     attributes:
-      caption: null
+      caption: This is the test caption.
       name: test-splash.jpg
       formats:
         thumbnail:
