@@ -364,14 +364,13 @@ const displayAuthors = (arr) => {
 let isServer = ref(process.server);
 
 // const error = useError();
+const { data: posts } = await useAsyncData("content-news", () =>
+  queryContent("/news/").limit(limit.value).sort({ postDate: -1 }).find()
+);
 const { data } = await useAsyncData(`content-home`, async () => {
   const post = await queryContent().where({ _path: "/" }).findOne();
   return post;
 });
-
-const { data: posts } = await useAsyncData("news", () =>
-  queryContent("/news/").limit(limit.value).sort({ postDate: -1 }).find()
-);
 
 onMounted(() => {
   isMounted.value = true;
