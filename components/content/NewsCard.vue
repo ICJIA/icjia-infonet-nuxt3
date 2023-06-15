@@ -2,6 +2,7 @@
   <v-card
     class="px-5 py-5 info-card"
     :style="cardStyle"
+    :elevation="props.elevation"
     @click="navigateTo(props.item.path)"
   >
     <div style="font-size: 14px; margin-top: 0px">
@@ -42,6 +43,10 @@ const props = defineProps({
   displayFooter: {
     type: Boolean,
     default: false,
+  },
+  elevation: {
+    type: String,
+    default: "0",
   },
 });
 

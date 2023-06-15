@@ -15,7 +15,11 @@
                 md="6"
                 style="display: flex; flex-direction: column"
               >
-                <NewsCard :item="item" background="#fafafa"></NewsCard
+                <NewsCard
+                  :item="item"
+                  background="#fafafa"
+                  elevation="1"
+                ></NewsCard
               ></v-col> </v-row
           ></v-container>
         </v-col>
