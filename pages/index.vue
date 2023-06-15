@@ -141,43 +141,49 @@
 
     <!-- ---------------------------------------- start text section -->
 
-    <v-container
-      fluid
-      style="background: #f2f2f2; z-index: 1000"
-      v-if="isMounted"
+    <v-lazy
+      :min-height="200"
+      :options="{ threshold: 0.5 }"
+      transition="fade-transition"
     >
-      <v-row
-        ><v-col cols="12" md="6" style="margin-top: -20px">
-          <v-container
-            ><v-row>
-              <v-col cols="12" md="8"
-                ><h2 style="border: none">News & Updates</h2>
-              </v-col>
-              <v-col cols="12" md="4" class="text-right hidden-sm-and-down"
-                ><div style="border: none" class="pt-8 pr-3">
-                  <v-btn
-                    color="#0D4474"
-                    to="/news"
-                    size="x-small"
-                    style="font-weight: 700; color: #fff"
-                    >All News&nbsp;&raquo;</v-btn
-                  >
-                </div>
-              </v-col>
-            </v-row></v-container
-          >
-          <h2 style="margin-top: -35px"></h2>
+      <v-container
+        fluid
+        style="background: #f2f2f2; z-index: 1000"
+        v-if="isMounted"
+      >
+        <v-row
+          ><v-col cols="12" md="6" style="margin-top: -20px">
+            <v-container
+              ><v-row>
+                <v-col cols="12" md="8"
+                  ><h2 style="border: none">News & Updates</h2>
+                </v-col>
+                <v-col cols="12" md="4" class="text-right hidden-sm-and-down"
+                  ><div style="border: none" class="pt-8 pr-3">
+                    <v-btn
+                      color="#0D4474"
+                      to="/news"
+                      size="x-small"
+                      style="font-weight: 700; color: #fff"
+                      >All News&nbsp;&raquo;</v-btn
+                    >
+                  </div>
+                </v-col>
+              </v-row></v-container
+            >
+            <h2 style="margin-top: -35px"></h2>
 
-          <div v-for="post in posts" :key="post._path" class="mb-5">
-            <NewsCard :item="post" background="#fff"></NewsCard>
-          </div> </v-col
-        ><v-col cols="12" md="6"
-          ><h2>Frequently Asked Questions (FAQs)</h2>
+            <div v-for="post in posts" :key="post._path" class="mb-5">
+              <NewsCard :item="post" background="#fff"></NewsCard>
+            </div> </v-col
+          ><v-col cols="12" md="6"
+            ><h2>Frequently Asked Questions (FAQs)</h2>
 
-          <Faqs></Faqs>
-        </v-col>
-      </v-row>
-    </v-container>
+            <Faqs></Faqs>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-lazy>
 
     <!-- ---------------------------------------- end text section -->
 
