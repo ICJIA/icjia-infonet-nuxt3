@@ -193,7 +193,48 @@
               <div v-if="!isMobile && isMounted">
                 <v-no-ssr>
                   <v-sheet class="mx-auto mt-12" elevation="0" v-if="!mobile">
-                    <h2 class="px-5 py-5 mb-10">Latest InfoNet Research</h2>
+                    <v-container fluid
+                      ><v-row>
+                        <v-col cols="12" md="8"
+                          ><h2
+                            style="
+                              border: none;
+                              margin: 0;
+                              padding: 0;
+                              margin-top: -35px;
+                            "
+                          >
+                            Latest InfoNet Research
+                          </h2>
+                        </v-col>
+                        <v-col
+                          cols="12"
+                          md="4"
+                          class="text-right hidden-sm-and-down"
+                          ><div
+                            style="border: none; margin-top: -45px"
+                            class="pt-4 pr-3"
+                          >
+                            <v-btn
+                              color="#0D4474"
+                              href="https://icjia.illinois.gov"
+                              target="_blank"
+                              size="x-small"
+                              style="font-weight: 700; color: #fff"
+                              >All ICJIA Research&nbsp;&raquo;</v-btn
+                            >
+                          </div>
+                        </v-col>
+                      </v-row></v-container
+                    >
+                    <v-container fluid
+                      ><v-row
+                        ><v-col
+                          style="border-top: 1px solid #bbb; margin-top: -10px"
+                          >&nbsp;</v-col
+                        ></v-row
+                      ></v-container
+                    >
                     <v-slide-group
                       v-model="model"
                       class="pa-4"
