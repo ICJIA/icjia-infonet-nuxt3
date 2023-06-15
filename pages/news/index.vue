@@ -4,8 +4,8 @@
       <v-row>
         <v-col>
           <h1 class="brand-color">News & Updates</h1>
-          Full News Listing here
-          <!-- <v-container fluid>
+        
+          <v-container fluid>
             <v-row align="stretch">
               <v-col
                 v-for="item in query"
@@ -17,7 +17,7 @@
               >
                 <NewsCard :item="item"></NewsCard
               ></v-col> </v-row
-          ></v-container> -->
+          ></v-container>
         </v-col>
       </v-row>
     </v-container>
@@ -25,16 +25,16 @@
 </template>
 
 <script setup>
-// import moment from "moment";
-// import _ from "lodash";
-// const { path } = useRoute();
-// const router = useRouter();
+import moment from "moment";
+import _ from "lodash";
+const { path } = useRoute();
+const router = useRouter();
 
-// const { data: query } = await useAsyncData("news", () =>
-//   queryContent("/news/")
-//     .sort([{ publishedAt: -1 }])
-//     .find()
-// );
+const { data: query } = await useAsyncData("news", () =>
+  queryContent("/news/")
+    .sort([{ postDate: -1 }])
+    .find()
+);
 </script>
 
 <style lang="scss" scoped>
