@@ -6,7 +6,7 @@ const pages = require("../public/pages.json");
 const faqs = require("../public/faqs.json");
 const manualPages = require("../public/manualPages.json");
 // const meetings = require("../public/meetings.json");
-// const posts = require("../public/posts.json");
+const posts = require("../public/posts.json");
 // const publications = require("../public/publications.json");
 // const site = [...pages, ...posts];
 
@@ -14,7 +14,7 @@ const manualPages = require("../public/manualPages.json");
 
 // const site = [...pages, ...meetings, ...posts, ...publications];
 
-const site = [...pages, ...faqs, ...manualPages];
+const site = [...pages, ...faqs, ...posts, ...manualPages];
 
 const searchIndex = site.map((item) => {
   // console.log(item.attributes);

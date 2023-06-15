@@ -40,5 +40,26 @@
             "path": "/translate",
             "url": "https://infonet.icjia.dev/translate"
         }
+    },
+    {
+        "id": "222",
+        "attributes": {
+            "title": "News & Updates",
+            "slug": "news",
+            "category": "regular",
+            "hideFromSearch": false,
+            "hideFromSitemap": false,
+            "showTableOfContents": false,
+            "summary": "InfoNet News & Updates.",
+            "body": "InfoNet News & Updates.",
+            "createdAt": "2023-06-15",
+            "updatedAt": "2023-06-15",
+            "publishedAt": "2023-06-15",
+            "searchMeta": "infonet news latest updates ",
+            "draft": false,
+            "navigation": true,
+            "path": "/news",
+            "url": "https://infonet.icjia.dev/news"
+        }
     }
 ]

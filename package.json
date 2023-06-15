@@ -25,7 +25,7 @@
     "create:local": "yarn clear:cache && node ./creators/createLocalMeta.mjs",
     "create:sitemap": "node ./creators/createSitemap.mjs",
     "scripts:local": "yarn create:local",
-    "scripts": "yarn clear:cache && yarn create:contentDirectory && yarn create:pages &&  yarn create:faqs && yarn create:hub && yarn create:searchIndex && yarn create:sitemap && yarn create:routes",
+    "scripts": "yarn clear:cache && yarn create:contentDirectory && yarn create:pages && yarn create:news && yarn create:faqs && yarn create:hub && yarn create:searchIndex && yarn create:sitemap && yarn create:routes",
     "clear:cache": "rm -rf .nuxt .output",
     "prestart": "source $HOME/.nvm/nvm.sh; nvm use"
   },
@@ -53,7 +53,7 @@
     "markdown-it-attrs": "^4.1.6",
     "moment": "^2.29.4",
     "request": "^2.88.2",
-    "sass": "^1.63.3",
+    "sass": "^1.63.4",
     "sitemap": "^7.1.1",
     "swiper": "^9.4.0",
     "url-exist": "2.0.2",

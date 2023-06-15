@@ -29,13 +29,7 @@ const query = `query {
         createdAt
         updatedAt
         publishedAt
-        searchMeta
-        link {
-          id
-          title
-          url
-          summary
-        }
+        searchMeta  
         splash {
           data {
             id

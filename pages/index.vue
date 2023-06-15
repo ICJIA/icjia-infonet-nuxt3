@@ -127,7 +127,7 @@
                 <v-img
                   class="splash"
                   cover
-                  max-height="625"
+                  max-height="600"
                   alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
                   src="/home-splash-v3.jpg"
                 ></v-img>
@@ -137,9 +137,7 @@
       ></v-row>
     </v-container>
 
-    <v-lazy transition="fade-transition">
-      <HomeBoxes v-if="isMounted"></HomeBoxes>
-    </v-lazy>
+    <HomeBoxes v-if="isMounted"></HomeBoxes>
 
     <!-- ---------------------------------------- start text section -->
     <v-lazy
