@@ -19,7 +19,7 @@
       >&nbsp;&nbsp;&raquo;&nbsp;&nbsp;</span
     >
     <span style="color: white; font-weight: 400">{{
-      makeTitle(route.path.toUpperCase())
+      truncateString(makeTitle(route.path.toUpperCase()))
     }}</span>
   </div>
 </template>
@@ -32,19 +32,24 @@ const htmlEntity = (entity) => {
   return String.fromCharCode(entity);
 };
 
-const truncate = function (str, length = 25, ending = "...") {
-  // if (length == null) {
-  //   length = 100;
-  // }
-  // if (ending == null) {
-  //   ending = "...";
-  // }
-  if (str.length > length) {
-    return str.substring(0, length - ending.length) + ending;
-  } else {
+// const truncate = function (str, length = 25, ending = "...") {
+
+//   if (str.length > length) {
+//     return str.substring(0, length - ending.length) + ending;
+//   } else {
+//     return str;
+//   }
+// };
+
+function truncateString(str, num = 30) {
+  // If the length of str is less than or equal to num
+  // just return str--don't truncate it.
+  if (str.length <= num) {
     return str;
   }
-};
+  // Return str truncated with '...' concatenated to the end of str.
+  return str.slice(0, num) + "...";
+}
 
 const makeTitle = (slug) => {
   // remove initial slash
