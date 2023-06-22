@@ -1,13 +1,13 @@
 <template>
   <v-app id="appTop">
-    <div style="margin-top: 150px" class="text-center" v-if="!isMounted">
+    <!-- <div style="margin-top: 150px" class="text-center" v-if="!isMounted">
       <div class="text-center">
         <div style="font-weight: 700; font-size: 25px; margin-bottom: 25px">
           LOADING
         </div>
         <img src="/home-loading.gif" />
       </div>
-    </div>
+    </div> -->
     <TheNav></TheNav>
 
     <TheSidebar></TheSidebar>
