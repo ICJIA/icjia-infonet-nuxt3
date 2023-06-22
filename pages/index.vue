@@ -177,15 +177,12 @@
           </div> </v-col
         ><v-col cols="12" md="6"
           ><h2>Frequently Asked Questions (FAQs)</h2>
-          <div v-for="item in faqs" :key="faqs._path">
-            Question: {{ item.question }}
-            <br />
-            Answer: {{ item.answer }}
-            <br />
-            <br />
-          </div>
+
           <v-expansion-panels>
-            <v-expansion-panel v-for="item in faqs" :key="item._path"
+            <v-expansion-panel
+              v-for="item in faqs"
+              :key="item._path"
+              class="mb-3"
               ><v-expansion-panel-title
                 expand-icon="mdi-plus"
                 collapse-icon="mdi-minus"

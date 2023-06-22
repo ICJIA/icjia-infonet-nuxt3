@@ -1,28 +1,19 @@
 <template>
   <div>
     <v-expansion-panels>
-      <v-expansion-panel
-        v-for="(item, index) in data"
-        :key="item._path"
-        class="mb-5"
-        elevation="1"
-      >
-        <v-expansion-panel-title
+      <v-expansion-panel v-for="item in data" :key="item._path"
+        ><v-expansion-panel-title
           expand-icon="mdi-plus"
           collapse-icon="mdi-minus"
-          style="
-            color: #000 !important;
-            font-family: 'Lato', san-serif !important;
-            font-weight: 400;
-            background: #fff;
-          "
+          style="font-weight: 700; background: #eee; color: #000"
         >
           {{ item.question }}
         </v-expansion-panel-title>
         <v-expansion-panel-text>
-          <span v-html="renderer.render(item.answer)"></span>
-        </v-expansion-panel-text>
-      </v-expansion-panel>
+          <span
+            v-html="renderer.render(item.answer)"
+          ></span> </v-expansion-panel-text
+      ></v-expansion-panel>
     </v-expansion-panels>
   </div>
 </template>
