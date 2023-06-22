@@ -177,7 +177,7 @@
           </div> </v-col
         ><v-col cols="12" md="6"
           ><h2>Frequently Asked Questions (FAQs)</h2>
-          <Faqs></Faqs>
+          FAQs: {{ faqs }}
         </v-col>
       </v-row>
     </v-container>
@@ -369,9 +369,9 @@ const { data } = await useAsyncData(`content-home`, async () => {
   return post;
 });
 
-// const { data: faqs } = await useAsyncData("content-faqs", () =>
-//   queryContent("/faqs/").find()
-// );
+const { data: faqs } = await useAsyncData("content-faqs", () =>
+  queryContent("/faqs/").find()
+);
 
 onMounted(() => {
   isMounted.value = true;
