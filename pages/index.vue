@@ -184,6 +184,14 @@
             <br />
             <br />
           </div>
+          <v-expansion-panels>
+            <v-expansion-panel
+              v-for="item in faqs"
+              :key="item._path"
+              :title="item.question"
+              :text="item.answer"
+            ></v-expansion-panel>
+          </v-expansion-panels>
         </v-col>
       </v-row>
     </v-container>
