@@ -185,11 +185,18 @@
             <br />
           </div>
           <v-expansion-panels>
-            <v-expansion-panel
-              v-for="item in faqs"
-              :key="item._path"
-              :title="item.question"
-              :text="item.answer"
+            <v-expansion-panel v-for="item in faqs" :key="item._path"
+              ><v-expansion-panel-title
+                expand-icon="mdi-plus"
+                collapse-icon="mdi-minus"
+                style="font-weight: 700; background: #eee; color: #000"
+              >
+                {{ item.question }}
+              </v-expansion-panel-title>
+              <v-expansion-panel-text>
+                <span
+                  v-html="renderer.render(item.answer)"
+                ></span> </v-expansion-panel-text
             ></v-expansion-panel>
           </v-expansion-panels>
         </v-col>
@@ -359,6 +366,17 @@
 </template>
 
 <script setup>
+import md from "markdown-it";
+import attrs from "markdown-it-attrs";
+const renderer = new md({
+  html: true,
+  xhtmlOut: false,
+  breaks: false,
+  langPrefix: "language-",
+  linkify: true,
+  typographer: true,
+  quotes: "“”‘’",
+}).use(attrs);
 import hubArticles from "~/assets/json/hub.json";
 import { useDisplay } from "vuetify";
 const { mobile } = useDisplay();
