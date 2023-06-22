@@ -177,30 +177,13 @@
           </div> </v-col
         ><v-col cols="12" md="6"
           ><h2>Frequently Asked Questions (FAQs)</h2>
-          <v-expansion-panels>
-            <v-expansion-panel
-              v-for="(item, index) in faqs"
-              :key="item._path"
-              class="mb-5"
-              elevation="1"
-            >
-              <v-expansion-panel-title
-                expand-icon="mdi-plus"
-                collapse-icon="mdi-minus"
-                style="
-                  color: #000 !important;
-                  font-family: 'Lato', san-serif !important;
-                  font-weight: 400;
-                  background: #fff;
-                "
-              >
-                {{ item.question }}
-              </v-expansion-panel-title>
-              <v-expansion-panel-text>
-                <span v-html="renderer.render(item.answer)"></span>
-              </v-expansion-panel-text>
-            </v-expansion-panel>
-          </v-expansion-panels>
+          <div v-for="item in faqs" :key="faqs._path">
+            Question: {{ item.question }}
+            <br />
+            Answer: {{ item.answer }}
+            <br />
+            <br />
+          </div>
         </v-col>
       </v-row>
     </v-container>
