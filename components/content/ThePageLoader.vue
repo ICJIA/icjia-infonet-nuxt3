@@ -2,7 +2,7 @@
   <div style="margin-top: 150px" class="text-center">
     <div class="text-center">
       <div style="font-weight: 700; font-size: 25px; margin-bottom: 25px">
-        LOADING
+        LOADING INFONET
       </div>
       <img src="/home-loading.gif" />
     </div>
