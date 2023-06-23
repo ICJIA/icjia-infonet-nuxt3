@@ -35,6 +35,6 @@ axios
       }
     });
 
-    console.log("hub.json created in /asseets/json/");
+    console.log("hub.json created in /assets/json/");
   })
   .catch((err) => console.error(err));

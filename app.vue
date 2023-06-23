@@ -19,6 +19,9 @@
 
 <script setup>
 import { is } from "@babel/types";
+import tabMeta from "~/assets/json/tabs.json";
+const tabs = useState("tabs", () => tabMeta);
+console.log("Tabs: ", tabs.value);
 
 const { isTranslationEnabled } = useAppConfig();
 const isHome = ref(true);
