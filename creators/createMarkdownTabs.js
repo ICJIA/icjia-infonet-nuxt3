@@ -78,23 +78,21 @@ axios
       let obj = { ...tab };
 
       obj.attributes.path = `/tabs/${obj.attributes.sectionID}/${obj.attributes.slug}`;
-      console.log("Markdown tabs content created: ", obj.attributes.path);
+      //console.log("Markdown tabs content created: ", obj.attributes.path);
       return obj;
     });
     jsonfile.writeFileSync(`./public/tabs.json`, site, function (err) {
       if (err) {
         console.error(err);
       }
-      console.log("tabs.json created in /public/");
     });
 
     jsonfile.writeFileSync(`./assets/json/tabs.json`, site, function (err) {
       if (err) {
         console.error(err);
       }
-      console.log("tabs.json created in /assets/json/");
     });
-
+    console.log("tabs.json created in /assets/json/");
     // const basePath = path.join(contentDir, `tabs`);
 
     // if (!fs.existsSync(basePath)) {

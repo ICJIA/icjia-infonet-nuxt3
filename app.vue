@@ -21,8 +21,7 @@
 import { is } from "@babel/types";
 import tabMeta from "~/assets/json/tabs.json";
 const tabs = useState("tabs", () => tabMeta);
-console.log("Tabs: ", tabs.value);
-
+console.log("Tabs loaded.");
 const { isTranslationEnabled } = useAppConfig();
 const isHome = ref(true);
 const route = useRoute();
