@@ -17,17 +17,19 @@
                 >
               </v-tabs>
 
-              <v-card-text>
-                <v-window v-model="tab">
-                  <v-window-item
-                    v-for="tab in tabArray"
-                    :key="`tabContent-${tab.id}`"
-                    :value="tab.attributes.slug"
-                  >
-                    <div>{{ tab.attributes.body }}</div>
-                  </v-window-item>
-                </v-window>
-              </v-card-text>
+              <v-window v-model="tab">
+                <v-window-item
+                  v-for="tab in tabArray"
+                  :key="`tabContent-${tab.id}`"
+                  :value="tab.attributes.slug"
+                  class="py-5 px-5"
+                >
+                  <span
+                    class="markdown-body"
+                    v-html="renderer.render(tab.attributes.body)"
+                  ></span>
+                </v-window-item>
+              </v-window>
             </v-card>
             <div
               class="mt-12"
@@ -45,6 +47,17 @@
 
 <script setup>
 import { useDisplay } from "vuetify";
+import md from "markdown-it";
+import attrs from "markdown-it-attrs";
+const renderer = new md({
+  html: true,
+  xhtmlOut: false,
+  breaks: false,
+  langPrefix: "language-",
+  linkify: true,
+  typographer: true,
+  quotes: "“”‘’",
+}).use(attrs);
 
 const props = defineProps({
   sectionID: {
