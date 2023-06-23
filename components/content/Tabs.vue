@@ -13,8 +13,9 @@
                   v-for="tab in tabArray"
                   :key="`tabTitle-${tab.id}`"
                   style="font-size: 11px !important"
-                  >{{ tab.attributes.title }}</v-tab
                 >
+                  {{ getTitle(tab.attributes) }}
+                </v-tab>
               </v-tabs>
 
               <v-window v-model="tab">
@@ -77,6 +78,16 @@ const _tabArray = tabs.value.filter((tab) => {
 const tabArray = toRaw(_tabArray);
 
 const { mobile } = useDisplay();
+
+const getTitle = (attributes) => {
+  let title;
+  if (mobile.value === true) {
+    title = attributes.agency;
+  } else {
+    title = attributes.title;
+  }
+  return title;
+};
 
 onMounted(() => {
   isMounted.value = true;
