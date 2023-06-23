@@ -60,6 +60,10 @@ export default defineAppConfig({
       main: "About",
       link: "/about",
     },
+    {
+      main: "Debug",
+      link: "/debug",
+    },
   ],
   sidebarMenu: [
     {
