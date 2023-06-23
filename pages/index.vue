@@ -110,7 +110,7 @@
                 to="/about"
                 style="font-weight: 700; color: #000 !important"
                 ><span style="color: #000 !important"
-                  >Read More&nbsp;&raquo;</span
+                  >List of Partners&nbsp;&raquo;</span
                 ></v-btn
               >
             </div>
