@@ -29,34 +29,31 @@
                     class="markdown-body"
                     v-html="renderer.render(tab.attributes.body)"
                   ></span>
-                  <h3>Screenshots:</h3>
-                  <!-- <div
-                    v-for="(image, index) in tab.attributes.images.data"
-                    :key="`images-${index}`"
-                    class="mt-5"
+                  <div
+                    v-if="
+                      tab.attributes &&
+                      tab.attributes.images &&
+                      tab.attributes.images.data.length > 0
+                    "
                   >
-                    <img
-                      :src="getImageURL(image.attributes.formats.thumbnail.url)"
-                    />
-                    <div
-                      v-html="getImageCaption(image.attributes.caption)"
-                    ></div>
-                  </div> -->
-                  <ul class="image-gallery">
-                    <li
-                      v-for="(image, index) in tab.attributes.images.data"
-                      :key="`images-${index}`"
-                      class="mt-5"
-                    >
-                      <img
-                        :src="
-                          getImageURL(image.attributes.formats.thumbnail.url)
-                        "
-                      />
-                      <div style="font-size: 11px" class="">Caption Here</div>
-                      <!-- <div class="overlay"><span>Image title</span></div> -->
-                    </li>
-                  </ul>
+                    <h3>Screenshots:</h3>
+
+                    <ul class="image-gallery">
+                      <li
+                        v-for="(image, index) in tab.attributes.images.data"
+                        :key="`images-${index}`"
+                        class="mt-5"
+                      >
+                        <img
+                          :src="
+                            getImageURL(image.attributes.formats.thumbnail.url)
+                          "
+                        />
+                        <div style="font-size: 11px" class="">Caption Here</div>
+                        <!-- <div class="overlay"><span>Image title</span></div> -->
+                      </li>
+                    </ul>
+                  </div>
                 </v-window-item>
               </v-window>
             </v-card>
@@ -159,13 +156,13 @@ ul {
   }
 
   .image-gallery > li {
-    flex-basis: 450px; /*width: 350px;*/
+    flex-basis: 250px; /*width: 350px;*/
     margin: 0;
   }
 
   .image-gallery::after {
     content: "";
-    /* flex-basis: 450px; */
+    flex-basis: 250px;
   }
 }
 
