@@ -10,7 +10,7 @@
               <v-tabs v-model="tab" bg-color="grey-darken-2" grow center-active>
                 <v-tab
                   :value="tab.attributes.slug"
-                  v-for="tab in tabArray"
+                  v-for="tab in tabContent"
                   :key="`tabTitle-${tab.id}`"
                   style="font-size: 11px !important"
                 >
@@ -20,7 +20,7 @@
 
               <v-window v-model="tab">
                 <v-window-item
-                  v-for="tab in tabArray"
+                  v-for="tab in tabContent"
                   :key="`tabContent-${tab.id}`"
                   :value="tab.attributes.slug"
                   class="py-5 px-5"
@@ -36,7 +36,7 @@
               class="mt-12"
               v-if="props.sectionID && props.sectionID.length > 0"
             >
-              {{ tabArray }}
+              {{ tabContent }}
             </div>
           </div>
           <div v-else class="mt-12 text-center">
@@ -70,12 +70,12 @@ console.log(props.sectionID);
 const tabs = useState("tabs");
 const tab = ref(null);
 const isMounted = ref(false);
-const _tabArray = tabs.value.filter((tab) => {
+const _tabContent = tabs.value.filter((tab) => {
   if (tab.attributes.sectionID === props.sectionID) {
     return tab;
   }
 });
-const tabArray = toRaw(_tabArray);
+const tabContent = toRaw(_tabContent);
 
 const { mobile } = useDisplay();
 
