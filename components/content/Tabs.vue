@@ -29,15 +29,42 @@
                     class="markdown-body"
                     v-html="renderer.render(tab.attributes.body)"
                   ></span>
+                  <h3>Screenshots:</h3>
+                  <!-- <div
+                    v-for="(image, index) in tab.attributes.images.data"
+                    :key="`images-${index}`"
+                    class="mt-5"
+                  >
+                    <img
+                      :src="getImageURL(image.attributes.formats.thumbnail.url)"
+                    />
+                    <div
+                      v-html="getImageCaption(image.attributes.caption)"
+                    ></div>
+                  </div> -->
+                  <ul class="image-gallery">
+                    <li
+                      v-for="(image, index) in tab.attributes.images.data"
+                      :key="`images-${index}`"
+                      class="mt-5"
+                    >
+                      <img
+                        :src="
+                          getImageURL(image.attributes.formats.thumbnail.url)
+                        "
+                      />
+                      <div style="font-size: 11px" class="">Caption Here</div>
+                      <!-- <div class="overlay"><span>Image title</span></div> -->
+                    </li>
+                  </ul>
                 </v-window-item>
               </v-window>
             </v-card>
+
             <div
               class="mt-12"
               v-if="props.sectionID && props.sectionID.length > 0"
-            >
-              {{ tabContent }}
-            </div>
+            ></div>
           </div>
           <div v-else class="mt-12 text-center">
             <ThePageLoader />
@@ -89,9 +116,64 @@ const getTitle = (attributes) => {
   return title;
 };
 
+const getImageURL = (url) => {
+  return `https://infonet.icjia-api.cloud${url}`;
+};
+
+const getImageCaption = (caption) => {
+  if (caption) {
+    return `<div class="" style="font-size: 10px !important">${caption}</div>`;
+  }
+};
+
 onMounted(() => {
   isMounted.value = true;
 });
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+ul {
+  list-style: none;
+}
+
+.image-gallery {
+  text-align: center;
+}
+
+.image-gallery > li {
+  /* fallback */
+  display: inline-block;
+  width: 100%;
+  margin: 0 0px 0px 0px;
+  /* end fallback */
+  position: relative;
+  cursor: pointer;
+}
+
+@supports (display: flex) {
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .image-gallery > li {
+    flex-basis: 450px; /*width: 350px;*/
+    margin: 0;
+  }
+
+  .image-gallery::after {
+    content: "";
+    /* flex-basis: 450px; */
+  }
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+</style>
