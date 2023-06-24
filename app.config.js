@@ -7,6 +7,10 @@ export default defineAppConfig({
   homeNewsLimit: 2,
   footerMenu: [
     {
+      main: "Debug",
+      link: "/debug",
+    },
+    {
       main: "Home",
       link: "/",
     },
@@ -59,10 +63,6 @@ export default defineAppConfig({
     {
       main: "About",
       link: "/about",
-    },
-    {
-      main: "Debug",
-      link: "/debug",
     },
   ],
   sidebarMenu: [
