@@ -78,7 +78,7 @@
   border-radius: 0.75rem;
 }
 
-/* Responsive image gallery rules begin*/
+/* Test 2-Responsive image gallery rules begin*/
 
 ul {
   list-style: none;
