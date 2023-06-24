@@ -37,22 +37,21 @@
                     "
                   >
                     <h3>Screenshots:</h3>
+                  </div>
 
-                    <ul class="image-gallery">
-                      <li
-                        v-for="(image, index) in tab.attributes.images.data"
-                        :key="`images-${index}`"
-                        class="mt-5"
-                      >
-                        <img
-                          :src="
-                            getImageURL(image.attributes.formats.thumbnail.url)
-                          "
-                        />
-                        <div style="font-size: 11px" class="">Caption Here</div>
-                        <!-- <div class="overlay"><span>Image title</span></div> -->
-                      </li>
-                    </ul>
+                  <div class="gallery text-center">
+                    <div
+                      class="gallery-panel hover"
+                      v-for="(image, index) in tab.attributes.images.data"
+                      :key="`images-${index}`"
+                    >
+                      <img
+                        :src="
+                          getImageURL(image.attributes.formats.thumbnail.url)
+                        "
+                      />
+                      <div style="font-size: 11px" class="">Caption Here</div>
+                    </div>
                   </div>
                 </v-window-item>
               </v-window>
@@ -129,50 +128,21 @@ onMounted(() => {
 </script>
 
 <style scoped>
-ul {
-  list-style: none;
+/* CSS GRID */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 100rem;
+  margin: 3rem auto;
+  padding: 0 3rem;
 }
 
-.image-gallery {
-  text-align: center !important;
-}
-
-.image-gallery > li {
-  /* fallback */
-  display: inline-block;
-  width: 100%;
-  margin: 0 0px 0px 0px;
-  /* end fallback */
-  position: relative;
-  cursor: pointer;
-}
-
-@supports (display: flex) {
-  .image-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-  }
-
-  .image-gallery > li {
-    flex-basis: 250px; /*width: 350px;*/
-    margin: 0;
-  }
-
-  .image-gallery::after {
-    content: "";
-    /* flex-basis: 250px; */
-    /* justify-content: space-around !important; */
-    /* flex: auto; */
-  }
-}
-
-.image-gallery li img {
+.gallery-panel img {
+  width: 300px;
+  height: 200px;
   object-fit: cover;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  border-radius: 5px;
+  border-radius: 0.75rem;
 }
 </style>
