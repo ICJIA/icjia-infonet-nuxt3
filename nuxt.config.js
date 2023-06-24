@@ -40,7 +40,22 @@ export default defineNuxtConfig({
           content: "https://infonet.icjia.dev/icjia-logo.png",
         },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
+        },
+        {
+          rel: "preconnect",
+          href: "https://fonts.gstatic.com",
+          crossorigin: true,
+        },
+        // {
+        //   rel: "stylesheet",
+        //   href: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;400;700;900&display=swap",
+        // },
+      ],
       script: [
         {
           src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
@@ -122,29 +137,29 @@ export default defineNuxtConfig({
     // },
   },
 
-  googleFonts: {
-    inject: true,
-    download: true,
-    display: "swap",
-    prefetch: true,
-    families: {
-      Roboto: {
-        wght: [100, 400, 700, 900],
-        ital: [100],
-      },
-      Lato: {
-        wght: [100, 300, 400, 700, 900],
-        ital: [100],
-      },
-      Raleway: {
-        wght: [100, 300, 400, 900],
-        ital: [100],
-      },
-      Oswald: {
-        wght: [100, 400, 900],
-      },
-    },
-  },
+  // googleFonts: {
+  //   inject: true,
+  //   download: true,
+  //   display: "swap",
+  //   prefetch: true,
+  //   families: {
+  //     Roboto: {
+  //       wght: [100, 400, 700, 900],
+  //       ital: [100],
+  //     },
+  //     Lato: {
+  //       wght: [100, 300, 400, 700, 900],
+  //       ital: [100],
+  //     },
+  //     Raleway: {
+  //       wght: [100, 300, 400, 900],
+  //       ital: [100],
+  //     },
+  //     Oswald: {
+  //       wght: [100, 400, 900],
+  //     },
+  //   },
+  // },
 
   image: {
     // The screen sizes predefined by `@nuxt/image`:
