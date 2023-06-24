@@ -35,9 +35,7 @@
                       tab.attributes.images &&
                       tab.attributes.images.data.length > 0
                     "
-                  >
-                    <h3>Screenshots:</h3>
-                  </div>
+                  ></div>
 
                   <div class="gallery text-center">
                     <div
@@ -50,7 +48,9 @@
                           getImageURL(image.attributes.formats.thumbnail.url)
                         "
                       />
-                      <div style="font-size: 11px" class="">Caption Here</div>
+                      <div style="font-size: 11px" class="text-left pl-1">
+                        Caption Here
+                      </div>
                     </div>
                   </div>
                 </v-window-item>
@@ -142,7 +142,7 @@ onMounted(() => {
 .gallery-panel img {
   width: 300px;
   height: 200px;
-  object-fit: cover;
+  object-fit: cover !important;
   border-radius: 0.35rem;
 }
 </style>
