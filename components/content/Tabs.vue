@@ -134,7 +134,7 @@ ul {
 }
 
 .image-gallery {
-  text-align: center;
+  text-align: center !important;
 }
 
 .image-gallery > li {
@@ -151,7 +151,7 @@ ul {
   .image-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 5px;
   }
 
@@ -162,7 +162,9 @@ ul {
 
   .image-gallery::after {
     content: "";
-    flex-basis: 250px;
+    /* flex-basis: 250px; */
+    /* justify-content: space-around !important; */
+    /* flex: auto; */
   }
 }
 
