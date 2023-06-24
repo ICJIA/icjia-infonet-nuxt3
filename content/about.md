@@ -7,7 +7,7 @@ showTableOfContents: true
 summary: This is the summary for the about page.
 section: root
 createdAt: 2023-04-02T15:04:25.519Z
-updatedAt: 2023-06-23T19:11:03.001Z
+updatedAt: 2023-06-23T20:12:38.624Z
 publishedAt: 2023-04-02T15:04:26.918Z
 searchMeta: null
 category: page
