@@ -143,6 +143,6 @@ onMounted(() => {
   width: 300px;
   height: 200px;
   object-fit: cover;
-  border-radius: 0.75rem;
+  border-radius: 0.35rem;
 }
 </style>
