@@ -1,67 +1,32 @@
 <template>
   <div>
-    <v-container
-      ><v-row
-        ><v-col cols="12">
-          <div v-if="isMounted">
-            <div class="py-12"><strong>isMobile: </strong>{{ mobile }}</div>
-
-            <v-card>
-              <v-tabs v-model="tab" bg-color="grey-darken-2" grow center-active>
-                <v-tab
-                  :value="tab.attributes.slug"
-                  v-for="tab in tabArray"
-                  :key="`tabTitle-${tab.id}`"
-                  style="font-size: 11px !important"
-                  >{{ tab.attributes.title }}</v-tab
-                >
-              </v-tabs>
-
-              <v-card-text>
-                <v-window v-model="tab">
-                  <v-window-item
-                    v-for="tab in tabArray"
-                    :key="`tabContent-${tab.id}`"
-                    :value="tab.attributes.slug"
-                  >
-                    <div>{{ tab.attributes.body }}</div>
-                  </v-window-item>
-                </v-window>
-              </v-card-text>
-            </v-card>
-            <div class="mt-12">
-              {{ tabArray }}
-            </div>
-          </div>
-          <div v-else class="mt-12 text-center">
-            <ThePageLoader />
-          </div> </v-col></v-row
-    ></v-container>
+    <h2>Screenshot Gallery Test</h2>
+    <div class="gallery text-center">
+      <div class="gallery-panel hover" v-for="n in 25" :key="n">
+        <img
+          src="https://infonet.icjia-api.cloud/uploads/thumbnail_test_splash_abd78c7c4f.jpg"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
-<script setup>
-import { useDisplay } from "vuetify";
+<script setup></script>
 
-useHead({
-  title: "Debug",
-});
+<style scoped>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+  max-width: 100rem;
+  margin: 3rem auto;
+  padding: 0 3rem;
+}
 
-const tabs = useState("tabs");
-const tab = ref(null);
-const isMounted = ref(false);
-const _tabArray = tabs.value.filter((tab) => {
-  if (tab.attributes.sectionID === "screenshots") {
-    return tab;
-  }
-});
-const tabArray = toRaw(_tabArray);
-
-const { mobile } = useDisplay();
-
-onMounted(() => {
-  isMounted.value = true;
-});
-</script>
-
-<style lang="scss" scoped></style>
+.gallery-panel img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+</style>
