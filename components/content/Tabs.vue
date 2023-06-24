@@ -12,7 +12,7 @@
                   :value="tab.attributes.slug"
                   v-for="tab in tabContent"
                   :key="`tabTitle-${tab.id}`"
-                  style="font-size: 11px !important"
+                  style="font-size: 14px !important; font-weight: 900"
                 >
                   {{ getTitle(tab.attributes) }}
                 </v-tab>
