@@ -51,11 +51,12 @@ export default defineNuxtConfig({
           href: "https://fonts.gstatic.com",
           crossorigin: true,
         },
-        // {
-        //   rel: "stylesheet",
-        //   href: "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;400;700;900&display=swap",
-        // },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0",
+        },
       ],
+
       script: [
         {
           src: "https://code.jquery.com/jquery-3.6.1.slim.min.js",
@@ -107,7 +108,7 @@ export default defineNuxtConfig({
   },
 
   modules: [
-    "@nuxtjs/google-fonts",
+    // "@nuxtjs/google-fonts",
     // "@nuxtjs/apollo",
     // "@pinia/nuxt",
     "@nuxt/image-edge",
