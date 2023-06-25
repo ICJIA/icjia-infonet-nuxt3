@@ -20,7 +20,7 @@ splash:
   data:
     id: "2"
     attributes:
-      caption: This is the test caption.
+      caption: Chicago, Illinois
       name: test-splash.jpg
       formats:
         thumbnail:

@@ -3,8 +3,10 @@
     <div id="myModal" class="modal" @click="closeModal">
       <!-- Modal content -->
       <div class="modal-content">
-        <img :src="url.url" />
-        <div class="text-center">Caption here</div>
+        <img :src="url" :alt="`Image: ${caption}`" />
+        <div class="text-left" v-if="caption" style="font-size: 12px">
+          {{ caption }}
+        </div>
       </div>
     </div>
   </div>
@@ -12,18 +14,22 @@
 
 <script setup>
 let url = ref("");
+let caption = ref("");
 let dialog = ref(false);
 let modal = ref(null);
 console.log("ImageModal.vue loaded.");
 useListen("modal:gallery", (e) => {
   console.log("Event data: ", e);
-  url.value = e;
+  console.log(e.url, e.caption);
+  url.value = e.url;
+  caption.value = e.caption;
   dialog.value = true;
 });
 onUnmounted(() => {
   console.log("Unmounted");
   dialog.value = false;
   url = null;
+  caption = null;
 });
 onMounted(() => {
   console.log("Mounted");

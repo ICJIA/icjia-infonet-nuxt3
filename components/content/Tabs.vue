@@ -49,8 +49,14 @@
                       :key="`images-${index}`"
                       @click="
                         image?.attributes?.formats?.medium
-                          ? openModal(image.attributes.formats.medium.url)
-                          : openModal(image.attributes.formats.small.url)
+                          ? openGalleryModal({
+                              url: image.attributes.formats.medium.url,
+                              caption: image.attributes?.caption || null,
+                            })
+                          : openGalleryModal({
+                              url: image.attributes.formats.small.url,
+                              caption: image.attributes?.caption || null,
+                            })
                       "
                     >
                       <img
@@ -59,7 +65,7 @@
                         "
                       />
                       <div style="font-size: 11px" class="text-left pl-1">
-                        Caption Here
+                        {{ image.attributes?.caption }}
                       </div>
                     </div>
                   </div>
@@ -132,10 +138,16 @@ const getImageCaption = (caption) => {
   }
 };
 
-const openModal = (f) => {
-  let myURL = `https://infonet.icjia-api.cloud${f}`;
-  console.log("Modal: ", myURL);
-  useEvent("modal:gallery", { url: myURL });
+const openModal = (u, c) => {
+  let myURL = `https://infonet.icjia-api.cloud${u}`;
+  console.log("Modal: ", myURL, c);
+  useEvent("modal:gallery", { url: myURL, caption: c });
+};
+
+const openGalleryModal = ({ url, caption }) => {
+  let myURL = `https://infonet.icjia-api.cloud${url}`;
+  console.log("Modal: ", myURL, caption);
+  useEvent("modal:gallery", { url: myURL, caption: caption });
 };
 
 onMounted(() => {
