@@ -72,14 +72,15 @@ const constructURL = (f) => {
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
+  margin: 2% auto;
+  padding: 10px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 .modal-content img {
   width: 100%;
+  max-height: 800px;
 }
 
 /* The Close Button */
@@ -96,4 +97,18 @@ const constructURL = (f) => {
   text-decoration: none;
   cursor: pointer;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    width: 90%; /* Could be more or less, depending on screen size */
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+  .modal-content {
+    width: 40%;
+  }
+} */
 </style>

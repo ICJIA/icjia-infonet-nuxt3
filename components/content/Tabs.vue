@@ -37,7 +37,7 @@
                     "
                   ></div>
 
-                  <div class="gallery text-center">
+                  <div class="gallery" style="margin-left: -10px">
                     <div
                       class="gallery-panel hover"
                       v-for="(image, index) in tab.attributes.images.data"
