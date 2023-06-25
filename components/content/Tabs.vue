@@ -23,7 +23,7 @@
                   v-for="tab in tabContent"
                   :key="`tabContent-${tab.id}`"
                   :value="tab.attributes.slug"
-                  class="py-5 px-5"
+                  class=""
                 >
                   <span
                     class="markdown-body"
@@ -37,7 +37,7 @@
                     "
                   ></div>
 
-                  <div class="gallery" style="margin-left: -10px">
+                  <div class="gallery mt-12" style="margin-left: 0px">
                     <div
                       class="gallery-panel hover"
                       v-for="(image, index) in tab.attributes.images.data"
