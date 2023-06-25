@@ -7,7 +7,7 @@ showTableOfContents: true
 summary: This is the summary for the about page.
 section: root
 createdAt: 2023-04-02T15:04:25.519Z
-updatedAt: 2023-06-25T19:58:58.069Z
+updatedAt: 2023-06-25T20:17:49.743Z
 publishedAt: 2023-04-02T15:04:26.918Z
 searchMeta: null
 category: page
@@ -78,8 +78,8 @@ rawText: " indent margin left 25px infonet overview infonet is a web based data
   sustainability and growth icjia s next venture is the infonet stepping forward
   project which aims to build new automated reporting tools including for pmt
   incorporate more meaningful outcome measures and create a new user interface
-  for prosecution and law enforcement based victim service providers infonet
-  screenshots lazytabs sectionid screenshots "
+  for prosecution and law enforcement based victim service providers video embed
+  here infonet screenshots lazytabs sectionid screenshots "
 draft: false
 navigation: true
 path: /about
@@ -93,6 +93,8 @@ url: https://infonet.icjia.dev/about
  margin-left: 25px
  
  }
+ 
+
   
  </style>
 
@@ -161,12 +163,7 @@ Chicago Department of Family & Support Services’ (CDFSS) Division on Domestic 
 
 ICJIA recently completed the InfoNet 2.0 Project, an effort to completely rebuild the application on a new technology platform. With InfoNet 2.0 now poised for sustainability and growth, ICJIA’s next venture is the InfoNet Stepping Forward Project, which aims to build new automated reporting tools (including for PMT); incorporate more meaningful outcome measures; and create a new user interface for prosecution and law enforcement based victim service providers. 
 
-<div class="text-center mt-5 mb-5 embed">
-  <div class="videoWrapper" style="width: 100%; ">
-           <iframe height="315" width="560" src="https://www.youtube.com/embed/rZ73MJVD_YU" style="border: none  !important;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Engaging Families in Planning and Intervention Thumbnail">
-           </iframe>
-   </div>
-</div>
+-- **Video embed here** --
 
 </div>
 
