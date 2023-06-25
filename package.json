@@ -20,6 +20,7 @@
     "create:pages": "node ./creators/createMarkdownPages.js",
     "create:tabs": "node ./creators/createMarkdownTabs.js",
     "create:publications": "node ./creators/createMarkdownPublications.js",
+    "create:biographies": "node ./creators/createBiographies.js",
     "create:searchIndex": "node  ./creators/createSearchIndex.mjs",
     "create:contentDirectory": "node ./creators/createContentDirectory.js",
     "create:hub": "node ./creators/createHubArticles.mjs",

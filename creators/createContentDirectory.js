@@ -24,6 +24,7 @@ const PUBLIC_FILES_TO_REMOVE = [
   "pages.json",
   "posts.json",
   "hub.json",
+  "biographies.json",
   "tabs.json",
   "publications.json",
   "meetings.json",

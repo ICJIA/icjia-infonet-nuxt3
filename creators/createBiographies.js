@@ -21,5 +21,24 @@ axios
     },
   })
   .then((res) => {
-    console.log(res.data);
+    jsonfile.writeFileSync(
+      `./public/biographies.json`,
+      res.data,
+      function (err) {
+        if (err) {
+          console.error(err);
+        }
+      }
+    );
+
+    jsonfile.writeFileSync(
+      `./assets/json/biographies.json`,
+      res.data,
+      function (err) {
+        if (err) {
+          console.error(err);
+        }
+      }
+    );
+    console.log("Biographies created");
   });
