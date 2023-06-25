@@ -93,28 +93,4 @@ axios
       }
     });
     console.log("tabs.json created in /assets/json/");
-    // const basePath = path.join(contentDir, `tabs`);
-
-    // if (!fs.existsSync(basePath)) {
-    //   fs.mkdirSync(basePath);
-    // }
-
-    // site.forEach((tab) => {
-    //   const basename = tab.attributes.slug;
-    //   const filePath = path.join(
-    //     contentDir,
-    //     `/tabs/${tab.attributes.sectionID}/${basename}.md`
-    //   );
-    //   const directoryPath = path.join(
-    //     contentDir,
-    //     `tabs/${tab.attributes.sectionID}`
-    //   );
-
-    //   if (!fs.existsSync(directoryPath)) {
-    //     fs.mkdirSync(directoryPath);
-    //   }
-
-    //   const content = formatMarkdown(tab.attributes);
-    //   fs.writeFileSync(filePath, content);
-    // });
   });
