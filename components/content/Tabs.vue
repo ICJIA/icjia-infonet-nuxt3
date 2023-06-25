@@ -42,6 +42,11 @@
                       class="gallery-panel hover"
                       v-for="(image, index) in tab.attributes.images.data"
                       :key="`images-${index}`"
+                      @click="
+                        image?.attributes?.formats?.medium
+                          ? openModal(image.attributes.formats.small.url)
+                          : openModal(image.attributes.formats.small.url)
+                      "
                     >
                       <img
                         :src="
@@ -120,6 +125,12 @@ const getImageCaption = (caption) => {
   if (caption) {
     return `<div class="" style="font-size: 10px !important">${caption}</div>`;
   }
+};
+
+const openModal = (f) => {
+  let myURL = `https://infonet.icjia-api.cloud${f}`;
+  console.log("Modal: ", myURL);
+  useEvent("modal:gallery", { url: myURL });
 };
 
 onMounted(() => {

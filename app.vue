@@ -1,6 +1,8 @@
 <template>
   <v-app id="appTop">
+    <ImageModal></ImageModal>
     <TheNav></TheNav>
+
     <ThePageLoader v-if="!isMounted && isHome"> </ThePageLoader>
     <TheSidebar></TheSidebar>
 
