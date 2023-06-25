@@ -81,7 +81,7 @@ const constructURL = (f) => {
   margin: 2% auto;
   padding: 10px;
   border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
+  width: 60%; /* Could be more or less, depending on screen size */
 }
 
 .modal-content img {
