@@ -119,7 +119,7 @@ const props = defineProps({
     default: "",
   },
 });
-console.log(props.sectionID);
+//console.log(props.sectionID);
 const tabs = useState("tabs");
 const tab = ref(null);
 const isMounted = ref(false);
