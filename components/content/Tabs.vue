@@ -52,18 +52,32 @@
                           ? openGalleryModal({
                               url: image.attributes.formats.medium.url,
                               caption: image.attributes?.caption || null,
+                              thumbnail: image.attributes.formats.thumbnail.url,
                             })
                           : openGalleryModal({
                               url: image.attributes.formats.small.url,
                               caption: image.attributes?.caption || null,
+                              thumbnail: image.attributes.formats.thumbnail.url,
                             })
                       "
                     >
-                      <img
+                      <v-img
                         :src="
                           getImageURL(image.attributes.formats.thumbnail.url)
                         "
-                      />
+                        :lazy-src="
+                          getImageURL(image.attributes.formats.thumbnail.url)
+                        "
+                        ><template v-slot:placeholder>
+                          <div
+                            class="d-flex align-center justify-center fill-height"
+                          >
+                            <v-progress-circular
+                              color="grey-lighten-4"
+                              indeterminate
+                            ></v-progress-circular>
+                          </div> </template
+                      ></v-img>
                       <div style="font-size: 11px" class="text-left pl-1">
                         {{ image.attributes?.caption }}
                       </div>
@@ -138,16 +152,15 @@ const getImageCaption = (caption) => {
   }
 };
 
-const openModal = (u, c) => {
-  let myURL = `https://infonet.icjia-api.cloud${u}`;
-  console.log("Modal: ", myURL, c);
-  useEvent("modal:gallery", { url: myURL, caption: c });
-};
-
-const openGalleryModal = ({ url, caption }) => {
+const openGalleryModal = ({ url, caption, thumbnail }) => {
   let myURL = `https://infonet.icjia-api.cloud${url}`;
+  let thumbnailURL = `https://infonet.icjia-api.cloud${thumbnail}`;
   console.log("Modal: ", myURL, caption);
-  useEvent("modal:gallery", { url: myURL, caption: caption });
+  useEvent("modal:gallery", {
+    url: myURL,
+    caption: caption,
+    thumbnail: thumbnailURL,
+  });
 };
 
 onMounted(() => {

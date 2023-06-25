@@ -143,6 +143,8 @@ export default defineNuxtConfig({
   //   download: true,
   //   display: "swap",
   //   prefetch: true,
+  //   base64: false,
+  //   fontsPath: '~assets/fonts'
   //   families: {
   //     Roboto: {
   //       wght: [100, 400, 700, 900],

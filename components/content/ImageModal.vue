@@ -1,9 +1,16 @@
 <template>
   <div class="text-center">
     <div id="myModal" class="modal" @click="closeModal">
-      <!-- Modal content -->
       <div class="modal-content">
-        <img :src="url" :alt="`Image: ${caption}`" />
+        <v-img :src="url" :lazy-src="thumbnail" :alt="`Image: ${caption}`" cover
+          ><template v-slot:placeholder>
+            <div class="d-flex align-center justify-center fill-height">
+              <v-progress-circular
+                color="grey-lighten-4"
+                indeterminate
+              ></v-progress-circular>
+            </div> </template
+        ></v-img>
         <div class="text-left" v-if="caption" style="font-size: 12px">
           {{ caption }}
         </div>
@@ -16,6 +23,7 @@
 let url = ref("");
 let caption = ref("");
 let dialog = ref(false);
+let thumbnail = ref();
 let modal = ref(null);
 console.log("ImageModal.vue loaded.");
 useListen("modal:gallery", (e) => {
@@ -23,6 +31,7 @@ useListen("modal:gallery", (e) => {
   console.log(e.url, e.caption);
   url.value = e.url;
   caption.value = e.caption;
+  thumbnail.value = e.thumbnail;
   dialog.value = true;
 });
 onUnmounted(() => {
@@ -110,11 +119,4 @@ const constructURL = (f) => {
     width: 90%; /* Could be more or less, depending on screen size */
   }
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-  .modal-content {
-    width: 40%;
-  }
-} */
 </style>
