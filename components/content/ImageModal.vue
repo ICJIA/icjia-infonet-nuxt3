@@ -30,7 +30,7 @@ useListen("modal:gallery", (e) => {
   console.log("Event data: ", e);
   console.log(e.url, e.caption);
   url.value = e.url;
-  caption.value = e.caption;
+  caption.value = e.caption || null;
   thumbnail.value = e.thumbnail;
   dialog.value = true;
 });
