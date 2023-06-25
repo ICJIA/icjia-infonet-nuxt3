@@ -55,6 +55,7 @@
     "fuse.js": "^6.6.2",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.6",
+    "mitt": "^3.0.0",
     "moment": "^2.29.4",
     "request": "^2.88.2",
     "sass": "^1.63.4",

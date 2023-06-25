@@ -7,7 +7,7 @@ showTableOfContents: true
 summary: This is the summary for the about page.
 section: root
 createdAt: 2023-04-02T15:04:25.519Z
-updatedAt: 2023-06-23T20:12:38.624Z
+updatedAt: 2023-06-24T22:30:16.602Z
 publishedAt: 2023-04-02T15:04:26.918Z
 searchMeta: null
 category: page
@@ -62,7 +62,7 @@ rawText: " indent margin left 25px infonet overview infonet is a web based data
   services cdfss division on domestic violence leads the city of chicago s multi
   layered response to domestic violence cdfss supports a network of about 20
   service providers that address victims counseling and legal needs infonet
-  screenshots tabs sectionid screenshots "
+  screenshots lazytabs sectionid screenshots "
 draft: false
 navigation: true
 path: /about
@@ -138,7 +138,7 @@ Chicago Department of Family & Support Services’ (CDFSS) Division on Domestic 
 
 ## InfoNet Screenshots
 
-::Tabs
+::LazyTabs
 ---
 sectionID: "screenshots"
 ---

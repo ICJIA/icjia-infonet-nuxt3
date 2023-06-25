@@ -260,7 +260,7 @@ const toggleNav = () => {
 const isHome = ref(true);
 const route = useRoute();
 watchEffect(() => {
-  console.log("route.path: ", route.path);
+  //console.log("route.path: ", route.path);
   if (route.path === "/") {
     isHome.value = true;
   } else {
@@ -274,6 +274,9 @@ const navMenu = JSON.parse(JSON.stringify(appConfig.navMenu));
 const isExternalUrl = (url) => {
   return true;
 };
+
+// capture
+useListen("user:registered", (user) => console.log(user));
 
 onMounted(() => {
   isMounted.value = true;
