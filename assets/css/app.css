@@ -141,3 +141,30 @@ ul.cohort-list li {
     font-size: 2em;
     text-align: center;
 }
+
+/* .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+   
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    padding-right: 25px;
+    width: 50%;
+    height: 50%;
+}
+
+.embed {
+    min-height: 250px !important;
+} */
+
+ .videoWrapper {
+     position: relative;
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }

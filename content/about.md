@@ -7,7 +7,7 @@ showTableOfContents: true
 summary: This is the summary for the about page.
 section: root
 createdAt: 2023-04-02T15:04:25.519Z
-updatedAt: 2023-06-24T22:30:16.602Z
+updatedAt: 2023-06-25T19:23:46.827Z
 publishedAt: 2023-04-02T15:04:26.918Z
 searchMeta: null
 category: page
@@ -61,8 +61,25 @@ rawText: " indent margin left 25px infonet overview infonet is a web based data
   violence and 30 sexual assault centers chicago department of family support
   services cdfss division on domestic violence leads the city of chicago s multi
   layered response to domestic violence cdfss supports a network of about 20
-  service providers that address victims counseling and legal needs infonet
-  screenshots lazytabs sectionid screenshots "
+  service providers that address victims counseling and legal needs national
+  webinar this webinar provides an overview of infonet and lessons learned in
+  its development the system is supported by the illinois criminal justice
+  information authority icjia while system use and requirements are
+  collaboratively governed by icjia the illinois department of human services
+  illinois coalition against domestic violence illinois coalition against sexual
+  assault and children s advocacy centers of illinois local service providers
+  enter victim intake data each service provided and victim interactions with
+  legal and health care systems infonet is used to satisfy various funder
+  requirements including voca vawa stop and sasp and fvpsa infonet is also used
+  to better understand victimization and victim needs in illinois informing
+  strategic planning at state and local levels icjia recently completed the
+  infonet 2 0 project an effort to completely rebuild the application on a new
+  technology platform with infonet 2 0 now poised for sustainability and growth
+  icjia s next venture is the infonet stepping forward project which aims to
+  build new automated reporting tools including for pmt incorporate more
+  meaningful outcome measures and create a new user interface for prosecution
+  and law enforcement based victim service providers infonet screenshots
+  lazytabs sectionid screenshots "
 draft: false
 navigation: true
 path: /about
@@ -133,6 +150,23 @@ Illinois Coalition Against Sexual Assault is a unified network of over 30 rape c
 Illinois Department of Human Services’ (IDHS) Bureau of Domestic Violence, Sexual Assault, and Human Trafficking assists Illinois residents to live free from domestic violence, sexual assault, and human trafficking by promoting prevention and working in partnership with communities in advancing equality, dignity, and respect for all. IDHS administers federal and state funding to over 60 domestic violence and 30 sexual assault centers. 
 
 Chicago Department of Family & Support Services’ (CDFSS) Division on Domestic Violence leads the City of Chicago’s multi-layered response to domestic violence. CDFSS supports a network of about 20 service providers that address victims’ counseling and legal needs. 
+
+</div>
+
+## National Webinar
+
+<div class="indent">
+
+This webinar provides an overview of InfoNet and lessons learned in its development. The system is supported by the Illinois Criminal Justice Information Authority (ICJIA), while system use and requirements are collaboratively governed by ICJIA, the Illinois Department of Human Services, Illinois Coalition Against Domestic Violence, Illinois Coalition Against Sexual Assault, and Children’s Advocacy Centers of Illinois. Local service providers enter victim intake data, each service provided, and victim interactions with legal and health care systems. InfoNet is used to satisfy various funder requirements, including VOCA, VAWA STOP and SASP, and FVPSA. InfoNet is also used to better understand victimization and victim needs in Illinois, informing strategic planning at state and local levels.
+
+ICJIA recently completed the InfoNet 2.0 Project, an effort to completely rebuild the application on a new technology platform. With InfoNet 2.0 now poised for sustainability and growth, ICJIA’s next venture is the InfoNet Stepping Forward Project, which aims to build new automated reporting tools (including for PMT); incorporate more meaningful outcome measures; and create a new user interface for prosecution and law enforcement based victim service providers. 
+
+<div class="text-center mt-5 mb-5 embed">
+  <div class="videoWrapper" style="width: 100%; ">
+           <iframe height="315" width="560" src="https://www.youtube.com/embed/rZ73MJVD_YU" style="border: none  !important;" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Engaging Families in Planning and Intervention Thumbnail">
+           </iframe>
+   </div>
+</div>
 
 </div>
 
