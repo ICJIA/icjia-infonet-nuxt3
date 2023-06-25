@@ -25,6 +25,12 @@ export default defineNuxtConfig({
           content: "InfoNet",
         },
         {
+          hid: "permissions-policy",
+          "http-equiv": "Permissions-Policy",
+
+          content: "interest-cohort=()",
+        },
+        {
           hid: "og-title",
           property: "og:title",
           content: "InfoNet",
