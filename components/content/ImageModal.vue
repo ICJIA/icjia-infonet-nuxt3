@@ -11,7 +11,11 @@
               ></v-progress-circular>
             </div> </template
         ></v-img>
-        <div class="text-left" v-if="caption" style="font-size: 12px">
+        <div
+          class="text-left mt-1 py-2"
+          v-if="caption"
+          style="font-size: 14px; font-weight: 700"
+        >
           {{ caption }}
         </div>
       </div>
