@@ -25,10 +25,15 @@
                   :value="tab.attributes.slug"
                   class=""
                 >
-                  <span
-                    class="markdown-body"
-                    v-html="renderer.render(tab.attributes.body)"
-                  ></span>
+                  <div
+                    class="px-5 py-5"
+                    v-if="tab.attributes.body && tab.attributes.body.length > 0"
+                  >
+                    <span
+                      class="markdown-body"
+                      v-html="renderer.render(tab.attributes.body)"
+                    ></span>
+                  </div>
                   <div
                     v-if="
                       tab.attributes &&
