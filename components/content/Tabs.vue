@@ -44,7 +44,7 @@
                       :key="`images-${index}`"
                       @click="
                         image?.attributes?.formats?.medium
-                          ? openModal(image.attributes.formats.small.url)
+                          ? openModal(image.attributes.formats.medium.url)
                           : openModal(image.attributes.formats.small.url)
                       "
                     >
