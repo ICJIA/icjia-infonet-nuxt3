@@ -7,7 +7,7 @@ showTableOfContents: true
 summary: This is the summary for the about page.
 section: root
 createdAt: 2023-04-02T15:04:25.519Z
-updatedAt: 2023-06-25T19:23:46.827Z
+updatedAt: 2023-06-25T19:58:58.069Z
 publishedAt: 2023-04-02T15:04:26.918Z
 searchMeta: null
 category: page
@@ -62,24 +62,24 @@ rawText: " indent margin left 25px infonet overview infonet is a web based data
   services cdfss division on domestic violence leads the city of chicago s multi
   layered response to domestic violence cdfss supports a network of about 20
   service providers that address victims counseling and legal needs national
-  webinar this webinar provides an overview of infonet and lessons learned in
-  its development the system is supported by the illinois criminal justice
-  information authority icjia while system use and requirements are
-  collaboratively governed by icjia the illinois department of human services
-  illinois coalition against domestic violence illinois coalition against sexual
-  assault and children s advocacy centers of illinois local service providers
-  enter victim intake data each service provided and victim interactions with
-  legal and health care systems infonet is used to satisfy various funder
-  requirements including voca vawa stop and sasp and fvpsa infonet is also used
-  to better understand victimization and victim needs in illinois informing
-  strategic planning at state and local levels icjia recently completed the
-  infonet 2 0 project an effort to completely rebuild the application on a new
-  technology platform with infonet 2 0 now poised for sustainability and growth
-  icjia s next venture is the infonet stepping forward project which aims to
-  build new automated reporting tools including for pmt incorporate more
-  meaningful outcome measures and create a new user interface for prosecution
-  and law enforcement based victim service providers infonet screenshots
-  lazytabs sectionid screenshots "
+  webinar illinois infonet gathering statewide victim services data provides an
+  overview of infonet and lessons learned in its development the system is
+  supported by the illinois criminal justice information authority icjia while
+  system use and requirements are collaboratively governed by icjia the illinois
+  department of human services illinois coalition against domestic violence
+  illinois coalition against sexual assault and children s advocacy centers of
+  illinois local service providers enter victim intake data each service
+  provided and victim interactions with legal and health care systems infonet is
+  used to satisfy various funder requirements including voca vawa stop and sasp
+  and fvpsa infonet is also used to better understand victimization and victim
+  needs in illinois informing strategic planning at state and local levels icjia
+  recently completed the infonet 2 0 project an effort to completely rebuild the
+  application on a new technology platform with infonet 2 0 now poised for
+  sustainability and growth icjia s next venture is the infonet stepping forward
+  project which aims to build new automated reporting tools including for pmt
+  incorporate more meaningful outcome measures and create a new user interface
+  for prosecution and law enforcement based victim service providers infonet
+  screenshots lazytabs sectionid screenshots "
 draft: false
 navigation: true
 path: /about
@@ -157,7 +157,7 @@ Chicago Department of Family & Support Services’ (CDFSS) Division on Domestic 
 
 <div class="indent">
 
-This webinar provides an overview of InfoNet and lessons learned in its development. The system is supported by the Illinois Criminal Justice Information Authority (ICJIA), while system use and requirements are collaboratively governed by ICJIA, the Illinois Department of Human Services, Illinois Coalition Against Domestic Violence, Illinois Coalition Against Sexual Assault, and Children’s Advocacy Centers of Illinois. Local service providers enter victim intake data, each service provided, and victim interactions with legal and health care systems. InfoNet is used to satisfy various funder requirements, including VOCA, VAWA STOP and SASP, and FVPSA. InfoNet is also used to better understand victimization and victim needs in Illinois, informing strategic planning at state and local levels.
+**Illinois InfoNet: Gathering Statewide Victim Services Data** provides an overview of InfoNet and lessons learned in its development. The system is supported by the Illinois Criminal Justice Information Authority (ICJIA), while system use and requirements are collaboratively governed by ICJIA, the Illinois Department of Human Services, Illinois Coalition Against Domestic Violence, Illinois Coalition Against Sexual Assault, and Children’s Advocacy Centers of Illinois. Local service providers enter victim intake data, each service provided, and victim interactions with legal and health care systems. InfoNet is used to satisfy various funder requirements, including VOCA, VAWA STOP and SASP, and FVPSA. InfoNet is also used to better understand victimization and victim needs in Illinois, informing strategic planning at state and local levels.
 
 ICJIA recently completed the InfoNet 2.0 Project, an effort to completely rebuild the application on a new technology platform. With InfoNet 2.0 now poised for sustainability and growth, ICJIA’s next venture is the InfoNet Stepping Forward Project, which aims to build new automated reporting tools (including for PMT); incorporate more meaningful outcome measures; and create a new user interface for prosecution and law enforcement based victim service providers. 
 
