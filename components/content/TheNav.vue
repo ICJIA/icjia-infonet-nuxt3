@@ -275,9 +275,6 @@ const isExternalUrl = (url) => {
   return true;
 };
 
-// capture
-useListen("user:registered", (user) => console.log(user));
-
 onMounted(() => {
   isMounted.value = true;
 });

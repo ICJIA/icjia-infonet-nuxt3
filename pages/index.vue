@@ -409,7 +409,7 @@ const { data: faqs } = await useAsyncData("content-faqs", () =>
 onMounted(() => {
   isMounted.value = true;
   // fire an event
-  useEvent("user:registered", { name: "Chris" });
+  // useEvent("user:registered", { name: "Chris" });
 });
 
 const gotoArticle = (slug) => {
