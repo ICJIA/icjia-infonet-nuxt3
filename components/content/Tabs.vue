@@ -5,6 +5,12 @@
         ><v-col cols="12">
           <div v-if="isMounted">
             <!-- <div class="py-12"><strong>isMobile: </strong>{{ mobile }}</div> -->
+            <div
+              class="text-right mb-2 pr-2"
+              style="font-size: 12px; font-weight: 900; color: #aaa"
+            >
+              Click tab to view content
+            </div>
 
             <v-card v-if="props.sectionID && props.sectionID.length > 0">
               <v-tabs v-model="tab" bg-color="grey-darken-2" grow center-active>
