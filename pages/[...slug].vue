@@ -94,10 +94,7 @@ useHead({
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
             </ContentDoc>
-            <!-- <div v-if="Object.keys(route.query).length">
-              Email subject: {{ route.query.subject }}
-            </div>
-            <div v-else>Email subject: General</div> -->
+
             <div v-if="route.path === '/partners'" class="text-center mt-12">
               <nuxt-link to="/about">More about Infonet&nbsp;&raquo;</nuxt-link>
             </div>

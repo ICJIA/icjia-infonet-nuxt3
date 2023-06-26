@@ -6,8 +6,8 @@
           <div v-if="isMounted">
             <!-- <div class="py-12"><strong>isMobile: </strong>{{ mobile }}</div> -->
             <div
-              class="text-right mb-2 pr-2"
-              style="font-size: 12px; font-weight: 900; color: #aaa"
+              class="text-left mb-2 pr-2"
+              style="font-size: 12px; font-weight: 900; color: #777"
             >
               Click tab to view content
             </div>
