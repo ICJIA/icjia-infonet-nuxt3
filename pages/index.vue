@@ -107,7 +107,7 @@
               <v-btn
                 size="small"
                 variant="text"
-                to="/about"
+                to="/partners"
                 style="font-weight: 700; color: #000 !important"
                 ><span style="color: #000 !important"
                   >List of Partners&nbsp;&raquo;</span
