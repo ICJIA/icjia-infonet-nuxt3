@@ -9,7 +9,7 @@
               class="text-left mb-2 pr-2"
               style="font-size: 12px; font-weight: 900; color: #777"
             >
-              Click tab to view content
+              Click tab to view agency content
             </div>
 
             <v-card v-if="props.sectionID && props.sectionID.length > 0">
