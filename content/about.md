@@ -7,7 +7,7 @@ showTableOfContents: true
 summary: This is the summary for the about page.
 section: root
 createdAt: 2023-04-02T15:04:25.519Z
-updatedAt: 2023-06-25T20:17:49.743Z
+updatedAt: 2023-06-26T11:52:34.317Z
 publishedAt: 2023-04-02T15:04:26.918Z
 searchMeta: null
 category: page
@@ -78,8 +78,8 @@ rawText: " indent margin left 25px infonet overview infonet is a web based data
   sustainability and growth icjia s next venture is the infonet stepping forward
   project which aims to build new automated reporting tools including for pmt
   incorporate more meaningful outcome measures and create a new user interface
-  for prosecution and law enforcement based victim service providers video embed
-  here infonet screenshots lazytabs sectionid screenshots "
+  for prosecution and law enforcement based victim service providers infonet
+  screenshots lazytabs sectionid screenshots "
 draft: false
 navigation: true
 path: /about
@@ -163,7 +163,11 @@ Chicago Department of Family & Support Services’ (CDFSS) Division on Domestic 
 
 ICJIA recently completed the InfoNet 2.0 Project, an effort to completely rebuild the application on a new technology platform. With InfoNet 2.0 now poised for sustainability and growth, ICJIA’s next venture is the InfoNet Stepping Forward Project, which aims to build new automated reporting tools (including for PMT); incorporate more meaningful outcome measures; and create a new user interface for prosecution and law enforcement based victim service providers. 
 
--- **Video embed here** --
+<div class="text-center mt-8 mb-8">
+
+<iframe class="video" src="https://www.youtube.com/embed/rZ73MJVD_YU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;"></iframe>
+
+</div>
 
 </div>
 
