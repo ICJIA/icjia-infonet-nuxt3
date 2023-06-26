@@ -80,6 +80,7 @@ axios
     let section;
     const site = items.map((item) => {
       const obj = { ...item };
+      obj.attributes.markdown = item.attributes.body;
       obj.attributes.postDate = obj.attributes.dateOverride
         ? new Date(obj.attributes.dateOverride)
         : obj.attributes.publishedAt;

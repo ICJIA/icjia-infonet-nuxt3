@@ -42,6 +42,7 @@ axios
       obj.attributes.body = obj.attributes.answer;
       obj.attributes.path = `/faqs/${item.attributes.slug}`;
       obj.attributes.url = `${SITE_URL}${obj.attributes.path}`;
+      obj.attributes.markdown = item.attributes.body;
 
       if (item.attributes.searchMeta) {
         obj.attributes.searchMeta = "faq " + item.attributes.searchMeta;

@@ -15,7 +15,7 @@ summary: InfoNet is a web-based data/case management system used by over 100
   Chicago Department of Family & Support Services.
 section: root
 createdAt: 2023-04-02T15:04:25.519Z
-updatedAt: 2023-06-26T15:16:55.069Z
+updatedAt: 2023-06-26T16:45:45.780Z
 publishedAt: 2023-04-02T15:04:26.918Z
 searchMeta: null
 category: page
@@ -45,37 +45,11 @@ rawText: " indent margin left 25px infonet overview infonet is a web based data
   conducts research using infonet data and helps test infonet upgrades kirthi
   ravi infonet developer kirthi writes code for infonet to create new functions
   and tools for users ziaul z hasan infonet developer z writes code for infonet
-  to create new functions and tools for users infonet partners illinois criminal
-  justice information authority icjia https icjia illinois gov is the lead
-  agency responsible for housing and supporting infonet icjia staff oversee
-  infonet s design and upgrades provide training and technical assistance to
-  users use infonet s data for research and planning and works with partners to
-  govern infonet s use and growth all four infonet partners below work routinely
-  with icjia to govern infonet s use and data requirements use infonet s data
-  for grant monitoring research and strategic planning and cohosting
-  facilitating forums and or relaying feedback from the field about how infonet
-  can be improved illinois coalition against domestic violence icadv https www
-  ilcadv org is a membership organization working to eliminate domestic violence
-  in illinois and increase access to ever improving services for survivors of
-  all backgrounds icadv serves over 50 domestic violence programs statewide that
-  provide direct service to survivors and their dependent children illinois
-  coalition against sexual assault https icasa org is a unified network of over
-  30 rape crisis centers envisioning a world free of sexual violence and working
-  together to end sexual violence in illinois illinois department of human
-  services idhs https www dhs state il us page aspx bureau of domestic violence
-  sexual assault and human trafficking assists illinois residents to live free
-  from domestic violence sexual assault and human trafficking by promoting
-  prevention and working in partnership with communities in advancing equality
-  dignity and respect for all idhs administers federal and state funding to over
-  60 domestic violence and 30 sexual assault centers chicago department of
-  family support services cdfss https www chicago gov city en depts fss html
-  division on domestic violence leads the city of chicago s multi layered
-  response to domestic violence cdfss supports a network of about 20 service
-  providers that address victims counseling and legal needs infonet user
-  agencies coming soon national webinar illinois infonet gathering statewide
-  victim services data provides an overview of infonet and lessons learned in
-  its development the system is supported by the illinois criminal justice
-  information authority icjia while system use and requirements are
+  to create new functions and tools for users infonet partners partners infonet
+  user agencies coming soon national webinar illinois infonet gathering
+  statewide victim services data provides an overview of infonet and lessons
+  learned in its development the system is supported by the illinois criminal
+  justice information authority icjia while system use and requirements are
   collaboratively governed by icjia the illinois department of human services
   illinois coalition against domestic violence illinois coalition against sexual
   assault and children s advocacy centers of illinois local service providers
@@ -92,6 +66,135 @@ rawText: " indent margin left 25px infonet overview infonet is a web based data
   and law enforcement based victim service providers infonet screenshots
   lazytabs sectionid screenshots "
 draft: false
+markdown: >-
+  <style>
+
+   .indent {
+   
+   margin-left: 25px
+   
+   }
+   
+
+    
+   </style>
+
+
+
+  ## InfoNet overview
+
+
+  <div class="indent">
+
+
+  InfoNet is a web-based data/case management system used by over 100 domestic and sexual violence service providers in Illinois. The system is nationally recognized for facilitating standardized data collection and reporting at the statewide level. Initial development of InfoNet began in the mid-90s as a collaborative effort between the Illinois Criminal Justice Information Authority, the Illinois Coalition Against Domestic Violence, and the Illinois Coalition Against Sexual Assault. Since then, InfoNet has grown to include partnerships with the Illinois Department of Human Services and the Chicago Department of Family & Support Services. 
+
+
+  The primary purposes of InfoNet are to:
+
+
+  -	Standardize data collection and reporting, improving the ability to analyze information statewide and locally.
+
+
+  - 	Provide a central repository for statewide victim service data.
+
+
+  -	Ease reporting for victim service providers that receive grants from multiple funding agencies, which often require different types of information.
+
+
+  -	Facilitate continuous strategic planning for improving services and system response to victims.
+
+
+  </div>
+
+
+
+  ## InfoNet team
+
+
+  <div class="indent">
+
+
+  **Jennifer Hiselman, InfoNet Manager**: Jennifer oversees InfoNet’s operation, provides training and assistance to users, and works with users and other stakeholders to improve and maximize InfoNet’s utility. 
+  		
+  **Ming Xie, Lead InfoNet Developer**: Ming leads InfoNet’s development work, overseeing all InfoNet maintenance and upgrades. 
+
+
+  **L. Fernanda Gonzalez, Research Scientist**: Fernanda assists with training and user requests for data and/or assistance, and conducts research using InfoNet data. 
+
+
+  **Caleb Schaffner, Research Scientist**: Caleb assists with training and user requests for data and/or assistance, conducts research using InfoNet data, and helps test InfoNet upgrades. 
+
+
+  **Kirthi Ravi, InfoNet Developer**: Kirthi writes code for InfoNet to create new functions and tools for users. 
+
+
+  **Ziaul “Z” Hasan, InfoNet Developer**: Z writes code for InfoNet to create new functions and tools for users. 
+
+
+  </div>
+
+
+  ## InfoNet partners
+
+
+  <div class="">
+
+
+  :Partners
+
+
+  </div>
+
+
+  ## InfoNet User Agencies
+
+
+  <div class="indent">
+
+
+  **Coming Soon**
+
+
+  </div>
+
+
+  ## National Webinar
+
+
+  <div class="indent">
+
+
+  **Illinois InfoNet: Gathering Statewide Victim Services Data** provides an overview of InfoNet and lessons learned in its development. The system is supported by the Illinois Criminal Justice Information Authority (ICJIA), while system use and requirements are collaboratively governed by ICJIA, the Illinois Department of Human Services, Illinois Coalition Against Domestic Violence, Illinois Coalition Against Sexual Assault, and Children’s Advocacy Centers of Illinois. Local service providers enter victim intake data, each service provided, and victim interactions with legal and health care systems. InfoNet is used to satisfy various funder requirements, including VOCA, VAWA STOP and SASP, and FVPSA. InfoNet is also used to better understand victimization and victim needs in Illinois, informing strategic planning at state and local levels.
+
+
+  ICJIA recently completed the InfoNet 2.0 Project, an effort to completely rebuild the application on a new technology platform. With InfoNet 2.0 now poised for sustainability and growth, ICJIA’s next venture is the InfoNet Stepping Forward Project, which aims to build new automated reporting tools (including for PMT); incorporate more meaningful outcome measures; and create a new user interface for prosecution and law enforcement based victim service providers. 
+
+
+  <div class="text-center mt-8 mb-8">
+
+
+  <iframe class="video" src="https://www.youtube.com/embed/rZ73MJVD_YU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;"></iframe>
+
+
+  </div>
+
+
+  </div>
+
+
+  ## InfoNet Screenshots
+
+
+  ::LazyTabs
+
+  ---
+
+  sectionID: "screenshots"
+
+  ---
+
+  ::
 navigation: true
 path: /about
 url: https://infonet.icjia.dev/about
@@ -150,19 +253,9 @@ The primary purposes of InfoNet are to:
 
 ## InfoNet partners
 
-<div class="indent">
+<div class="">
 
-[Illinois Criminal Justice Information Authority (ICJIA)](https://icjia.illinois.gov) is the lead agency responsible for housing and supporting InfoNet. ICJIA staff oversee InfoNet’s design and upgrades, provide training and technical assistance to users, use InfoNet’s data for research and planning, and works with partners to govern InfoNet’s use and growth. 
-
-All four InfoNet partners below work routinely with ICJIA to govern InfoNet’s use and data requirements; use InfoNet’s data for grant monitoring, research, and strategic planning; and cohosting/facilitating forums and/or relaying feedback from the field about how InfoNet can be improved.   
-
-[Illinois Coalition Against Domestic Violence (ICADV)](https://www.ilcadv.org/) is a membership organization working to eliminate domestic violence in Illinois and increase access to ever-improving services for survivors of all backgrounds. ICADV serves over 50 domestic violence programs statewide that provide direct service to survivors and their dependent children. 
-
-[Illinois Coalition Against Sexual Assault](https://icasa.org/) is a unified network of over 30 rape crisis centers, envisioning a world free of sexual violence, and working together to end sexual violence in Illinois. 
-
-[Illinois Department of Human Services’ (IDHS)](https://www.dhs.state.il.us/page.aspx) Bureau of Domestic Violence, Sexual Assault, and Human Trafficking assists Illinois residents to live free from domestic violence, sexual assault, and human trafficking by promoting prevention and working in partnership with communities in advancing equality, dignity, and respect for all. IDHS administers federal and state funding to over 60 domestic violence and 30 sexual assault centers. 
-
-[Chicago Department of Family & Support Services’ (CDFSS)](https://www.chicago.gov/city/en/depts/fss.html) Division on Domestic Violence leads the City of Chicago’s multi-layered response to domestic violence. CDFSS supports a network of about 20 service providers that address victims’ counseling and legal needs. 
+:Partners
 
 </div>
 

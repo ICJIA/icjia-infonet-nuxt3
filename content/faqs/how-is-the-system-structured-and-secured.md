@@ -30,6 +30,15 @@ title: How is the system structured and secured?
 summary: How is the system structured and secured?
 path: /faqs/how-is-the-system-structured-and-secured
 url: https://infonet.icjia.dev/faqs/how-is-the-system-structured-and-secured
+markdown: >-
+  Remote users access InfoNet via the Internet. Several levels of security have
+  been built into the system, including password protection at the
+  organizational, individual and device levels. InfoNet uses a virtual private
+  network (VPN) that encrypts data securely as it transports information between
+  users and Authority InfoNet servers.
+
+
+  This centralized system shifts technical responsibilities for maintaining a data collection and reporting system from service providers, which often have little to no resources for information technology, to technical professionals at ICJIA. Service providers may use InfoNet at no cost, but they are responsible for obtaining a device that meets minimum specifications and an Internet connection.
 searchMeta: "faq  "
 ---
 

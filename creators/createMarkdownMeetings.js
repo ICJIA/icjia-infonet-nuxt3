@@ -72,7 +72,7 @@ axios
     const site = items.map((item) => {
       const obj = { ...item };
       let rawText;
-
+      obj.attributes.markdown = item.attributes.body;
       rawText = obj.attributes?.body
         ?.replace(/<[^>]*>?/gm, "")
         .replace(/[^a-z0-9]/gi, " ");

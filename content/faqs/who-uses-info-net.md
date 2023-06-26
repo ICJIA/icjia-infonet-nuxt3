@@ -29,6 +29,16 @@ title: Who uses InfoNet?
 summary: Who uses InfoNet?
 path: /faqs/who-uses-info-net
 url: https://infonet.icjia.dev/faqs/who-uses-info-net
+markdown: >-
+  Three types of service providers use InfoNet: child advocacy, domestic
+  violence, and sexual assault cetners. Data from all three types are maintained
+  in one system, but user interfaces are tailored to the unique needs of each
+  type. A total of 109 local service providers access InfoNet from nearly 200
+  sites statewide. They include 67 domestic violence centers, 34 sexual assault
+  centers and eight child advocacy centers.
+
+
+  In addition to ICJIA, ICADV, ICASA and DHS access InfoNet for grant monitoring, informing funding priorities, and strategic planning.
 searchMeta: "faq  "
 ---
 

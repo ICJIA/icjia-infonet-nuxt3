@@ -13,6 +13,7 @@ searchMeta: null
 category: page
 rawText: "contact page and form goes here "
 draft: false
+markdown: Contact page and form goes here.
 navigation: true
 path: /contact
 url: https://infonet.icjia.dev/contact

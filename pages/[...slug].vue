@@ -98,6 +98,9 @@ useHead({
               Email subject: {{ route.query.subject }}
             </div>
             <div v-else>Email subject: General</div> -->
+            <div v-if="route.path === '/partners'" class="text-center mt-12">
+              <nuxt-link to="/about">More about Infonet&nbsp;&raquo;</nuxt-link>
+            </div>
           </div>
           <div v-else>{{ redirect() }}</div>
         </v-col>

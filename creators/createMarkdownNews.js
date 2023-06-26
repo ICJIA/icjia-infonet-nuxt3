@@ -84,6 +84,7 @@ axios
         ? moment(obj.attributes.dateOverride).format()
         : moment(obj.attributes.publishedAt).format();
       let rawText;
+      obj.attributes.markdown = post.attributes.body;
 
       rawText = obj.attributes?.body
         ?.replace(/<[^>]*>?/gm, "")

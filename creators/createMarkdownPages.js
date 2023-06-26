@@ -67,6 +67,7 @@ axios
       rawText = rawText.replace(/\s\s+/g, " ");
       obj.attributes.rawText = rawText.toLowerCase();
       obj.attributes.draft = false;
+      obj.attributes.markdown = page.attributes.body;
 
       obj.attributes.navigation = true;
       if (page.attributes.section !== "root") {
