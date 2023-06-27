@@ -128,7 +128,18 @@
                     max-height="600"
                     alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
                     src="/home-splash-v3.jpg"
+                    lazy-src="https://infonet.icjia-api.cloud/uploads/home_splash_v3_11c9ca82eb.jpg"
                     @click="$router.push('/about')"
+                  >
+                    <template v-slot:placeholder>
+                      <div
+                        class="d-flex align-center justify-center fill-height"
+                      >
+                        <v-progress-circular
+                          color="grey-lighten-4"
+                          indeterminate
+                        ></v-progress-circular>
+                      </div> </template
                   ></v-img>
                 </template>
                 <span class="mt-3"
