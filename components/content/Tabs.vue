@@ -6,10 +6,10 @@
           <div v-if="isMounted">
             <!-- <div class="py-12"><strong>isMobile: </strong>{{ mobile }}</div> -->
             <div
-              class="text-left mb-2 pr-2"
+              class="text-center mb-4 pr-2"
               style="font-size: 12px; font-weight: 900; color: #777"
             >
-              Click tab to view agency content
+              Click tab to view agency info
             </div>
 
             <v-card v-if="props.sectionID && props.sectionID.length > 0">
