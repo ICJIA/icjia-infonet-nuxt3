@@ -145,7 +145,14 @@ useHead({
                 :src="`https://infonet.icjia-api.cloud${data.splash.data.attributes.formats.medium.url}`"
                 :lazy-src="`https://infonet.icjia-api.cloud${data.splash.data.attributes.formats.thumbnail.url}`"
                 height="550"
-              />
+                ><template v-slot:placeholder>
+                  <div class="d-flex align-center justify-center fill-height">
+                    <v-progress-circular
+                      color="grey-lighten-4"
+                      indeterminate
+                    ></v-progress-circular>
+                  </div> </template
+              ></v-img>
               <div
                 style="font-size: 12px; color: #666; font-weight: 700"
                 class="mt-2 pl-1 mb-12"
