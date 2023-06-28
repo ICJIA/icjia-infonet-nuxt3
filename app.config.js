@@ -92,8 +92,15 @@ export default defineAppConfig({
           link: "/partners",
         },
         {
+          divider: true,
+        },
+        {
           title: "News & Updates",
           link: "/news",
+        },
+        {
+          title: "Screenshots",
+          link: "/screenshots",
         },
       ],
     },
@@ -135,6 +142,7 @@ export default defineAppConfig({
           title: "FAQs",
           link: "/faqs",
         },
+
         {
           title: "Infonet Partners",
           link: "/partners",
@@ -142,6 +150,10 @@ export default defineAppConfig({
         {
           title: "News & Updates",
           link: "/news",
+        },
+        {
+          title: "Screenshots",
+          link: "/screenshots",
         },
       ],
     },

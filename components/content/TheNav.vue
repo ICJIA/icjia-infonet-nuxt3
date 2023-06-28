@@ -206,7 +206,7 @@
             </template>
 
             <v-list>
-              <v-list-item exact to="/search">
+              <v-list-item exact to="/contact">
                 <v-list-item-title style="font-size: 16px; font-weight: 700"
                   ><v-icon size="x-small" icon="mdi-mail" left></v-icon
                   >&nbsp;&nbsp;Contact</v-list-item-title
