@@ -179,7 +179,7 @@
           </span>
         </span>
 
-        <v-btn
+        <!-- <v-btn
           variant="text"
           aria-label="Search"
           size="default"
@@ -201,12 +201,13 @@
         >
           <v-tooltip activator="parent" location="bottom"> Translate </v-tooltip
           ><v-icon icon="mdi-web" size="large"></v-icon
-        ></v-btn>
+        ></v-btn> -->
 
         <!-- <v-btn icon class="hidden-lg-and-up hidden-sm-and-down">
           <v-icon>mdi-dots-vertical</v-icon>
         </v-btn> -->
-        <span class="hidden-lg-and-up hidden-sm-and-down">
+        <!-- <span class="hidden-lg-and-up hidden-sm-and-down"> -->
+        <span class="hidden-sm-and-down">
           <v-tooltip activator="parent" location="bottom"> More </v-tooltip>
           <v-menu transition="scale-transition">
             <template #activator="{ props }">

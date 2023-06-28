@@ -2,6 +2,7 @@
 import appRoutes from "assets/json/appRoutes.json";
 const { path } = useRoute();
 const router = useRouter();
+const isMounted = ref(false);
 
 const showTOC = ref(false);
 const cols = ref(12);
@@ -26,24 +27,25 @@ onBeforeMount(() => {
   if (!isValidRoute) {
     throw showError({ statusCode: 404, statusMessage: "Page Not Found" });
   }
-}),
-  onMounted(() => {
-    if (data.value.showTableOfContents) {
-      showTOC.value = true;
-      cols.value = 9;
-      console.log("showTOC", showTOC.value);
-      sections = Array.from(document.querySelectorAll("h2"));
-      myToc = sections.map((section) => {
-        return {
-          id: section.id,
-          depth: 2,
-          text: section.innerText,
-        };
-      });
+});
+onMounted(() => {
+  isMounted.value = true;
+  if (data.value.showTableOfContents) {
+    showTOC.value = true;
+    cols.value = 9;
+    console.log("showTOC", showTOC.value);
+    sections = Array.from(document.querySelectorAll("h2"));
+    myToc = sections.map((section) => {
+      return {
+        id: section.id,
+        depth: 2,
+        text: section.innerText,
+      };
+    });
 
-      myTocObj = { title: "", searchDepth: 2, depth: 2, links: myToc };
-    }
-  });
+    myTocObj = { title: "", searchDepth: 2, depth: 2, links: myToc };
+  }
+});
 
 const desc = data.value.summary ? data.value.summary : data.value.title;
 
@@ -113,7 +115,7 @@ useHead({
 </script>
 
 <template>
-  <div class="pb-12" data-aos="fade-in">
+  <div class="pb-12">
     <v-container fluid style="margin: 0; padding: 0"
       ><v-row
         ><v-col cols="12" :md="cols">

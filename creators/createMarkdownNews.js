@@ -78,18 +78,20 @@ axios
     const posts = res.data.data.posts.data;
 
     let section;
+    let rawText;
     const site = posts.map((post) => {
       const obj = { ...post };
       obj.attributes.postDate = obj.attributes.dateOverride
         ? moment(obj.attributes.dateOverride).format()
         : moment(obj.attributes.publishedAt).format();
-      let rawText;
+
       obj.attributes.markdown = post.attributes.body;
 
       rawText = obj.attributes?.body
         ?.replace(/<[^>]*>?/gm, "")
         .replace(/[^a-z0-9]/gi, " ");
       rawText = rawText.replace(/\s\s+/g, " ");
+      obj.attributes.rawText = rawText.toLowerCase();
       obj.attributes.rawText = rawText.toLowerCase();
       obj.attributes.draft = false;
 
