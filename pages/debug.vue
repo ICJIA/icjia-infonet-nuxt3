@@ -1,5 +1,5 @@
 <template>
-  <div>Debug info here</div>
+  <div>Temporary debug info here</div>
 </template>
 
 <script setup></script>
