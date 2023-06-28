@@ -5,7 +5,8 @@
         <NuxtLink :to="item.link" class="context-link">{{
           item.main
         }}</NuxtLink>
-        <span v-if="menuLength - 1 !== index"> | </span>
+        <!-- <span v-if="menuLength - 1 !== index"> | </span> -->
+        <span v-if="menuLength - 1 !== index">&nbsp;</span>
       </span>
     </div>
   </nav>

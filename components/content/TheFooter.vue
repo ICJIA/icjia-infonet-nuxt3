@@ -20,20 +20,15 @@
               class="text-center mt-2"
               style="color: white"
             >
-              <!-- <div>
+              <div>
                 <img
                   src="https://infonet.icjia.dev/icjia-logo.png"
                   alt="Footer logo"
-                  width="250"
+                  width="150"
                   style="border: 0px solid #ddd; display: inline"
                   class="hover"
-                  @click="
-                    $router.push('/').catch((err) => {
-                      $vuetify.goTo(0);
-                    })
-                  "
                 />
-              </div> -->
+              </div>
 
               <div class="pb-6" style="margin-top: -0px">
                 <v-btn
