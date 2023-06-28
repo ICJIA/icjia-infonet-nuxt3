@@ -30,6 +30,18 @@ export default defineAppConfig({
       main: "News & Updates",
       link: "/news",
     },
+    {
+      main: "Resources",
+      link: "/resources",
+    },
+    {
+      main: "Upgrades",
+      link: "/upgrades",
+    },
+    {
+      main: "Publications",
+      link: "/publications",
+    },
     // {
     //   main: "Meetings",
     //   link: "/meetings",
@@ -56,13 +68,38 @@ export default defineAppConfig({
   ],
 
   navMenu: [
-    {
-      main: "Home",
-      link: "/",
-    },
+    // {
+    //   main: "Home",
+    //   link: "/",
+    // },
     {
       main: "About",
       link: "/about",
+    },
+    {
+      main: "Resources",
+      children: [
+        // {
+        //   "section": "Illinois Statistical Analysis Center (SAC)"
+        // },
+        {
+          title: "Frequently Asked Questions (FAQs)",
+          link: "/faqs",
+        },
+
+        {
+          title: "Data & Publications",
+          link: "/publications",
+        },
+        {
+          title: "Upgrades",
+          link: "/upgrades",
+        },
+        {
+          title: "User Info & Resources",
+          link: "/resources",
+        },
+      ],
     },
   ],
   sidebarMenu: [
@@ -80,8 +117,20 @@ export default defineAppConfig({
       link: "/faqs",
     },
     {
-      main: "News & Updates",
+      main: "News",
       link: "/news",
+    },
+    {
+      main: "Resources",
+      link: "/resources",
+    },
+    {
+      main: "Upgrades",
+      link: "/upgrades",
+    },
+    {
+      main: "Publications",
+      link: "/publications",
     },
   ],
 });

@@ -63,7 +63,7 @@
                 letter-spacing: 0px;
                 font-family: 'Raleway', sans-serif;
               "
-              class="mb-12"
+              class="mb-12 hidden-sm-and-down"
               >DATA COLLECTION & REPORTING SYSTEM</span
             ></span
           >
@@ -110,7 +110,13 @@
         <span
           v-for="(menu, index) in navMenu"
           :key="`main-${index}`"
-          style="display: inline-block"
+          style="
+            display: inline-block;
+            font-weight: 900 !important;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif !important;
+            font-weight: 900;
+          "
         >
           <span v-if="menu && menu?.children">
             <v-menu>
@@ -134,7 +140,12 @@
                   <v-divider v-if="child.divider"></v-divider>
                   <v-list-item-title
                     v-if="child.section"
-                    style="margin-top: 10px; font-weight: 900; color: #555"
+                    style="
+                      margin-top: 10px;
+                      font-weight: 900;
+                      color: #555;
+                      font-family: 'Roboto', sans-serif !important;
+                    "
                     class="pr-5"
                     >{{ child.section }}</v-list-item-title
                   >
@@ -144,8 +155,13 @@
                     :to="child?.external ? null : child?.link"
                     :href="child?.external ? child?.link : null"
                     :target="child?.external ? '_blank' : null"
+                    style="font-weight: 900"
                   >
-                    <v-list-item-title style="font-size: 12px !important"
+                    <v-list-item-title
+                      style="
+                        font-size: 12px !important;
+                        font-weight: 700 !important;
+                      "
                       >{{ child.title }}
                       <span v-if="child?.external">External</span>
                       <v-icon v-if="child.icon" small right color="black">{{
@@ -168,7 +184,7 @@
               class="hidden-sm-and-down navItem"
               style="
                 font-weight: 900 !important;
-                font-size: 18px;
+                font-size: 16px;
                 font-family: 'Roboto', sans-serif !important;
               "
               >{{ menu.main }}&nbsp;
@@ -179,33 +195,6 @@
           </span>
         </span>
 
-        <!-- <v-btn
-          variant="text"
-          aria-label="Search"
-          size="default"
-          class="hidden-md-and-down navItem"
-          style="font-weight: 900 !important; font-size: 16px"
-          @click="goToSearch"
-        >
-          <v-tooltip activator="parent" location="bottom"> Search </v-tooltip>
-          <v-icon icon="mdi-magnify" size="large"></v-icon>
-        </v-btn>
-
-        <v-btn
-          v-if="isTranslationEnabled"
-          size="default"
-          aria-label="Translate"
-          class="hidden-md-and-down navItem"
-          style="font-weight: 900 !important; font-size: 16px"
-          @click="goToTranslate"
-        >
-          <v-tooltip activator="parent" location="bottom"> Translate </v-tooltip
-          ><v-icon icon="mdi-web" size="large"></v-icon
-        ></v-btn> -->
-
-        <!-- <v-btn icon class="hidden-lg-and-up hidden-sm-and-down">
-          <v-icon>mdi-dots-vertical</v-icon>
-        </v-btn> -->
         <!-- <span class="hidden-lg-and-up hidden-sm-and-down"> -->
         <span class="hidden-sm-and-down">
           <v-tooltip activator="parent" location="bottom"> More </v-tooltip>
@@ -217,6 +206,12 @@
             </template>
 
             <v-list>
+              <v-list-item exact to="/search">
+                <v-list-item-title style="font-size: 16px; font-weight: 700"
+                  ><v-icon size="x-small" icon="mdi-mail" left></v-icon
+                  >&nbsp;&nbsp;Contact</v-list-item-title
+                >
+              </v-list-item>
               <v-list-item exact to="/search">
                 <v-list-item-title style="font-size: 16px; font-weight: 700"
                   ><v-icon size="x-small" icon="mdi-magnify" left></v-icon
