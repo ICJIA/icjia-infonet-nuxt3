@@ -68,25 +68,38 @@ export default defineAppConfig({
   ],
 
   navMenu: [
-    // {
-    //   main: "Home",
-    //   link: "/",
-    // },
+    {
+      main: "Home",
+      link: "/",
+    },
     {
       main: "About",
       link: "/about",
-    },
-    {
-      main: "Resources",
       children: [
         // {
         //   "section": "Illinois Statistical Analysis Center (SAC)"
         // },
         {
+          title: "About InfoNet",
+          link: "/about",
+        },
+        {
           title: "Frequently Asked Questions (FAQs)",
           link: "/faqs",
         },
-
+        {
+          title: "Infonet Partners",
+          link: "/partners",
+        },
+        {
+          title: "News & Updates",
+          link: "/news",
+        },
+      ],
+    },
+    {
+      main: "Resources",
+      children: [
         {
           title: "Data & Publications",
           link: "/publications",
@@ -110,27 +123,45 @@ export default defineAppConfig({
     {
       main: "About",
       link: "/about",
+      children: [
+        // {
+        //   "section": "Illinois Statistical Analysis Center (SAC)"
+        // },
+        {
+          title: "About InfoNet",
+          link: "/about",
+        },
+        {
+          title: "FAQs",
+          link: "/faqs",
+        },
+        {
+          title: "Infonet Partners",
+          link: "/partners",
+        },
+        {
+          title: "News & Updates",
+          link: "/news",
+        },
+      ],
     },
 
     {
-      main: "FAQs",
-      link: "/faqs",
-    },
-    {
-      main: "News",
-      link: "/news",
-    },
-    {
       main: "Resources",
-      link: "/resources",
-    },
-    {
-      main: "Upgrades",
-      link: "/upgrades",
-    },
-    {
-      main: "Publications",
-      link: "/publications",
+      children: [
+        {
+          title: "Data & Publications",
+          link: "/publications",
+        },
+        {
+          title: "Upgrades",
+          link: "/upgrades",
+        },
+        {
+          title: "User Info & Resources",
+          link: "/resources",
+        },
+      ],
     },
   ],
 });
