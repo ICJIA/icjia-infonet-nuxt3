@@ -39,7 +39,7 @@ export default defineAppConfig({
       link: "/upgrades",
     },
     {
-      main: "Publications",
+      main: "Data & Publications",
       link: "/publications",
     },
     // {
@@ -61,10 +61,6 @@ export default defineAppConfig({
       main: "Search",
       link: "/search",
     },
-    {
-      main: "Translate",
-      link: "/translate",
-    },
   ],
 
   navMenu: [
@@ -83,10 +79,7 @@ export default defineAppConfig({
           title: "About InfoNet",
           link: "/about",
         },
-        {
-          title: "Frequently Asked Questions (FAQs)",
-          link: "/faqs",
-        },
+
         {
           title: "Infonet Partners",
           link: "/partners",
@@ -101,6 +94,10 @@ export default defineAppConfig({
         {
           title: "Screenshots",
           link: "/screenshots",
+        },
+        {
+          title: "Frequently Asked Questions (FAQs)",
+          link: "/faqs",
         },
       ],
     },
@@ -138,14 +135,14 @@ export default defineAppConfig({
           title: "About InfoNet",
           link: "/about",
         },
-        {
-          title: "FAQs",
-          link: "/faqs",
-        },
 
         {
           title: "Infonet Partners",
           link: "/partners",
+        },
+        {
+          title: "FAQs",
+          link: "/faqs",
         },
         {
           title: "News & Updates",

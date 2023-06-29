@@ -99,7 +99,7 @@ const constructURL = (f) => {
 
 .modal-content img {
   width: 100%;
-  max-height: 800px;
+  max-height: 700px;
 }
 
 /* The Close Button */
