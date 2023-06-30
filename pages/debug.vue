@@ -1,5 +1,7 @@
 <template>
-  <div>Temporary debug info here</div>
+  <div>
+    <TheHomeBarGraph />
+  </div>
 </template>
 
 <script setup></script>

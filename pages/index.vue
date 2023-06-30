@@ -119,7 +119,19 @@
         <v-col cols="12" md="6" class="mb-8">
           <div class="flex-container">
             <div class="flex-row">
-              <v-tooltip location="bottom">
+              <TheHomeBarGraph />
+              <div class="text-center">
+                <v-btn
+                  size="small"
+                  variant="text"
+                  to="/about"
+                  style="font-weight: 700; color: #000 !important"
+                  ><span style="color: #000 !important"
+                    >More about InfoNet&nbsp;&raquo;</span
+                  ></v-btn
+                >
+              </div>
+              <!-- <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
                   <v-img
                     v-bind="props"
@@ -145,7 +157,7 @@
                 <span class="mt-3"
                   >Click chart for more information about InfoNet</span
                 >
-              </v-tooltip>
+              </v-tooltip> -->
             </div>
           </div>
         </v-col></v-row
