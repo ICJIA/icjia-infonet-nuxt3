@@ -1,5 +1,8 @@
 <template>
-  <div class="text-center">
+  <div
+    class="text-center px-8 py-8 elevation-2"
+    style="background: #fff; border: 1px solid #eee"
+  >
     <h2 style="border: none; font-size: 18px">
       Domestic and Sexual Assault Victims Who Received Service in Illinois,
       2018-2022
@@ -7,6 +10,17 @@
     <h3 style="border: none; font-size: 12px">Source: InfoNet System</h3>
     <div style="min-height: 25vh" class="pt-3 pb-10">
       <Bar :data="chartData" :options="chartOptions" />
+    </div>
+    <div class="text-center">
+      <v-btn
+        size="small"
+        variant="text"
+        to="/about"
+        style="font-weight: 700; color: #000 !important"
+        ><span style="color: #000 !important"
+          >More about InfoNet&nbsp;&raquo;</span
+        ></v-btn
+      >
     </div>
   </div>
 </template>

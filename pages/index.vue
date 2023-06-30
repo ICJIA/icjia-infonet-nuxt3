@@ -120,17 +120,7 @@
           <div class="flex-container">
             <div class="flex-row">
               <TheHomeBarGraph />
-              <div class="text-center">
-                <v-btn
-                  size="small"
-                  variant="text"
-                  to="/about"
-                  style="font-weight: 700; color: #000 !important"
-                  ><span style="color: #000 !important"
-                    >More about InfoNet&nbsp;&raquo;</span
-                  ></v-btn
-                >
-              </div>
+
               <!-- <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
                   <v-img
