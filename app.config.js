@@ -116,7 +116,7 @@ export default defineAppConfig({
     },
     {
       main: "News & Updates",
-      link: "/",
+      link: "/news",
     },
   ],
   sidebarMenu: [
