@@ -65,10 +65,6 @@ export default defineAppConfig({
 
   navMenu: [
     {
-      main: "Home",
-      link: "/",
-    },
-    {
       main: "About",
       link: "/about",
       children: [
@@ -87,10 +83,10 @@ export default defineAppConfig({
         {
           divider: true,
         },
-        {
-          title: "News & Updates",
-          link: "/news",
-        },
+        // {
+        //   title: "News & Updates",
+        //   link: "/news",
+        // },
         {
           title: "Screenshots",
           link: "/screenshots",
@@ -118,11 +114,19 @@ export default defineAppConfig({
         },
       ],
     },
+    {
+      main: "News & Updates",
+      link: "/",
+    },
   ],
   sidebarMenu: [
     {
       main: "Home",
       link: "/",
+    },
+    {
+      main: "News & Updates",
+      link: "/news",
     },
     {
       main: "About",

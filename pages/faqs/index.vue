@@ -13,7 +13,7 @@
               <v-expansion-panel-title
                 expand-icon="mdi-plus"
                 collapse-icon="mdi-minus"
-                style="font-weight: 700; background: #eee; color: #000"
+                style="font-weight: 700; background: #fafafa; color: #000"
               >
                 {{ item.question }}
               </v-expansion-panel-title>
