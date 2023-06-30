@@ -119,13 +119,13 @@
         <v-col cols="12" md="6" class="mb-8">
           <div class="flex-container">
             <div class="flex-row">
-              <TheHomeBarGraph />
+              <TheHomeBarGraph class="graph hidden-md-and-down" />
 
-              <!-- <v-tooltip location="bottom">
+              <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
                   <v-img
                     v-bind="props"
-                    class="splash hover"
+                    class="splash hover hidden-lg-and-up"
                     cover
                     max-height="600"
                     alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
@@ -147,7 +147,7 @@
                 <span class="mt-3"
                   >Click chart for more information about InfoNet</span
                 >
-              </v-tooltip> -->
+              </v-tooltip>
             </div>
           </div>
         </v-col></v-row
