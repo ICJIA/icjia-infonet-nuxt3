@@ -4,7 +4,7 @@
     style="background: #fff; border: 1px solid #eee"
   >
     <h2 style="border: none; font-size: 18px">
-      Domestic and Sexual Assault Victims Who Received Service in Illinois,
+      Domestic and Sexual Assault Victims Who Received Services in Illinois,
       2018-2022
     </h2>
     <h3 style="border: none; font-size: 12px">Source: InfoNet System</h3>
@@ -52,7 +52,7 @@ const chartData = ref({
   },
   datasets: [
     {
-      label: "Domestic and Sexual Violence Assualt Victims serviced",
+      label: "Victims who received services in Illinois",
       backgroundColor: "#0D4471",
       data: [70133, 72905, 60717, 61857, 61259],
     },
