@@ -3,11 +3,14 @@ import { createVuetify } from "vuetify";
 // import * as directives from "vuetify/directives";
 import * as labs from "vuetify/labs/components";
 
+import { aliases, fa } from "vuetify/iconsets/fa";
+import { mdi } from "vuetify/iconsets/mdi";
+
 export default defineNuxtPlugin((nuxtApp) => {
   const vuetify = createVuetify({
     // ssr: true,
     icons: {
-      iconfont: ["mdiSvg", "fa"], // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
+      iconfont: ["mdiSvg", "fa", "fa4", "faSvg"], // 'mdi' || 'mdiSvg' || 'md' || 'fa' || 'fa4' || 'faSvg'
     },
     components: {
       ...labs,
