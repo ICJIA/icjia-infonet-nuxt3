@@ -103,10 +103,11 @@
           <div class="flex-container">
             <div class="flex-row px-10">
               <div class="chart-container">
-                <TheHomeBarGraph class="graph hidden-md-and-down" />
+                <!-- <TheHomeBarGraph class="graph hidden-md-and-down" /> -->
+                <TheHomeBarGraph class="graph" />
               </div>
 
-              <v-tooltip location="bottom">
+              <!-- <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
                   <v-img
                     v-bind="props"
@@ -132,7 +133,7 @@
                 <span class="mt-3"
                   >Click chart for more information about InfoNet</span
                 >
-              </v-tooltip>
+              </v-tooltip> -->
             </div>
           </div>
         </v-col></v-row
