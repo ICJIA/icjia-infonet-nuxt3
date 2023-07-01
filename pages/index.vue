@@ -87,23 +87,6 @@
               <template #not-found>Document not found</template>
             </ContentDoc>
             <div class="text-center mt-4">
-              <!-- <v-btn
-                size="small"
-                to="/contact"
-                elevation="2"
-                dark
-                style="font-weight: 900; color: #333"
-                ><span style="color: #333">Contact</span></v-btn
-              >&nbsp;&nbsp; -->
-              <!-- <v-btn
-                size="small"
-                variant="text"
-                to="/about"
-                style="font-weight: 700; color: #000 !important"
-                ><span style="color: #000 !important"
-                  >List of Partners&nbsp;&raquo;</span
-                ></v-btn
-              > -->
               <v-btn
                 size="small"
                 variant="text"
@@ -127,7 +110,7 @@
                 <template v-slot:activator="{ props }">
                   <v-img
                     v-bind="props"
-                    class="splash hover hidden-lg-and-up"
+                    class="splash hover hidden-lg-and-up elevation-2"
                     cover
                     max-height="600"
                     alt="InfoNet graphic: Domestic and Sexual Violence Victims who received services, 2018-2022"
