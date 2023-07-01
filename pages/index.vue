@@ -81,7 +81,7 @@
               Illinois’ victim service data resource for over 25 years
             </h2>
           </div>
-          <div style="margin-top: -25px" class="py-5 pl-2 pr-10 text-left">
+          <div style="margin-top: -25px" class="py-5 pl-2 pr-5 text-left">
             <ContentDoc :key="data?.title" :value="data" class="markdown-body">
               <template #empty>Document not found</template>
               <template #not-found>Document not found</template>
@@ -119,7 +119,9 @@
         <v-col cols="12" md="6" class="mb-8">
           <div class="flex-container">
             <div class="flex-row px-10">
-              <TheHomeBarGraph class="graph hidden-md-and-down" />
+              <div class="chart-container">
+                <TheHomeBarGraph class="graph hidden-md-and-down" />
+              </div>
 
               <v-tooltip location="bottom">
                 <template v-slot:activator="{ props }">
@@ -477,4 +479,8 @@ const formatDate = (dateString) => {
 .v-icon--size-default {
   font-size: calc(var(--v-icon-size-multiplier) * 2.5em);
 }
+
+/* .chart-container {
+  max-width: 900px;
+} */
 </style>
