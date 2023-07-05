@@ -100,7 +100,11 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" class="mb-8">
-          <div class="flex-container">
+          <v-container
+            ><v-row
+              ><v-col cols="12"> <TheHomeBarGraph /> </v-col></v-row
+          ></v-container>
+          <!-- <div class="flex-container">
             <div class="flex-row px-10">
               <div class="chart-container">
                 <TheHomeBarGraph class="graph hidden-md-and-down" />
@@ -134,7 +138,7 @@
                 >
               </v-tooltip>
             </div>
-          </div>
+          </div> -->
         </v-col></v-row
       >
     </v-container>

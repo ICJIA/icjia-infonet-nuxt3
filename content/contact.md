@@ -4,10 +4,10 @@ slug: contact
 hideFromSearch: false
 hideFromSitemap: false
 showTableOfContents: false
-summary: This is the summary for the contact page.
+summary: Contact InfoNet
 section: root
 createdAt: 2023-04-02T15:12:26.792Z
-updatedAt: 2023-06-13T13:59:09.970Z
+updatedAt: 2023-07-03T19:40:37.379Z
 publishedAt: 2023-04-02T15:12:27.743Z
 searchMeta: null
 category: page
