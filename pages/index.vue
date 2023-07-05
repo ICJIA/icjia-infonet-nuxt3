@@ -100,9 +100,10 @@
           </div>
         </v-col>
         <v-col cols="12" md="6" class="mb-8">
-          <v-container
+          <v-container fluid
             ><v-row
-              ><v-col cols="12"> <TheHomeBarGraph /> </v-col></v-row
+              ><v-col cols="12">
+                <TheHomeBarGraph v-if="isMounted" /> </v-col></v-row
           ></v-container>
           <!-- <div class="flex-container">
             <div class="flex-row px-10">

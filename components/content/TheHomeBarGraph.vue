@@ -52,7 +52,7 @@ const chartData = ref({
   },
   datasets: [
     {
-      label: "Victims who received services in Illinois",
+      label: "Victims who received services",
       backgroundColor: "#0D4471",
       data: [70133, 72905, 60717, 61857, 61259],
     },
