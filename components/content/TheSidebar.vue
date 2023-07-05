@@ -40,7 +40,12 @@
                 <v-list-item
                   v-if="child.title"
                   exact
-                  style="margin-top: 0px; font-weight: 400; color: #555"
+                  style="
+                    margin-top: 0px;
+                    font-weight: 400;
+                    color: #555;
+                    margin-left: -30px;
+                  "
                   :to="child.link"
                 >
                   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ child.title }}</span>
