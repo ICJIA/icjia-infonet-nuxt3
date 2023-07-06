@@ -37,8 +37,6 @@
         </div>
       </div>
       <br /><br />
-      <!-- Debug:<br />
-      {{ props.data }} -->
     </v-card>
   </div>
 </template>

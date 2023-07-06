@@ -18,25 +18,6 @@
       </v-row>
     </template>
   </v-img>
-  <!-- <v-img
-    width="100%"
-    max-height="780"
-    cover
-    src="https://infonet.icjia.dev/icjia-logo.png"
-    lazy-src="https://infonet.icjia.dev/icjia-logo.png"
-    style="margin-top: 0px"
-    class="hidden-md-and-down"
-  >
-    <template #placeholder>
-      <v-row class="fill-height ma-0" align="center" justify="center">
-        <v-progress-circular
-          indeterminate
-          color="blue darken-3"
-          aria-label="Progress bar: Loading"
-        ></v-progress-circular>
-      </v-row>
-    </template>
-  </v-img> -->
 </template>
 
 <script setup>

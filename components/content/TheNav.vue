@@ -195,7 +195,6 @@
           </span>
         </span>
 
-        <!-- <span class="hidden-lg-and-up hidden-sm-and-down"> -->
         <span class="hidden-sm-and-down">
           <v-tooltip activator="parent" location="bottom"> More </v-tooltip>
           <v-menu transition="scale-transition">

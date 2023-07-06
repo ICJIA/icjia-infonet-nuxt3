@@ -1,16 +1,5 @@
 <template>
-  <div class="mt-8">
-    <!-- <v-btn
-      dark
-      style="background: #10366b; color: #fff; font-weight: 700"
-      class="mr-5"
-      to="/"
-      >Learn More</v-btn
-    > -->
-    <!-- <v-btn style="background: #fff; color: #333; font-weight: 700" to="/contact"
-      >Contact DVFR</v-btn
-    > -->
-  </div>
+  <div class="mt-8"></div>
 </template>
 
 <script setup>
