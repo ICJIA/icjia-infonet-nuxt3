@@ -57,7 +57,7 @@
     "fuse.js": "^6.6.2",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.6",
-    "mitt": "^3.0.0",
+    "mitt": "^3.0.1",
     "moment": "^2.29.4",
     "request": "^2.88.2",
     "sass": "^1.63.6",
@@ -68,7 +68,7 @@
     "uuid": "^9.0.0",
     "vite-plugin-vuetify": "^1.0.2",
     "vue-chartjs": "^5.2.0",
-    "vuetify": "^3.3.6",
+    "vuetify": "^3.3.7",
     "yaml": "^2.3.1"
   }
 }
