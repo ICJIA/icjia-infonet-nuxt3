@@ -15,7 +15,7 @@
     <!-- <div style="height: 75px"></div> -->
     <the-context-footer></the-context-footer>
 
-    <LazyTheFooter></LazyTheFooter>
+    <TheFooter></TheFooter>
   </v-app>
 </template>
 
