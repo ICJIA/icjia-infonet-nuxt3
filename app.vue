@@ -1,6 +1,6 @@
 <template>
   <v-app id="appTop">
-    <ImageModal></ImageModal>
+    <LazyImageModal></LazyImageModal>
     <TheNav></TheNav>
 
     <ThePageLoader v-if="!isMounted && isHome"> </ThePageLoader>
@@ -9,13 +9,13 @@
     <NuxtLoadingIndicator color="blue" />
 
     <v-main class="markdown-body" style="min-height: 90vh !important">
-      <TheBreadcrumbBar v-if="!isHome"></TheBreadcrumbBar>
+      <LazyTheBreadcrumbBar v-if="!isHome"></LazyTheBreadcrumbBar>
       <NuxtPage></NuxtPage>
     </v-main>
     <!-- <div style="height: 75px"></div> -->
     <the-context-footer></the-context-footer>
 
-    <TheFooter></TheFooter>
+    <LazyTheFooter></LazyTheFooter>
   </v-app>
 </template>
 
